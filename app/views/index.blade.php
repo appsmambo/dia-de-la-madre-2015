@@ -17,20 +17,20 @@
 		<![endif]-->
 		<script src="{{url()}}/js/queryloader2.min.js"></script>
 		<script>
-window.addEventListener('DOMContentLoaded', function () {
-	new QueryLoader2(document.querySelector("body"), {
-		barColor: "#ff6702",
-		backgroundColor: "#ffffff",
-		percentage: true,
-		barHeight: 2,
-		minimumTime: 500,
-		maxTime: 20000,
-		fadeOutTime: 1000,
-		onComplete: function () {
+			window.addEventListener('DOMContentLoaded', function () {
+				new QueryLoader2(document.querySelector("body"), {
+					barColor: "#ff6702",
+					backgroundColor: "#ffffff",
+					percentage: true,
+					barHeight: 2,
+					minimumTime: 500,
+					maxTime: 20000,
+					fadeOutTime: 1000,
+					onComplete: function () {
 
-		}
-	});
-});
+					}
+				});
+			});
 		</script>
 		<script src="{{url()}}/js/modernizr.custom.js"></script>
 		<script src="{{url()}}/js/jquery-1.11.2.min.js"></script>
@@ -38,10 +38,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
 	</head>
 	<body>
-		<!--div class="pt-triggers">
-			<button id="arriba" class="pt-touch-button">ARRIBA</button>
-			<button id="abajo" class="pt-touch-button">ABAJO</button>
-		</div-->
 		<header>
 			<div class="container-fluid">
 				<nav class="nav-bar clearfix">

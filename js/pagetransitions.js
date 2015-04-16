@@ -37,14 +37,19 @@ var PageTransitions = (function() {
 			});
 			$('.navbar-nav').show("fast");
 			$('nav').addClass("border");
+		});
+		$('.goParticipa').click(function() {
+			nextPage(48, 2);
 			return false;
 		});
-		$arriba.on( 'click', function() {
-			nextPage( 48 );
-		} );
-		$abajo.on( 'click', function() {
-			nextPage( 49 );
-		} );
+		$('.goElReto').click(function() {
+			nextPage(48, 3);
+			return false;
+		});
+		$('.goGaleria').click(function() {
+			nextPage(48, 4);
+			return false;
+		});
 
 	}
 
