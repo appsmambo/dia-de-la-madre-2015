@@ -38,10 +38,6 @@
 		
 	</head>
 	<body>
-		<!--div class="pt-triggers">
-			<button id="arriba" class="pt-touch-button">ARRIBA</button>
-			<button id="abajo" class="pt-touch-button">ABAJO</button>
-		</div-->
 		<div id="pt-main" class="pt-perspective">
 			<div class="pt-page page-intro">
 				<div class="row contenido">
@@ -77,6 +73,7 @@
 				
 			</div>
 		</div>
+		
 		<script src="{{url()}}/js/pagetransitions.js"></script>
 	</body>
 </html>

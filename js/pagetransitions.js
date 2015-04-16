@@ -31,15 +31,21 @@ var PageTransitions = (function() {
 		$pages.eq( current ).addClass( 'pt-page-current' );
 
 		$('.goInicio').click(function() {
-			nextPage(48, 1 );
+			nextPage(48, 2);
 			return false;
 		});
-		$arriba.on( 'click', function() {
-			nextPage( 48 );
-		} );
-		$abajo.on( 'click', function() {
-			nextPage( 49 );
-		} );
+		$('.goParticipa').click(function() {
+			nextPage(48, 2);
+			return false;
+		});
+		$('.goElReto').click(function() {
+			nextPage(48, 3);
+			return false;
+		});
+		$('.goGaleria').click(function() {
+			nextPage(48, 4);
+			return false;
+		});
 
 	}
 
