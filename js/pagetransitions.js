@@ -37,6 +37,8 @@ var PageTransitions = (function() {
 			});
 			$('.navbar-nav').show("fast");
 			$('nav').addClass("border");
+			$('.facebook, .twitter, .youtube, .instagram').addClass("active");
+			$('footer div, footer a').removeClass("none");
 		});
 		$('.goParticipa').click(function() {
 			nextPage(48, 2);

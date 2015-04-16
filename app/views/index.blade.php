@@ -17,20 +17,20 @@
 		<![endif]-->
 		<script src="{{url()}}/js/queryloader2.min.js"></script>
 		<script>
-			window.addEventListener('DOMContentLoaded', function () {
-				new QueryLoader2(document.querySelector("body"), {
-					barColor: "#ff6702",
-					backgroundColor: "#ffffff",
-					percentage: true,
-					barHeight: 2,
-					minimumTime: 500,
-					maxTime: 20000,
-					fadeOutTime: 1000,
-					onComplete: function () {
+window.addEventListener('DOMContentLoaded', function () {
+	new QueryLoader2(document.querySelector("body"), {
+		barColor: "#ff6702",
+		backgroundColor: "#ffffff",
+		percentage: true,
+		barHeight: 2,
+		minimumTime: 500,
+		maxTime: 20000,
+		fadeOutTime: 1000,
+		onComplete: function () {
 
-					}
-				});
-			});
+		}
+	});
+});
 		</script>
 		<script src="{{url()}}/js/modernizr.custom.js"></script>
 		<script src="{{url()}}/js/jquery-1.11.2.min.js"></script>
@@ -154,17 +154,24 @@
 		</div>
 		<footer>
 			<div class="container-fluid">
-				<div class="sm-3">
-					Síguenos en
-					<ul>
-						<li class="facebook"><a href="#" target="_blank"></a></li>
-						<li class="twitter"><a href="#" target="_blank"></a></li>
-						<li class="instagram"><a href="#" target="_blank"></a></li>
-						<li class="youtube"><a href="#" target="_blank"></a></li>
-					</ul>
-				</div>
-				<div class="sm-3 right">
-					hola
+				<div class="row">
+					<div class="col-sm-4">
+						Síguenos en
+						<ul class="clearfix">
+							<li><a href="#" target="_blank" class="facebook"></a></li>
+							<li><a href="#" target="_blank" class="twitter"></a></li>
+							<li><a href="#" target="_blank" class="instagram"></a></li>
+							<li><a href="#" target="_blank" class="youtube"></a></li>
+						</ul>
+						<div class="clearfix"></div>
+						<a href="#" class="btn-terminos none">Términos y Condiciones</a>
+					</div>
+					<div class="col-sm-4 btn-scroll none">
+						<a href="#" class="goParticipa"><img src="img/btn-scroll.png" class="img-responsive"/></a>
+					</div>
+					<div class="col-sm-4 right none">
+						<img src="img/hashtag-mama.jpg" class="img-responsive right"/>
+					</div>
 				</div>
 			</div>
 		</footer>

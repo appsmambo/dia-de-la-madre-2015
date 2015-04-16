@@ -91,14 +91,14 @@ html, body { height: 100%; }
 	margin-top:45px
 }
 .page-intro h1 {
-	font-family:'DINMedium';
+	font-family: 'DINNextLTPro-Medium';
 	font-size:125px;
 	font-style:italic;
 	letter-spacing:-8px;
 	line-height:100px
 }
 .page-intro h1 strong {
-	font-family:'DINBlackItalic';
+	font-family: 'DINNextLTPro-BlackItalic';
 	letter-spacing:-3px
 }
 .page-intro h1 span {

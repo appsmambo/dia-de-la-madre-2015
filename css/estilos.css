@@ -1,24 +1,4 @@
 @font-face {
-	font-family:'DINBlackItalic';
-	src:url('../fonts/DINNextLTPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/DINNextLTPro-BlackItalic.otf') format('opentype'),
-		url('../fonts/DINNextLTPro-BlackItalic.woff') format('woff'),
-		url('../fonts/DINNextLTPro-BlackItalic.ttf') format('truetype'),
-		url('../fonts/DINNextLTPro-BlackItalic.svg#DINNextLTPro-BlackItalic') format('svg');
-	font-weight:normal;
-	font-style:normal
-}
-@font-face {
-	font-family:'DINMedium';
-	src:url('../fonts/DINNextLTPro-Medium.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/DINNextLTPro-Medium.otf') format('opentype'),
-		url('../fonts/DINNextLTPro-Medium.woff') format('woff'),
-		url('../fonts/DINNextLTPro-Medium.ttf') format('truetype'),
-		url('../fonts/DINNextLTPro-Medium.svg#DINNextLTPro-Medium') format('svg');
-	font-weight:normal;
-	font-style:normal
-}
-@font-face {
   font-family: 'DINNextLTPro-UltraLightIt';
   src: url('../fonts/DINNextLTPro-UltraLightIt.eot?#iefix') format('embedded-opentype'),  
   	   url('../fonts/DINNextLTPro-UltraLightIt.otf')  format('opentype'),
@@ -78,7 +58,7 @@
   font-style: normal;
 }
 body {
-	font-family:'DINMedium';
+	font-family: 'DINNextLTPro-Medium';
 	overflow:hidden
 }
 .contenido {
@@ -91,15 +71,9 @@ body {
 header{
 	position:fixed;
 	width:100%;
-	top:5%;
+	top:3%;
 	left:0;
 	z-index: 2;
-}
-footer{
-	position:fixed;
-	width:100%;
-	bottom:5%;
-	left:0;
 }
 nav{
 	font-family: 'DINNextLTPro-UltraLightIt';
@@ -147,6 +121,85 @@ nav ul li a:hover, nav ul li a.active{
 	text-decoration: none;
 	color:#ffffff;
 	background:url('../img/fondo-menu-lista.jpg') no-repeat;
+}
+footer{
+	position:fixed;
+	width:100%;
+	bottom:3%;
+	left:0;
+	color:#ff6702;
+	font-family: 'DINNextLTPro-Light';
+	font-style:italic;
+	font-size:20px;
+}
+footer ul{
+	list-style: none;
+	margin:2px 0 8px 0;
+	padding: 0;
+}
+footer ul li{
+	float: left;
+	margin: 0 8% 0 0;
+	padding: 0;
+}
+footer ul li a{
+	display: block;
+}
+footer ul li a.facebook{
+	width:11px;
+	height:20px;
+	background:url('../img/redes.png') no-repeat;
+}
+footer ul li a.twitter{
+	width:23px;
+	height:20px;
+	background:url('../img/redes.png') no-repeat -11px 0;
+}
+footer ul li a.instagram{
+	width:20px;
+	height:20px;
+	background:url('../img/redes.png') no-repeat -34px 0;
+}
+footer ul li a.youtube{
+	width:27px;
+	height:20px;
+	background:url('../img/redes.png') no-repeat -54px 0;
+}
+footer ul li a.facebook.active{
+	background:url('../img/redes.png') no-repeat 0 -20px;
+}
+footer ul li a.twitter.active{
+	background:url('../img/redes.png') no-repeat -11px  -20px;
+}
+footer ul li a.instagram.active{
+	background:url('../img/redes.png') no-repeat -34px  -20px;
+}
+footer ul li a.youtube.active{
+	background:url('../img/redes.png') no-repeat -54px  -20px;
+}
+footer .right{
+	margin-top:2.5%;
+}
+.btn-scroll{
+	text-align: center;
+}
+.btn-scroll img{
+	display: inline-block;
+	height:30px;
+	height: 80px;
+}
+.btn-terminos{
+	display:inline-block;
+	background:#ff6702;
+	color:#ffffff;
+	width: auto;
+	padding:3%;
+	font-size: 14px;
+	font-family: 'DINNextLTPro-UltraLightIt';
+}
+.btn-terminos:hover{
+	color:#ffffff;
+	text-decoration: none;
 }
 .right{
 	float: right;
