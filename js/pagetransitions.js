@@ -32,6 +32,11 @@ var PageTransitions = (function() {
 
 		$('.goInicio').click(function() {
 			nextPage(48, 1 );
+			$('.logo-1').hide("fast", function(){
+				$('.logo-2').show("fast");
+			});
+			$('.navbar-nav').show("fast");
+			$('nav').addClass("border");
 			return false;
 		});
 		$arriba.on( 'click', function() {
