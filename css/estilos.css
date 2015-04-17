@@ -127,10 +127,13 @@ footer{
 	width:100%;
 	bottom:3%;
 	left:0;
-	color:#ff6702;
+	color:#ffffff;
 	font-family: 'DINNextLTPro-Light';
 	font-style:italic;
 	font-size:20px;
+}
+footer.active{
+	color:#ff6702;
 }
 footer ul{
 	list-style: none;
@@ -185,8 +188,7 @@ footer .right{
 }
 .btn-scroll img{
 	display: inline-block;
-	height:30px;
-	height: 80px;
+	cursor: pointer;
 }
 .btn-terminos{
 	display:inline-block;
@@ -225,19 +227,20 @@ footer .right{
 	text-align: center;
 	font-family: 'DINNextLTPro-Light';
 	font-size: 22px;
+	line-height: 30px;
 	text-align: center;
 	font-style: italic;
 }
 .titulo{
 	font-family: 'DINNextLTPro-BlackItalic';
-	font-size: 120px;
+	font-size: 115px;
 	text-align: center;
-	line-height: 70px;
+	line-height: 85px;
 }
 .titulo span{
 	font-family: 'DINNextLTPro-Medium';
 	font-style: italic;
-	font-size:98px;
+	font-size:95px;
 }
 .page-inicio .titulo{
 	text-align: left;
@@ -257,14 +260,14 @@ footer .right{
 .page-inicio.content-wrapper p.parraf span.sub-2{
 	font-family: 'DINNextLTPro-HeavyItalic';
 	font-style: normal;
-	font-size: 52px;
+	font-size: 50px;
 	display: inline-block;
-	line-height: 50px;
+	line-height: 60px;
 }
 .page-participa .titulo{
 	font-family: 'DINNextLTPro-HeavyItalic';
 	font-size:84px;
-	line-height: 110px;
+	line-height: 100px;
 }
 .page-participa .titulo span{
 	font-family: 'DINNextLTPro-Bold';
@@ -273,8 +276,36 @@ footer .right{
 	line-height: 15px;
 	display: block;
 }
+.page-participa p.col-sm-10{
+	margin-top:4%;
+}
 .page-participa.content-wrapper p.parraf{
 	line-height: 40px;
+	font-size: 24px;
+}
+.page-elReto .titulo{
+	font-family: 'DINNextLTPro-Bold';
+	font-size:69px;
+	line-height: 52px;
+	font-style: italic;
+}
+.page-elReto .titulo span{
+	font-family: 'DINNextLTPro-Light';
+	font-style: italic;
+}
+.page-elReto .titulo span.reto-1{
+	font-size:60px;
+	font-family: 'DINNextLTPro-Bold';
+}
+.page-elReto.content-wrapper p.parraf{
+	font-size:28px;
+}
+.page-elReto.content-wrapper p.parraf span{
+	font-size:37px;
+	font-family: 'DINNextLTPro-Bold';
+}
+.page-elReto p.col-sm-10{
+	margin-top:4%;
 }
 .btn-sube-foto{
 	cursor: pointer;

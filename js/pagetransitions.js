@@ -21,6 +21,21 @@ var PageTransitions = (function() {
 		// support css animations
 		support = Modernizr.cssanimations;
 	
+	function menu(){
+		$('.goMenu').removeClass("active");
+		if(current == 1){
+				$('#menu-home').addClass("active")
+			}
+			if(current == 2){
+				$('#menu-participa').addClass("active")
+			}
+			if(current == 3){
+				$('#menu-reto').addClass("active")
+			}
+			if(current == 4){
+				$('#menu-galeria').addClass("active")
+			}
+	}
 	function init() {
 
 		$pages.each( function() {
@@ -32,7 +47,9 @@ var PageTransitions = (function() {
 
 		$('.go').click(function() {
 			nextPage(48);
+			menu();
 			return false;
+			
 		});
 		$('.saltar').click(function() {
 			nextPage(48, 1);
@@ -40,13 +57,13 @@ var PageTransitions = (function() {
 				$('.logo-2').show("fast");
 			});
 			$('.navbar-nav').show("fast");
-			$('nav').addClass("border");
-			$('.facebook, .twitter, .youtube, .instagram').addClass("active");
+			$('.facebook, .twitter, .youtube, .instagram, footer').addClass("active");
 			$('footer div, footer a').removeClass("none");
 		});
 		$('.goMenu').click(function() {
 			seccion = $(this).data('seccion');
 			nextPage(48, seccion);
+			menu();
 			return false;
 		});
 

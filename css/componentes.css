@@ -66,7 +66,7 @@ html, body { height: 100%; }
 	background-position:center center;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
-	background-size:cover;
+	background-size: contain;
 	color:#fff
 }
 
@@ -75,12 +75,17 @@ html, body { height: 100%; }
 	background-position:center center;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
-	background-size:cover;
+	background-size:contain;
 	color:#fff
 }
 
 .page-elReto {
-	
+	background-image:url('../img/fondos/fondo-reto.jpg');
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:contain;
+	color:#fff
 }
 
 .page-galeria {
