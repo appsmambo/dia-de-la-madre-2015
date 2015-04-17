@@ -17,20 +17,20 @@
 		<![endif]-->
 		<script src="{{url()}}/js/queryloader2.min.js"></script>
 		<script>
-window.addEventListener('DOMContentLoaded', function () {
-	new QueryLoader2(document.querySelector("body"), {
-		barColor: "#ff6702",
-		backgroundColor: "#ffffff",
-		percentage: true,
-		barHeight: 2,
-		minimumTime: 500,
-		maxTime: 20000,
-		fadeOutTime: 1000,
-		onComplete: function () {
+			window.addEventListener('DOMContentLoaded', function () {
+				new QueryLoader2(document.querySelector("body"), {
+					barColor: "#ff6702",
+					backgroundColor: "#ffffff",
+					percentage: true,
+					barHeight: 2,
+					minimumTime: 500,
+					maxTime: 20000,
+					fadeOutTime: 1000,
+					onComplete: function () {
 
-		}
-	});
-});
+					}
+				});
+			});
 		</script>
 		<script src="{{url()}}/js/modernizr.custom.js"></script>
 		<script src="{{url()}}/js/jquery-1.11.2.min.js"></script>
@@ -95,7 +95,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			<div class="pt-page page-inicio content-wrapper">
 				<div class="container-fluid contenido">
 					<div class="row">
-						<div class="col-sm-9 col-sm-offset-2 col-xs-12">
+						<div class="col-sm-10 col-sm-offset-1">
 							<div class="row">
 								<div class="col-sm-10 col-sm-offset-1 col-xs-12 titulo clearfix">
 									<img src="img/hashtag.png"/>

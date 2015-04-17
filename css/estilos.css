@@ -58,6 +58,7 @@
   font-style: normal;
 }
 body {
+	background-color:#000;
 	font-family: 'DINNextLTPro-Medium';
 	overflow:hidden
 }
