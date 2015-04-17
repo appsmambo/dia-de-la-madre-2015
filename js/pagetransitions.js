@@ -24,16 +24,19 @@ var PageTransitions = (function() {
 	function menu(){
 		$('.goMenu').removeClass("active");
 		if(current == 1){
+			$('.go').fadeIn('fast');
 			$('#menu-home').addClass("active")
 		}
 		if(current == 2){
+			$('.go').fadeIn('fast');
 			$('#menu-participa').addClass("active")
 		}
 		if(current == 3){
+			$('.go').fadeIn('fast');
 			$('#menu-reto').addClass("active")
 		}
 		if(current == 4){
-			$('.go').hide('fast');
+			$('.go').fadeOut('fast');
 			$('#menu-galeria').addClass("active")
 		}
 	}
@@ -63,6 +66,7 @@ var PageTransitions = (function() {
 		});
 		$('.goMenu').click(function() {
 			seccion = $(this).data('seccion');
+			if (current == seccion) return false;
 			nextPage(48, seccion);
 			menu();
 			return false;
@@ -86,19 +90,14 @@ var PageTransitions = (function() {
 		var $currPage = $pages.eq( current );
 
 		if(showPage){
-			if( showPage < pagesCount - 1 ) {
-				current = showPage;
-			}
-			else {
-				current = 0;
-			}
+			current = showPage;
 		}
 		else{
 			if( current < pagesCount - 1 ) {
 				++current;
 			}
 			else {
-				current = 0;
+				current = 1;
 			}
 		}
 
