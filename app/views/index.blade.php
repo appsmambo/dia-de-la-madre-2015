@@ -100,7 +100,7 @@
 						<div class="col-sm-10 col-sm-offset-1">
 							<div class="row">
 								<div class="col-sm-8 col-sm-offset-2 col-xs-12 titulo clearfix">
-									<img src="img/hashtag.png" alt="" class="img-responsive">
+									<img src="{{url()}}/img/hashtag.png" alt="" class="img-responsive">
 									<p>momentos<br/> <span>con</span> mamá<p>
 								</div>
 							</div>
@@ -121,7 +121,7 @@
 								<div class="col-sm-10">
 									<div class="row">
 										<div class="col-sm-2">
-											<img src="img/par-izq.png" alt="" class="img-responsive pull-right">
+											<img src="{{url()}}/img/par-izq.png" alt="" class="img-responsive pull-right">
 										</div>
 										<div class="col-sm-8 titulo">
 											<p>
@@ -130,7 +130,7 @@
 											</p>
 										</div>
 										<div class="col-sm-2">
-											<img src="img/par-der.png" alt="" class="img-responsive pull-left">
+											<img src="{{url()}}/img/par-der.png" alt="" class="img-responsive pull-left">
 										</div>
 									</div>
 									<div class="clearfix"></div>
@@ -140,7 +140,7 @@
 								</div>
 								<div class="col-sm-2">
 									<a href="#" id="subeTuFoto">
-										<img src="img/btn-sube-tu-foto.png" class="img-responsive" alt="">
+										<img src="{{url()}}/img/btn-sube-tu-foto.png" class="img-responsive" alt="">
 									</a>
 								</div>
 							</div>
@@ -154,14 +154,14 @@
 						<div class="col-sm-8 col-sm-offset-2">
 							<div class="row">
 								<div class="col-sm-2">
-									<img src="img/par-izq.png" alt="" class="img-responsive pull-right">
+									<img src="{{url()}}/img/par-izq.png" alt="" class="img-responsive pull-right">
 								</div>
 								<div class="col-sm-8 titulo">
 									Además, <span>nos hemos</span><br/>
 									<span class="reto-1">propuesto un reto</span>
 								</div>
 								<div class="col-sm-2">
-									<img src="img/par-der.png" alt="" class="img-responsive pull-left">
+									<img src="{{url()}}/img/par-der.png" alt="" class="img-responsive pull-left">
 								</div>
 							</div>
 							<div class="clearfix"></div>
@@ -182,19 +182,19 @@
 							</p>
 							<div class="row clearfix">
 								<div class="col-sm-4">
-									<img src="img/foto-1.jpg" alt="" class="img-responsive pull-right">
+									<img src="{{url()}}/img/foto-1.jpg" alt="" class="img-responsive pull-right">
 									<div class="contenido-titulo">
 										<p>Mi viejita sabia que me encanta la música así que no se le ocurrió mejor cosa que regalarme una guitarra para mi cumpleaños, es la mejor.</p>
 									</div>
 								</div>
 								<div class="col-sm-4">
-									<img src="img/foto-2.jpg" alt="parentesis" class="img-responsive"/>
+									<img src="{{url()}}/img/foto-2.jpg" alt="parentesis" class="img-responsive"/>
 									<div class="contenido-titulo">
 										<p>Mi viejita sabia que me encanta la música así que no se le ocurrió mejor cosa que regalarme una guitarra para mi cumpleaños, es la mejor.</p>
 									</div>
 								</div>
 								<div class="col-sm-4">
-									<img src="img/foto-3.jpg" alt="parentesis" class="img-responsive"/>
+									<img src="{{url()}}/img/foto-3.jpg" alt="parentesis" class="img-responsive"/>
 									<div class="contenido-titulo">
 										<p>Mi viejita sabia que me encanta la música así que no se le ocurrió mejor cosa que regalarme una guitarra para mi cumpleaños, es la mejor.</p>
 									</div>
@@ -207,7 +207,7 @@
 		</div>
 		<div class="formulario hidden">
 			<div class="btn-close">
-				<img src="img/btn-close-formulario.jpg" alt="close"/>
+				<img src="{{url()}}/img/btn-close-formulario.jpg" alt="close"/>
 			</div>
 			<div class="container-formulario">
 				<p class="parrrafo-footer-1">
@@ -242,7 +242,7 @@
 						<input type="checkbox" name="terminos" id="terminos"/>
 					</p>
 					<div class="elige-tu-foto">
-						<img src="img/fondo-preview.jpg" alt="Elige Foto"/>
+						<img src="{{url()}}/img/fondo-preview.jpg" alt="Elige Foto"/>
 					</div>
 					<p class="caja-texto">
 						<input type="text" placeholder="Coloca aqui tu texto"/>
@@ -255,7 +255,7 @@
 		</div>
 		<div class="gracias hidden">
 			<div class="btn-close">
-				<img src="img/btn-close-formulario.jpg" alt="close"/>
+				<img src="{{url()}}/img/btn-close-formulario.jpg" alt="close"/>
 			</div>
 			<div class="content-a">
 				<div class="content-b">
@@ -271,13 +271,13 @@
 						<span class="white">de ayuda</span>
 					</div>
 					<a class="compartir" href="#">
-						<img src="img/comparte.png" alt="compartir"/>
+						<img src="{{url()}}/img/comparte.png" alt="compartir"/>
 					</a>
 					<div class="sociales-footer">
-						<a href="#"><img src="img/facebook-gracias.png" alt="facebook"/></a>
-						<a href="#"><img src="img/twitter-gracias.png" alt="twitter"/></a>
-						<a href="#"><img src="img/instagram-gracias.png" alt="instagram"/></a>
-						<a href="#"><img src="img/youtube-gracias.png" alt="youtube"/></a>
+						<a href="#"><img src="{{url()}}/img/facebook-gracias.png" alt="facebook"/></a>
+						<a href="#"><img src="{{url()}}/img/twitter-gracias.png" alt="twitter"/></a>
+						<a href="#"><img src="{{url()}}/img/instagram-gracias.png" alt="instagram"/></a>
+						<a href="#"><img src="{{url()}}/img/youtube-gracias.png" alt="youtube"/></a>
 					</div>
 				</div>
 			</div> 
@@ -298,11 +298,11 @@
 					</div>
 					<div class="col-sm-4 hidden">
 						<a href="#" class="go" style="display:block">
-							<img src="img/btn-scroll.png" class="img-responsive center-block" alt="" style="height:66px"/>
+							<img src="{{url()}}/img/btn-scroll.png" class="img-responsive center-block" alt="" style="height:66px"/>
 						</a>
 					</div>
 					<div class="col-sm-4 hidden">
-						<img src="img/hashtag-mama.png" class="img-responsive pull-right hashtag" alt=""/>
+						<img src="{{url()}}/img/hashtag-mama.png" class="img-responsive pull-right hashtag" alt=""/>
 					</div>
 				</div>
 			</div>
