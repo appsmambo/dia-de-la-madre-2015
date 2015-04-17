@@ -166,7 +166,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			<div class="pt-page page-galeria">
 
 			</div>
-			<div class="formulario">
+			<div class="formulario none">
 				<p class="">
 					Comparte una foto en la que reflejes un momento con tu mamá. 
 					La foto puede ser actual o de tu infancia, aparecer tu mamá o no, pero siempre debe recordarte a algún momento con ella. Recuerdos, anécdotas, frases suyas que 
