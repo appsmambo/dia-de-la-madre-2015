@@ -63,9 +63,6 @@
 								<ul class="nav navbar-nav hidden">
 									<li><a href="#" class="active goMenu" data-seccion="1" id="menu-home">home</a></li>
 									<li><a href="#" class="goMenu" data-seccion="2" id="menu-participa">participa</a></li>
-									<li><a href="#" class="goMenu" data-seccion="3" id="menu-reto">el reto</a></li>
-									<li><a href="#" class="goMenu" data-seccion="4" id="menu-galeria">galeria</a></li>
-								</ul>
 							</div>
 						</div>
 					</div>
@@ -152,8 +149,17 @@
 				<div class="kilos-content uno hidden" >
 						
 				</div>
-				<div class="kilos-content dos" >
+				<div class="kilos-content dos hidden" >
 					<div>180 <span class="kilos-small">kg</span><br/> <span class="kilos-texto">de ayuda</span></div>
+				</div>
+				<div class="kilos-content tres hidden" >
+					<div>120 <span class="kilos-small">kg</span><br/> <span class="kilos-texto">de ayuda</span></div>
+				</div>
+				<div class="kilos-content cuatro hidden" >
+					<div>20 <span class="kilos-small">kg</span><br/> <span class="kilos-texto">de ayuda</span></div>
+				</div>
+				<div class="kilos-content cinco" >
+					
 				</div>
 				<div class="container-fluid contenido">
 					
@@ -283,8 +289,6 @@
 					<div class="sociales-footer">
 						<a href="#"><img src="{{url()}}/img/facebook-gracias.png" alt="facebook"/></a>
 						<a href="#"><img src="{{url()}}/img/twitter-gracias.png" alt="twitter"/></a>
-						<a href="#"><img src="{{url()}}/img/instagram-gracias.png" alt="instagram"/></a>
-						<a href="#"><img src="{{url()}}/img/youtube-gracias.png" alt="youtube"/></a>
 					</div>
 				</div>
 			</div> 

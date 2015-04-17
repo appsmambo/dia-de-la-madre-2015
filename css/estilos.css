@@ -538,13 +538,23 @@ input.error{
 	font-size:35px;
 	line-height: 15px;
 }
-.kilos-content.dos div{
+.kilos-content div{
 	position:absolute;
-	bottom: 0;
-	height:60px;
-	border:1px solid red;
-	left:10px;
-	padding:20px 0 0 0;
+	height:55px;
+	left:30px;
+	padding:11px 0 0 0;
+}
+.kilos-content.dos div{
+	bottom: 75px;
+}
+.kilos-content.tres div{
+	bottom: 195px;
+}
+.kilos-content.cuatro div{
+	bottom: 315px;
+}
+.kilos-content.cinco div{
+	bottom: 385px;
 }
 .kilos-content .kilos-small{
 	font-size:16px;
