@@ -158,36 +158,36 @@ footer ul li a{
 	display: block;
 }
 footer ul li a.facebook{
-	width:7px;
+	width:9px;
 	height:16px;
 	background:url('../img/redes.png') no-repeat;
 }
 footer ul li a.twitter{
-	width:19px;
+	width:18px;
 	height:16px;
-	background:url('../img/redes.png') no-repeat -7px 0;
+	background:url('../img/redes.png') no-repeat -9px 0;
 }
 footer ul li a.instagram{
 	width:16px;
 	height:16px;
-	background:url('../img/redes.png') no-repeat -26px 0;
+	background:url('../img/redes.png') no-repeat -27px 0;
 }
 footer ul li a.youtube{
-	width:23px;
+	width:22px;
 	height:16px;
-	background:url('../img/redes.png') no-repeat -49px 0;
+	background:url('../img/redes.png') no-repeat -43px 0;
 }
 footer ul li a.facebook.active{
 	background:url('../img/redes.png') no-repeat 0 -16px;
 }
 footer ul li a.twitter.active{
-	background:url('../img/redes.png') no-repeat -7px  -16px;
+	background:url('../img/redes.png') no-repeat -9px  -16px;
 }
 footer ul li a.instagram.active{
-	background:url('../img/redes.png') no-repeat -26px  -16px;
+	background:url('../img/redes.png') no-repeat -27px  -16px;
 }
 footer ul li a.youtube.active{
-	background:url('../img/redes.png') no-repeat -49px  -16px;
+	background:url('../img/redes.png') no-repeat -43px  -16px;
 }
 footer .hashtag {
 	padding:3% 0 0
