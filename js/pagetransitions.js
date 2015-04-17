@@ -2,11 +2,9 @@ var PageTransitions = (function() {
 
 	var $main = $( '#pt-main' ),
 		$pages = $main.children( 'div.pt-page' ),
-		$arriba = $( '#arriba' ),
-		$abajo = $( '#abajo' ),
-		animcursor = 1,
 		pagesCount = $pages.length,
 		current = 0,
+		flag = true,
 		isAnimating = false,
 		endCurrPage = false,
 		endNextPage = false,
@@ -49,11 +47,37 @@ var PageTransitions = (function() {
 
 		$pages.eq( current ).addClass( 'pt-page-current' );
 
+		$('#subeTuFoto').click(function() {
+			$('header, #pt-main, footer').delay(250).animate({
+				right: "+820"
+			}, 250, function() {
+				// Animation complete.
+			});
+			$('.formulario').animate({
+				right: "0"
+			}, 500, function() {
+				// Animation complete.
+			});
+			flag = false;
+		});
+		$('.btn-close').click(function() {
+			$('header, #pt-main, footer').delay(250).animate({
+				right: "0"
+			}, 250, function() {
+				// Animation complete.
+			});
+			$('.formulario').animate({
+				right: "-820"
+			}, 500, function() {
+				// Animation complete.
+			});
+			flag = true;
+		});
+		
 		$('.go').click(function() {
 			nextPage(48);
 			menu();
 			return false;
-			
 		});
 		$('.saltar').click(function() {
 			nextPage(48, 1);
@@ -71,10 +95,11 @@ var PageTransitions = (function() {
 			menu();
 			return false;
 		});
-
+		
 	}
 
 	function nextPage(options, showPage) {
+		if (!flag) return;
 		if (typeof showPage === 'undefined') {
 			showPage = 0;
 		}

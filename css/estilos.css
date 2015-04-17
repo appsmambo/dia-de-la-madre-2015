@@ -133,7 +133,6 @@ footer{
 	position:fixed;
 	width:100%;
 	bottom:0;
-	left:0;
 	color:#ffffff;
 	font-family:'DINNextLTPro-Light';
 	font-style:italic;
@@ -314,15 +313,15 @@ textarea {
 	position:absolute;
 	height:100%;
 	width:820px;
-	background:#f5f5f5 ;
-	right:0;
+	background:#f5f5f5;
+	right:-820px;
 	top:0;
-	z-index: 2;
-	color: #818181;
-	font-size: 14px;
-	font-family: 'DINNextLTPro-Light';
-	text-align: center;
-	font-style: italic;
+	z-index:2;
+	color:#818181;
+	font-size:14px;
+	font-family:'DINNextLTPro-Light';
+	text-align:center;
+	font-style:italic
 }
 .gracias{
 	background:url('../img/bg-gracias.jpg') repeat;
@@ -458,7 +457,7 @@ input.error{
 	padding: 0;
 }
 .btn-close{
-	cursor: pointer;
+	cursor:pointer;
 	position:absolute;
 	right:0;
 	top:16.5%;

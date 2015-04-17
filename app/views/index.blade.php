@@ -205,10 +205,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="formulario hidden">
-			<div class="btn-close">
-				<img src="{{url()}}/img/btn-close-formulario.jpg" alt="close"/>
-			</div>
+		<div class="formulario">
+			<a class="btn-close">
+				<img src="{{url()}}/img/btn-close-formulario.jpg" alt="">
+			</a>
 			<div class="container-formulario">
 				<p class="parrrafo-footer-1">
 					<span>Comparte una foto en la que reflejes un momento con tu mamá.</span> 
@@ -253,10 +253,10 @@
 				</form>
 			</div>
 		</div>
-		<div class="gracias hidden">
-			<div class="btn-close">
-				<img src="{{url()}}/img/btn-close-formulario.jpg" alt="close"/>
-			</div>
+		<div class="gracias">
+			<a href="#" class="btn-close">
+				<img src="{{url()}}/img/btn-close-formulario.jpg" alt="">
+			</a>
 			<div class="content-a">
 				<div class="content-b">
 					<h2>
