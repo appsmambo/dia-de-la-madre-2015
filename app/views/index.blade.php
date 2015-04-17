@@ -119,17 +119,17 @@
 						<div class="col-sm-10 col-sm-offset-1">
 							<div class="row">
 								<div class="col-sm-10">
-									<div class="row">
-										<div class="col-sm-2">
+									<div class="row no-padding">
+										<div class="col-sm-1">
 											<img src="{{url()}}/img/par-izq.png" alt="" class="img-responsive pull-right">
 										</div>
-										<div class="col-sm-8 titulo">
+										<div class="col-sm-10 titulo">
 											<p>
 												Comparte una foto
 												<span> En la que reflejes un momento con tu mamá. </span>
 											</p>
 										</div>
-										<div class="col-sm-2">
+										<div class="col-sm-1">
 											<img src="{{url()}}/img/par-der.png" alt="" class="img-responsive pull-left">
 										</div>
 									</div>
@@ -152,15 +152,15 @@
 				<div class="container-fluid contenido">
 					<div class="row">
 						<div class="col-sm-8 col-sm-offset-2">
-							<div class="row">
-								<div class="col-sm-2">
+							<div class="row no-padding">
+								<div class="col-sm-1">
 									<img src="{{url()}}/img/par-izq.png" alt="" class="img-responsive pull-right">
 								</div>
-								<div class="col-sm-8 titulo">
+								<div class="col-sm-10 titulo">
 									Además, <span>nos hemos</span><br/>
 									<span class="reto-1">propuesto un reto</span>
 								</div>
-								<div class="col-sm-2">
+								<div class="col-sm-1">
 									<img src="{{url()}}/img/par-der.png" alt="" class="img-responsive pull-left">
 								</div>
 							</div>
@@ -298,7 +298,7 @@
 					</div>
 					<div class="col-sm-4 hidden">
 						<a href="#" class="go" style="display:block">
-							<img src="{{url()}}/img/btn-scroll.png" class="img-responsive center-block" alt="" style="height:66px"/>
+							<img src="{{url()}}/img/btn-scroll.png" class="img-responsive center-block" alt=""/>
 						</a>
 					</div>
 					<div class="col-sm-4 hidden">

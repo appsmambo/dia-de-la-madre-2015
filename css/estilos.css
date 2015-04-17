@@ -86,7 +86,7 @@ nav{
 	font-family: 'DINNextLTPro-UltraLightIt';
 	font-size:28px;
 	text-align: center;
-	height:94px
+	height:80px
 }
 nav.border{
 	border-bottom: 2px solid #ff6702;
@@ -132,7 +132,7 @@ nav ul li a:hover, nav ul li a.active{
 footer{
 	position:fixed;
 	width:100%;
-	bottom:5px;
+	bottom:0;
 	left:0;
 	color:#ffffff;
 	font-family:'DINNextLTPro-Light';
@@ -151,43 +151,43 @@ footer ul{
 }
 footer ul li{
 	float: left;
-	margin: 0 12px 0 0;
+	margin: 0 24px 0 0;
 	padding: 0;
 }
 footer ul li a{
 	display: block;
 }
 footer ul li a.facebook{
-	width:11px;
-	height:20px;
+	width:7px;
+	height:16px;
 	background:url('../img/redes.png') no-repeat;
 }
 footer ul li a.twitter{
-	width:23px;
-	height:20px;
-	background:url('../img/redes.png') no-repeat -11px 0;
+	width:19px;
+	height:16px;
+	background:url('../img/redes.png') no-repeat -7px 0;
 }
 footer ul li a.instagram{
-	width:20px;
-	height:20px;
-	background:url('../img/redes.png') no-repeat -34px 0;
+	width:16px;
+	height:16px;
+	background:url('../img/redes.png') no-repeat -26px 0;
 }
 footer ul li a.youtube{
-	width:27px;
-	height:20px;
-	background:url('../img/redes.png') no-repeat -54px 0;
+	width:23px;
+	height:16px;
+	background:url('../img/redes.png') no-repeat -49px 0;
 }
 footer ul li a.facebook.active{
-	background:url('../img/redes.png') no-repeat 0 -20px;
+	background:url('../img/redes.png') no-repeat 0 -16px;
 }
 footer ul li a.twitter.active{
-	background:url('../img/redes.png') no-repeat -11px  -20px;
+	background:url('../img/redes.png') no-repeat -7px  -16px;
 }
 footer ul li a.instagram.active{
-	background:url('../img/redes.png') no-repeat -34px  -20px;
+	background:url('../img/redes.png') no-repeat -26px  -16px;
 }
 footer ul li a.youtube.active{
-	background:url('../img/redes.png') no-repeat -54px  -20px;
+	background:url('../img/redes.png') no-repeat -49px  -16px;
 }
 footer .hashtag {
 	padding:3% 0 0
@@ -209,7 +209,7 @@ textarea {
 	text-decoration: none;
 }
 .go {
-	padding:2% 0 0
+	padding:0
 }
 .logo-2{
 	display: none;
@@ -268,7 +268,7 @@ textarea {
 }
 .page-participa .titulo{
 	font-family: 'DINNextLTPro-HeavyItalic';
-	font-size:84px;
+	font-size:90px;
 	line-height: 100px;
 }
 .page-participa .titulo span{
@@ -290,6 +290,7 @@ textarea {
 	font-size:69px;
 	line-height: 52px;
 	font-style: italic;
+	padding-top: 20px;
 }
 .page-elReto .titulo span{
 	font-family: 'DINNextLTPro-Light';
@@ -519,4 +520,8 @@ input.error{
 }
 .sociales-footer a{
 	margin-right:3%;
+}
+.no-padding div{
+	padding-left: 0;
+	padding-right: 0;
 }
