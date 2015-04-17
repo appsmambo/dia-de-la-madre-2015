@@ -35,6 +35,7 @@ window.addEventListener('DOMContentLoaded', function () {
 		<script src="{{url()}}/js/modernizr.custom.js"></script>
 		<script src="{{url()}}/js/jquery-1.11.2.min.js"></script>
 		<!--script src="{{url()}}/js/bootstrap.min.js"></script-->
+		<script src="{{url()}}/js/jquery.validate.min.js"></script>
 		<script src="{{url()}}/js/jquery.screwdefaultbuttonsV2.min.js"></script>
 		<script src="{{url()}}/js/funciones.js"></script>
 	</head>
@@ -196,7 +197,7 @@ window.addEventListener('DOMContentLoaded', function () {
 					</div>
 				</div>
 			</div>
-			<div class="formulario none">
+			<div class="formulario">
 				<div class="btn-close">
 					<img src="img/btn-close-formulario.jpg" alt="close"/>
 				</div>
@@ -214,11 +215,11 @@ window.addEventListener('DOMContentLoaded', function () {
 					<form method="post" name="registro" id="registro">
 						<p class="clearfix">
 							<label>Nombre<span>:</span></label>
-							<input type="text" name="nombre" id="nombre"/>
+							<input type="text" name="nombre" id="nombre" maxlength="50"/>
 						</p>
 						<p  class="clearfix">
 							<label>Dni<span>:</span></label>
-							<input type="text" name="dni" id="dni"/>
+							<input type="text" name="dni" id="dni" maxlength="8"/>
 						</p>
 						<p  class="clearfix">
 							<label>e-mail<span>:</span></label>
@@ -226,7 +227,7 @@ window.addEventListener('DOMContentLoaded', function () {
 						</p>
 						<p  class="clearfix">
 							<label>Nº celular<span>:</span></label>
-							<input type="text" name="celular" id="celular"/>
+							<input type="text" name="celular" id="celular" maxlength="12"/>
 						</p>
 						<p  class="clearfix terminos-condiciones">
 							<label >Acepto los Términos y Condiciones:</label>
@@ -245,7 +246,7 @@ window.addEventListener('DOMContentLoaded', function () {
 				</div>
 			</div>
 		</div>
-		<div class="gracias">
+		<div class="gracias none">
 			<div class="btn-close">
 				<img src="img/btn-close-formulario.jpg" alt="close"/>
 			</div>

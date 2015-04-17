@@ -414,6 +414,12 @@ textarea {
 .styledCheckbox{
 	float:right;
 }
+label.error{
+	display:none !important;
+}
+input.error{
+	border:1px solid red !important;
+}
 .elige-tu-foto{
 	padding:3px 0 0 0;
 	margin:0 0 16px 0;
