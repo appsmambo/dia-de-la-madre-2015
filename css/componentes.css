@@ -62,7 +62,7 @@ html, body { height: 100%; }
 }
 
 .page-inicio {
-	background-image:url('../img/fondos/fondo-home.jpg');
+	background-image:url('../img/fondos/home.jpg');
 	background-position:center center;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
@@ -71,7 +71,7 @@ html, body { height: 100%; }
 }
 
 .page-participa {
-	background-image:url('../img/fondos/fondo-participa.jpg');
+	background-image:url('../img/fondos/participa.jpg');
 	background-position:center center;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
@@ -80,7 +80,7 @@ html, body { height: 100%; }
 }
 
 .page-elReto {
-	background-image:url('../img/fondos/fondo-reto.jpg');
+	background-image:url('../img/fondos/reto.jpg');
 	background-position:center center;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
