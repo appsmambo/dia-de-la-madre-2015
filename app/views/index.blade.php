@@ -63,6 +63,9 @@
 								<ul class="nav navbar-nav hidden">
 									<li><a href="#" class="active goMenu" data-seccion="1" id="menu-home">home</a></li>
 									<li><a href="#" class="goMenu" data-seccion="2" id="menu-participa">participa</a></li>
+									<li><a href="#" class="goMenu" data-seccion="3" id="menu-reto">el reto</a></li>
+									<li><a href="#" class="goMenu" data-seccion="4" id="menu-galeria">galeria</a></li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -98,12 +101,13 @@
 							<div class="row">
 								<div class="col-sm-8 col-sm-offset-2 col-xs-12 titulo clearfix">
 									<img src="{{url()}}/img/hashtag.png" alt="" class="img-responsive">
-									<p>momentos<br/> <span>con</span> mamá<p>
+									<p>
+										<span class="home-sub-1">Las</span><br/><span class="home-sub-2">MEJORES</span><br/>madres
+									<p>
 								</div>
 							</div>
 							<p class="parraf">
-								Y nosotros a ella. Por eso, te presentamos un concurso en el que si resultas ganador le regalaremos<br/>
-								<span class="sub-1">un equipo Motorola Moto E</span> a tu mamá. Así podrás tenerla mejor conectada, más cerca <span class="sub-1">:)</span>
+								Sabemos que para ti, tu madre es la mejor, por eso queremos que nos cuentes de ella a través de una imagen. Elige el mejor momento a su lado y gana <span class="sub-1">un equipo Motorola Moto E</span> para que se lo regales. Así podrás tenerla mejor conectada, más cerca. <span class="sub-1">:)</span> 
 								<span class="sub-2">¿Qué tienes que hacer para participar?</span>
 							</p>
 						</div>
@@ -301,8 +305,6 @@
 						<ul class="clearfix">
 							<li><a href="#" target="_blank" class="facebook"></a></li>
 							<li><a href="#" target="_blank" class="twitter"></a></li>
-							<li><a href="#" target="_blank" class="instagram"></a></li>
-							<li><a href="#" target="_blank" class="youtube"></a></li>
 						</ul>
 						<div class="clearfix"></div>
 						<a href="#" class="btn-terminos hidden">Términos y Condiciones</a>

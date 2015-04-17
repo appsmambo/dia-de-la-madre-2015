@@ -147,11 +147,12 @@ footer ul{
 	list-style: none;
 	margin:2px 0 8px 0;
 	padding: 0;
+	width:142px;
 }
 footer ul li{
-	float: left;
-	margin: 0 24px 0 0;
+	margin: 0 5px;
 	padding: 0;
+	float: left;
 }
 footer ul li a{
 	display: block;
@@ -189,7 +190,7 @@ footer ul li a.youtube.active{
 	background:url('../img/redes.png') no-repeat -43px  -16px;
 }
 footer .hashtag {
-	padding:3% 0 0
+	padding:1% 0 0
 }
 textarea {
 	resize:none
@@ -234,17 +235,24 @@ textarea {
 }
 .titulo{
 	font-family:'DINNextLTPro-BlackItalic';
-	font-size:115px;
+	font-size:113px;
 	text-align:center;
 	line-height:85px
 }
-.titulo span{
+.titulo span.home-sub-1{
 	font-family:'DINNextLTPro-Medium';
 	font-style:italic;
-	font-size:90px
+	font-size:67px;
+	line-height: 15px;
+}
+.titulo span.home-sub-2{
+	font-family: 'DINNextLTPro-HeavyItalic';
+	font-size:60px;
+	line-height: 70px;
 }
 .page-inicio .titulo{
-	text-align:left
+	text-align:left;
+	line-height: 60px;
 }
 .page-inicio .titulo img, .page-inicio .titulo p{	
 	float: left;
@@ -286,7 +294,7 @@ textarea {
 }
 .page-elReto .titulo{
 	font-family: 'DINNextLTPro-Bold';
-	font-size:69px;
+	font-size:74px;
 	line-height: 52px;
 	font-style: italic;
 	padding-top: 20px;
@@ -300,7 +308,8 @@ textarea {
 	font-family: 'DINNextLTPro-Bold';
 }
 .page-elReto.content-wrapper p.parraf{
-	font-size:28px;
+	font-size:25px;
+	line-height: 33px;
 }
 .page-elReto.content-wrapper p.parraf span{
 	font-size:37px;
