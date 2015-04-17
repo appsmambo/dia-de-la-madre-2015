@@ -121,7 +121,7 @@ nav ul li a{
 nav ul li a:hover, nav ul li a.active{
 	text-decoration: none;
 	color:#ffffff;
-	background:url('../img/fondo-menu-lista.jpg') no-repeat;
+	background:url('../img/fondo-menu-lista.png') no-repeat;
 }
 footer{
 	position:fixed;
@@ -314,7 +314,7 @@ textarea {
 .btn-sube-foto{
 	cursor: pointer;
 }
-.formulario{
+.formulario, .gracias{
 	position:absolute;
 	height:100%;
 	width:820px;
@@ -327,6 +327,11 @@ textarea {
 	font-family: 'DINNextLTPro-Light';
 	text-align: center;
 	font-style: italic;
+}
+.gracias{
+	background:url('../img/bg-gracias.jpg') repeat;
+	color:#ffffff;
+	font-style: normal;
 }
 .container-formulario{
 	width:765px;
@@ -416,4 +421,101 @@ textarea {
 }
 .elige-tu-foto img{
 	cursor: pointer;
+}
+.contenido-titulo{
+	background: #ff6702;
+	font-family: 'DINNextLTPro-Light';
+	font-size: 16px;
+	line-height: 15px;
+	padding:3% 0;
+	color: #ffffff;
+	font-style: normal;
+	text-align: left;
+}
+.page-galeria.content-wrapper .contenido-titulo p{
+	width: 90%;
+	margin: 0 auto;
+}
+.page-galeria.content-wrapper p span.titulo-galeria{
+	font-family: 'DINNextLTPro-HeavyItalic';
+	font-size:38px; 
+}
+.page-galeria.content-wrapper p span{
+	color: #ff6702;
+}
+.page-galeria.content-wrapper{
+	font-size: 30px;
+	color: #555555;
+	font-family: 'DINNextLTPro-Light';
+	font-style: italic;
+	line-height: 30px;
+	text-align: center;
+}
+.page-galeria.content-wrapper p{
+	margin: 0 0 3% 0;
+	padding: 0;
+}
+.btn-close{
+	cursor: pointer;
+	position:absolute;
+	right:0;
+	top:16.5%;
+	width:80px;
+	height:73px;
+}
+.content-a{
+	display: table;
+	width:100%;
+	height:100%;
+}
+.content-b{
+	display: table-cell;
+	vertical-align: middle;
+}
+.gracias h2{
+	font-family: 'DINNextLTPro-Bold';
+	font-size:88px;
+	line-height: 74px;
+	margin: 0;
+	padding: 0;
+}
+.gracias h2 span{
+	color:#ff6702;
+}
+.gracias p{
+	margin:10px 0 0 0;
+	padding: 0;
+	font-size: 20px;
+	font-style: italic;
+	font-family: 'DINNextLTPro-Medium';
+	line-height: 24px;
+}
+.gracias p span{
+	font-family: 'DINNextLTPro-Bold';
+	font-size: 25px;
+}
+.kilos-ayuda{
+	width: 365px;
+	height:110px;
+	background:url('../img/fondo-vasos.png') no-repeat bottom;
+	border: 0;
+	margin: 3% auto;
+	font-family: 'DINNextLTPro-Medium';
+	font-style: italic;
+	font-size:85px;
+	line-height: 22px;
+	padding-top:35px;
+}
+.kilos-ayuda span.orange{
+	color: #ff6702;
+	font-size:40px;
+}
+.kilos-ayuda span.white{
+	font-size:35px;
+}
+.sociales-footer{
+	margin:3% 0 0 0;
+}
+.sociales-footer a{
+	margin-right:3%;
 }

@@ -17,20 +17,20 @@
 		<![endif]-->
 		<script src="{{url()}}/js/queryloader2.min.js"></script>
 		<script>
-			window.addEventListener('DOMContentLoaded', function () {
-				new QueryLoader2(document.querySelector("body"), {
-					barColor: "#ff6702",
-					backgroundColor: "#ffffff",
-					percentage: true,
-					barHeight: 2,
-					minimumTime: 500,
-					maxTime: 20000,
-					fadeOutTime: 1000,
-					onComplete: function () {
+window.addEventListener('DOMContentLoaded', function () {
+	new QueryLoader2(document.querySelector("body"), {
+		barColor: "#ff6702",
+		backgroundColor: "#ffffff",
+		percentage: true,
+		barHeight: 2,
+		minimumTime: 500,
+		maxTime: 20000,
+		fadeOutTime: 1000,
+		onComplete: function () {
 
-					}
-				});
-			});
+		}
+	});
+});
 		</script>
 		<script src="{{url()}}/js/modernizr.custom.js"></script>
 		<script src="{{url()}}/js/jquery-1.11.2.min.js"></script>
@@ -54,7 +54,7 @@
 								<a class="navbar-brand logo-entel" href="#">
 									<img src="img/logo-intro.png" class="img-responsive logo-1"/>
 									<div class="logo-2">
-										<img src="img/logo-entel.jpg" class="img-responsive" alt="Entel"/>
+										<img src="img/logo-entel.png" class="img-responsive" alt="Entel"/>
 									</div>
 								</a>
 							</div>
@@ -98,7 +98,7 @@
 					<div class="row">
 						<div class="col-sm-10 col-sm-offset-1">
 							<div class="row">
-								<div class="col-sm-10 col-sm-offset-1 col-xs-12 titulo clearfix">
+								<div class="col-sm-8 col-sm-offset-2 col-xs-12 titulo clearfix">
 									<img src="img/hashtag.png" alt="hashtag"/>
 									<p>momentos<br/> <span>con</span> mamá<p>
 								</div>
@@ -164,10 +164,42 @@
 					</div>
 				</div>
 			</div>
-			<div class="pt-page page-galeria">
-
+			<div class="pt-page page-galeria content-wrapper">
+				<div class="container-fluid contenido">
+					<div class="row">
+						<div class="col-sm-9 col-sm-offset-2">
+							<p>
+								Aquí puedes ver todas <span class="titulo-galeria">las fotos e historias</span> que han llegado hasta ahora, 
+								por si te falta inspiración para enviar la tuya <span > ;) </span> 
+							</p>
+							<div class="row clearfix">
+								<div class="col-sm-4">
+									<img src="img/foto-1.jpg" alt="parentesis" class="img-responsive"/>
+									<div class="contenido-titulo">
+										<p>Mi viejita sabia que me encanta la música así que no se le ocurrió mejor cosa que regalarme una guitarra para mi cumpleaños, es la mejor.</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<img src="img/foto-2.jpg" alt="parentesis" class="img-responsive"/>
+									<div class="contenido-titulo">
+										<p>Mi viejita sabia que me encanta la música así que no se le ocurrió mejor cosa que regalarme una guitarra para mi cumpleaños, es la mejor.</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<img src="img/foto-3.jpg" alt="parentesis" class="img-responsive"/>
+									<div class="contenido-titulo">
+										<p>Mi viejita sabia que me encanta la música así que no se le ocurrió mejor cosa que regalarme una guitarra para mi cumpleaños, es la mejor.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="formulario none">
+				<div class="btn-close">
+					<img src="img/btn-close-formulario.jpg" alt="close"/>
+				</div>
 				<div class="container-formulario">
 					<p class="parrrafo-footer-1">
 						<span>Comparte una foto en la que reflejes un momento con tu mamá.</span> 
@@ -213,6 +245,35 @@
 				</div>
 			</div>
 		</div>
+		<div class="gracias">
+			<div class="btn-close">
+				<img src="img/btn-close-formulario.jpg" alt="close"/>
+			</div>
+			<div class="content-a">
+				<div class="content-b">
+					<h2>
+						<span>¡</span>Muchas gracias<span>!</span>
+					</h2>
+					<p>
+						Con tu foto, hemos sumado <span>otro kilo de alimentos</span> a nuestro reto.<br/>
+						Ya tenemos un total de:
+					</p>
+					<div class="kilos-ayuda">
+						1000 <span class="orange">kg</span><br/>
+						<span class="white">de ayuda</span>
+					</div>
+					<a class="compartir" href="#">
+						<img src="img/comparte.png" alt="compartir"/>
+					</a>
+					<div class="sociales-footer">
+						<a href="#"><img src="img/facebook-gracias.png" alt="facebook"/></a>
+						<a href="#"><img src="img/twitter-gracias.png" alt="twitter"/></a>
+						<a href="#"><img src="img/instagram-gracias.png" alt="instagram"/></a>
+						<a href="#"><img src="img/youtube-gracias.png" alt="youtube"/></a>
+					</div>
+				</div>
+			</div> 
+		</div>
 		<footer>
 			<div class="container-fluid">
 				<div class="row">
@@ -233,7 +294,7 @@
 						</a>
 					</div>
 					<div class="col-sm-4 right none">
-						<img src="img/hashtag-mama.jpg" class="img-responsive right" alt="hashtag"/>
+						<img src="img/hashtag-mama.png" class="img-responsive right" alt="hashtag"/>
 					</div>
 				</div>
 			</div>
