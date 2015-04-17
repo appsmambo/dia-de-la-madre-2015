@@ -35,6 +35,7 @@
 		<script src="{{url()}}/js/modernizr.custom.js"></script>
 		<script src="{{url()}}/js/jquery-1.11.2.min.js"></script>
 		<!--script src="{{url()}}/js/bootstrap.min.js"></script-->
+		<script src="{{url()}}/js/jquery.validate.min.js"></script>
 		<script src="{{url()}}/js/jquery.screwdefaultbuttonsV2.min.js"></script>
 		<script src="{{url()}}/js/funciones.js"></script>
 	</head>
