@@ -62,6 +62,10 @@ body {
 	font-family: 'DINNextLTPro-Medium';
 	overflow:hidden
 }
+a {
+	display:block;
+	text-decoration:none
+}
 .contenido {
 	position:relative;
 	top:50%;
@@ -72,16 +76,17 @@ body {
 header{
 	position:fixed;
 	width:100%;
-	top:6px;
-	left:0;
-	z-index: 2;
+	z-index:2
+}
+header.active {
+	background-color:#fff;
+	border-bottom:2px solid #ff6702
 }
 nav{
 	font-family: 'DINNextLTPro-UltraLightIt';
 	font-size:28px;
 	text-align: center;
-	line-height: 50px;
-	padding-bottom:3%;
+	height:94px
 }
 nav.border{
 	border-bottom: 2px solid #ff6702;
@@ -121,7 +126,8 @@ nav ul li a{
 nav ul li a:hover, nav ul li a.active{
 	text-decoration: none;
 	color:#ffffff;
-	background:url('../img/fondo-menu-lista.png') no-repeat;
+	background-image:url('../img/fondo-menu.png');
+	background-color:transparent!important
 }
 footer{
 	position:fixed;
@@ -129,12 +135,14 @@ footer{
 	bottom:5px;
 	left:0;
 	color:#ffffff;
-	font-family: 'DINNextLTPro-Light';
+	font-family:'DINNextLTPro-Light';
 	font-style:italic;
-	font-size:20px;
+	font-size:16px
 }
 footer.active{
-	color:#ff6702;
+	background-color:#fff;
+	border-top:2px solid #ff6702;
+	color:#ff6702
 }
 footer ul{
 	list-style: none;
@@ -143,7 +151,7 @@ footer ul{
 }
 footer ul li{
 	float: left;
-	margin: 0 8% 0 0;
+	margin: 0 12px 0 0;
 	padding: 0;
 }
 footer ul li a{
@@ -181,37 +189,27 @@ footer ul li a.instagram.active{
 footer ul li a.youtube.active{
 	background:url('../img/redes.png') no-repeat -54px  -20px;
 }
-footer .right{
-	margin-top:2.5%;
+footer .hashtag {
+	padding:3% 0 0
 }
 textarea {
 	resize:none
-}
-.btn-scroll{
-	text-align: center;
-}
-.btn-scroll img{
-	display: inline-block;
-	cursor: pointer;
 }
 .btn-terminos{
 	display:inline-block;
 	background:#ff6702;
 	color:#ffffff;
 	width: auto;
-	padding:3%;
-	font-size: 14px;
+	padding:2px 8px 1px;
+	font-size: 13px;
 	font-family: 'DINNextLTPro-UltraLightIt';
 }
 .btn-terminos:hover{
 	color:#ffffff;
 	text-decoration: none;
 }
-.right{
-	float: right;
-}
-.none{
-	display: none;
+.go {
+	padding:2% 0 0
 }
 .logo-2{
 	display: none;
@@ -226,28 +224,28 @@ textarea {
 	width:100% !important;
 }
 .content-wrapper p.parraf{
-	padding: 0;
-	margin: 10px 0 0 0;
-	text-align: center;
-	font-family: 'DINNextLTPro-Light';
-	font-size: 22px;
-	line-height: 30px;
-	text-align: center;
-	font-style: italic;
+	padding:0;
+	margin:10px 0 0 0;
+	text-align:center;
+	font-family:'DINNextLTPro-Light';
+	font-size:22px;
+	line-height:30px;
+	text-align:center;
+	font-style:italic
 }
 .titulo{
-	font-family: 'DINNextLTPro-BlackItalic';
-	font-size: 115px;
-	text-align: center;
-	line-height: 85px;
+	font-family:'DINNextLTPro-BlackItalic';
+	font-size:115px;
+	text-align:center;
+	line-height:85px
 }
 .titulo span{
-	font-family: 'DINNextLTPro-Medium';
-	font-style: italic;
-	font-size:95px;
+	font-family:'DINNextLTPro-Medium';
+	font-style:italic;
+	font-size:90px
 }
 .page-inicio .titulo{
-	text-align: left;
+	text-align:left
 }
 .page-inicio .titulo img, .page-inicio .titulo p{	
 	float: left;
@@ -310,9 +308,6 @@ textarea {
 }
 .page-elReto p.col-sm-10{
 	margin-top:4%;
-}
-.btn-sube-foto{
-	cursor: pointer;
 }
 .formulario, .gracias{
 	position:absolute;

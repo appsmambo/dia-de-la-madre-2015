@@ -24,17 +24,18 @@ var PageTransitions = (function() {
 	function menu(){
 		$('.goMenu').removeClass("active");
 		if(current == 1){
-				$('#menu-home').addClass("active")
-			}
-			if(current == 2){
-				$('#menu-participa').addClass("active")
-			}
-			if(current == 3){
-				$('#menu-reto').addClass("active")
-			}
-			if(current == 4){
-				$('#menu-galeria').addClass("active")
-			}
+			$('#menu-home').addClass("active")
+		}
+		if(current == 2){
+			$('#menu-participa').addClass("active")
+		}
+		if(current == 3){
+			$('#menu-reto').addClass("active")
+		}
+		if(current == 4){
+			$('.go').hide('fast');
+			$('#menu-galeria').addClass("active")
+		}
 	}
 	function init() {
 
@@ -55,10 +56,10 @@ var PageTransitions = (function() {
 			nextPage(48, 1);
 			$('.logo-1').hide("fast", function(){
 				$('.logo-2').show("fast");
+				$('.navbar-nav').removeClass("hidden");
+				$('.facebook, .twitter, .youtube, .instagram, header, footer').addClass("active");
+				$('footer div, footer a').removeClass("hidden");
 			});
-			$('.navbar-nav').show("fast");
-			$('.facebook, .twitter, .youtube, .instagram, footer').addClass("active");
-			$('footer div, footer a').removeClass("none");
 		});
 		$('.goMenu').click(function() {
 			seccion = $(this).data('seccion');
