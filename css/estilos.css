@@ -524,3 +524,47 @@ input.error{
 	padding-left: 0;
 	padding-right: 0;
 }
+.kilos-content {
+	position:absolute;
+	width:120px;
+	left:30px;
+	height:480px;
+	top:50%;
+	border:0;
+	margin-top:-240px;
+	font-family: 'DINNextLTPro-Medium';
+	font-style: italic;
+	color: #ff6702;
+	font-size:35px;
+	line-height: 15px;
+}
+.kilos-content.dos div{
+	position:absolute;
+	bottom: 0;
+	height:60px;
+	border:1px solid red;
+	left:10px;
+	padding:20px 0 0 0;
+}
+.kilos-content .kilos-small{
+	font-size:16px;
+}
+.kilos-content .kilos-texto{
+	font-size:20px;
+	font-family: 'DINNextLTPro-Light';
+}
+.kilos-content.uno{
+	background:url('../img/kilos-1.png') no-repeat left;
+}
+.kilos-content.dos{
+	background:url('../img/kilos-2.png') no-repeat left;
+}
+.kilos-content.tres{
+	background:url('../img/kilos-3.png') no-repeat left;
+}
+.kilos-content.cuatro{
+	background:url('../img/kilos-4.png') no-repeat left;
+}
+.kilos-content.cinco{
+	background:url('../img/kilos-5.png') no-repeat left;
+}

@@ -149,7 +149,14 @@
 				</div>
 			</div>
 			<div class="pt-page page-elReto content-wrapper">
+				<div class="kilos-content uno hidden" >
+						
+				</div>
+				<div class="kilos-content dos" >
+					<div>180 <span class="kilos-small">kg</span><br/> <span class="kilos-texto">de ayuda</span></div>
+				</div>
 				<div class="container-fluid contenido">
+					
 					<div class="row">
 						<div class="col-sm-8 col-sm-offset-2">
 							<div class="row no-padding">
