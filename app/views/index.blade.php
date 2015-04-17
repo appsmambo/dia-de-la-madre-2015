@@ -35,7 +35,8 @@
 		<script src="{{url()}}/js/modernizr.custom.js"></script>
 		<script src="{{url()}}/js/jquery-1.11.2.min.js"></script>
 		<!--script src="{{url()}}/js/bootstrap.min.js"></script-->
-
+		<script src="{{url()}}/js/jquery.screwdefaultbuttonsV2.min.js"></script>
+		<script src="{{url()}}/js/funciones.js"></script>
 	</head>
 	<body>
 		<header>
@@ -53,7 +54,7 @@
 								<a class="navbar-brand logo-entel" href="#">
 									<img src="img/logo-intro.png" class="img-responsive logo-1"/>
 									<div class="logo-2">
-										<img src="img/logo-entel.jpg" class="img-responsive"/>
+										<img src="img/logo-entel.jpg" class="img-responsive" alt="Entel"/>
 									</div>
 								</a>
 							</div>
@@ -76,7 +77,7 @@
 					<div class="col-sm-offset-3 col-sm-6">
 						<div class="row">
 							<div class="col-sm-3">
-								<img src="{{url()}}/img/hashtag.png" alt="" class="img-responsive pull-right hashtag">
+								<img src="{{url()}}/img/hashtag.png" alt="hasgtag" class="img-responsive pull-right hashtag">
 							</div>
 							<div class="col-sm-9">
 								<h1>
@@ -87,7 +88,7 @@
 						</div>
 						<br><br>
 						<a class="saltar" href="#">
-							<img src="{{url()}}/img/boton-saltar.png" alt="" class="img-responsive center-block">
+							<img src="{{url()}}/img/boton-saltar.png" alt="boton-saltar" class="img-responsive center-block">
 						</a>
 					</div>
 				</div>
@@ -98,7 +99,7 @@
 						<div class="col-sm-10 col-sm-offset-1">
 							<div class="row">
 								<div class="col-sm-10 col-sm-offset-1 col-xs-12 titulo clearfix">
-									<img src="img/hashtag.png"/>
+									<img src="img/hashtag.png" alt="hashtag"/>
 									<p>momentos<br/> <span>con</span> mamá<p>
 								</div>
 							</div>
@@ -147,12 +148,12 @@
 					<div class="row">
 						<div class="col-sm-8 col-sm-offset-2 col-xs-12 clearfix titulo ">
 							<div class="row">
-								<div class="col-sm-1"><img src="img/par-izq.png"/></div>
+								<div class="col-sm-1"><img src="img/par-izq.png" alt="parentesis"/></div>
 								<p class="col-sm-10">
 									Además, <span>nos hemos</span><br/>
 									<span class="reto-1">propuesto un reto</span>
 								</p>
-								<div class="col-sm-1"><img src="img/par-der.png"/></div>
+								<div class="col-sm-1"><img src="img/par-der.png" alt="parentesis"/></div>
 								<div class="clearfix"></div>
 								<p class="parraf">
 									<span>Ayudar a nuestros niños de Aldeas infantiles</span>. Por ello, con esa foto, estarás donando <span>1 kilo de alimentos</span> que irá directamente para ellos. Cuantas más fotos, más kilos de ayuda. Convence a tus amigos para que también envíen su foto y entre todos conseguiremos el reto.
@@ -167,12 +168,49 @@
 
 			</div>
 			<div class="formulario none">
-				<p class="">
-					Comparte una foto en la que reflejes un momento con tu mamá. 
-					La foto puede ser actual o de tu infancia, aparecer tu mamá o no, pero siempre debe recordarte a algún momento con ella. Recuerdos, anécdotas, frases suyas que 
-					te quedaron grabadas para siempre, etc. Además, explícanos en pocas palabras 
-					el porqué de la imagen, la historia que hay detrás.
-				</p>
+				<div class="container-formulario">
+					<p class="parrrafo-footer-1">
+						<span>Comparte una foto en la que reflejes un momento con tu mamá.</span> 
+						La foto puede ser actual o de tu infancia, aparecer tu mamá o no, pero siempre debe
+						recordarte a algún momento con ella. Recuerdos, anécdotas, frases suyas que 
+						te quedaron grabadas para siempre, etc. Además, explícanos en pocas palabras 
+						el porqué de la imagen, la historia que hay detrás.
+					</p>
+					<p class="parrrafo-footer-2">
+						<span class="asterisco">*</span> Las fotos que más nos gusten serán compartidas en nuestras redes sociales. <span>¡Suerte!</span> ;)
+					</p>
+					<form method="post" name="registro" id="registro">
+						<p class="clearfix">
+							<label>Nombre<span>:</span></label>
+							<input type="text" name="nombre" id="nombre"/>
+						</p>
+						<p  class="clearfix">
+							<label>Dni<span>:</span></label>
+							<input type="text" name="dni" id="dni"/>
+						</p>
+						<p  class="clearfix">
+							<label>e-mail<span>:</span></label>
+							<input type="text" name="mail" id="mail"/>
+						</p>
+						<p  class="clearfix">
+							<label>Nº celular<span>:</span></label>
+							<input type="text" name="celular" id="celular"/>
+						</p>
+						<p  class="clearfix terminos-condiciones">
+							<label >Acepto los Términos y Condiciones:</label>
+							<input type="checkbox" name="terminos" id="terminos"/>
+						</p>
+						<div class="elige-tu-foto">
+							<img src="img/fondo-preview.jpg" alt="Elige Foto"/>
+						</div>
+						<p class="caja-texto">
+							<input type="text" placeholder="Coloca aqui tu texto"/>
+						</p>
+						<p class="btn-enviar-text">
+							<input type="image" src="img/btn-enviar.png" class="btn-enviar"/>
+						</p>
+					</form>
+				</div>
 			</div>
 		</div>
 		<footer>
@@ -191,11 +229,11 @@
 					</div>
 					<div class="col-sm-4 btn-scroll none">
 						<a href="#" class="go">
-							<img src="img/btn-scroll.png" class="img-responsive"/>
+							<img src="img/btn-scroll.png" class="img-responsive" alt="scroll"/>
 						</a>
 					</div>
 					<div class="col-sm-4 right none">
-						<img src="img/hashtag-mama.jpg" class="img-responsive right"/>
+						<img src="img/hashtag-mama.jpg" class="img-responsive right" alt="hashtag"/>
 					</div>
 				</div>
 			</div>

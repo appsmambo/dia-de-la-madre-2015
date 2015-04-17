@@ -317,13 +317,103 @@ textarea {
 .formulario{
 	position:absolute;
 	height:100%;
-	width:780px;
+	width:820px;
 	background:#f5f5f5 ;
 	right:0;
 	top:0;
 	z-index: 2;
 	color: #818181;
+	font-size: 14px;
+	font-family: 'DINNextLTPro-Light';
+	text-align: center;
+	font-style: italic;
+}
+.container-formulario{
+	width:765px;
+	margin: 0 auto;
 }
 .formulario p{
+	margin: 2% 0 0 0;
+	padding: 0;
+}
+.formulario p.parrrafo-footer-1 span{
+	font-family: 'DINNextLTPro-Bold';
+	font-style: italic;
+	font-size: 18px;
+}
+.formulario p.parrrafo-footer-2{
+	font-size: 16px;
+	margin-top: 4px;
+}
+.formulario p.parrrafo-footer-2 span{
+	font-size: 18px;
+	font-family: 'DINNextLTPro-Medium';
+}
+.formulario p.parrrafo-footer-2 span.asterisco{
+	font-size: 12px;
+	color: #ff6702;
+}
+.formulario form{
+	width:530px;
+	margin: 2% auto 0 auto;
+	padding: 0;
+	text-align: left;
+	font-family: 'DINNextLTPro-Medium';
+	font-size: 15px;
+}
+.formulario form p{
+	width:530px;
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+.formulario form p label{
+	width:100px;
+	float: left;
+}
+.formulario form p label span{
+	color:#ff6702;
+}
+.formulario form p input{
+	width:380px;
+	float: right;
+	border: 0;
+	background: #fcfcfc;
+	height: 25px;
+}
+.formulario form p.terminos-condiciones label{
+	width:480px;
+	float: left;
+	text-align: right;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 30px;
+}
+.formulario form p.caja-texto input{
+	width:530px;
+	height:60px;
 	text-align: center;
+}
+.formulario form p.caja-texto{
+	height: 60px;
+}
+.formulario form p.btn-enviar-text{
+	text-align: center;
+}
+.formulario form p.btn-enviar-text input{
+	width:140px;
+	height:34px;
+	float: none;
+	margin-top:-20px;
+	display: inline-block;
+}
+.styledCheckbox{
+	float:right;
+}
+.elige-tu-foto{
+	padding:3px 0 0 0;
+	margin:0 0 16px 0;
+	text-align: center;
+}
+.elige-tu-foto img{
+	cursor: pointer;
 }
