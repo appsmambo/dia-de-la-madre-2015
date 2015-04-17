@@ -71,7 +71,7 @@ body {
 header{
 	position:fixed;
 	width:100%;
-	top:3%;
+	top:6px;
 	left:0;
 	z-index: 2;
 }
@@ -125,7 +125,7 @@ nav ul li a:hover, nav ul li a.active{
 footer{
 	position:fixed;
 	width:100%;
-	bottom:3%;
+	bottom:5px;
 	left:0;
 	color:#ffffff;
 	font-family: 'DINNextLTPro-Light';
