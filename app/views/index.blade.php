@@ -197,7 +197,7 @@ window.addEventListener('DOMContentLoaded', function () {
 					</div>
 				</div>
 			</div>
-			<div class="formulario">
+			<div class="formulario none">
 				<div class="btn-close">
 					<img src="img/btn-close-formulario.jpg" alt="close"/>
 				</div>
