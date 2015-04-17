@@ -59,10 +59,10 @@ window.addEventListener('DOMContentLoaded', function () {
 							</div>
 							<div class="collapse navbar-collapse col-sm-9" id="bs-example-navbar-collapse-1 ">
 								<ul class="nav navbar-nav none">
-									<li ><a href="#" class="active">home</a></li>
-									<li><a href="#">participa</a></li>
-									<li><a href="#">el reto</a></li>
-									<li><a href="#">galeria</a></li>
+									<li><a href="#" class="active goMenu" data-seccion="1">home</a></li>
+									<li><a href="#" class="goMenu" data-seccion="2">participa</a></li>
+									<li><a href="#" class="goMenu" data-seccion="3">el reto</a></li>
+									<li><a href="#" class="goMenu" data-seccion="4">galeria</a></li>
 								</ul>
 							</div>
 						</div>
@@ -86,7 +86,7 @@ window.addEventListener('DOMContentLoaded', function () {
 							</div>
 						</div>
 						<br><br>
-						<a class="goInicio" href="#">
+						<a class="saltar" href="#">
 							<img src="{{url()}}/img/boton-saltar.png" alt="" class="img-responsive center-block">
 						</a>
 					</div>
@@ -167,7 +167,9 @@ window.addEventListener('DOMContentLoaded', function () {
 						<a href="#" class="btn-terminos none">Términos y Condiciones</a>
 					</div>
 					<div class="col-sm-4 btn-scroll none">
-						<a href="#" class="goParticipa"><img src="img/btn-scroll.png" class="img-responsive"/></a>
+						<a href="#" class="go">
+							<img src="img/btn-scroll.png" class="img-responsive"/>
+						</a>
 					</div>
 					<div class="col-sm-4 right none">
 						<img src="img/hashtag-mama.jpg" class="img-responsive right"/>

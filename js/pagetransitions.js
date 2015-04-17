@@ -30,8 +30,12 @@ var PageTransitions = (function() {
 
 		$pages.eq( current ).addClass( 'pt-page-current' );
 
-		$('.goInicio').click(function() {
-			nextPage(48, 1 );
+		$('.go').click(function() {
+			nextPage(48);
+			return false;
+		});
+		$('.saltar').click(function() {
+			nextPage(48, 1);
 			$('.logo-1').hide("fast", function(){
 				$('.logo-2').show("fast");
 			});
@@ -40,16 +44,9 @@ var PageTransitions = (function() {
 			$('.facebook, .twitter, .youtube, .instagram').addClass("active");
 			$('footer div, footer a').removeClass("none");
 		});
-		$('.goParticipa').click(function() {
-			nextPage(48, 2);
-			return false;
-		});
-		$('.goElReto').click(function() {
-			nextPage(48, 3);
-			return false;
-		});
-		$('.goGaleria').click(function() {
-			nextPage(48, 4);
+		$('.goMenu').click(function() {
+			seccion = $(this).data('seccion');
+			nextPage(48, seccion);
 			return false;
 		});
 
