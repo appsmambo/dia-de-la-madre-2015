@@ -76,10 +76,10 @@
 		<div id="pt-main" class="pt-perspective">
 			<div class="pt-page page-intro">
 				<div class="row contenido">
-					<div class="col-sm-offset-3 col-sm-6">
+					<div class="col-sm-offset-3 col-sm-6 col-xs-12">
 						<div class="row">
-							<div class="col-sm-12 center-block">
-								<img src="{{url()}}/img/titulo-home.png" alt="" class="img-responsive hashtag">
+							<div class="col-sm-12  col-xs-12">
+								<img src="{{url()}}/img/titulo-home.png" alt="" class="img-responsive hashtag center-block">
 							</div>
 						</div>
 						<br><br>
@@ -92,7 +92,7 @@
 			<div class="pt-page page-inicio content-wrapper">
 				<div class="container-fluid contenido">
 					<div class="row">
-						<div class="col-sm-10 col-sm-offset-1">
+						<div class="col-sm-10 col-sm-offset-1 col-xs-12">
 							<div class="row">
 								<div class="col-sm-8 col-sm-offset-2 col-xs-12 titulo clearfix">
 									<img src="{{url()}}/img/titulo-hashtag.png" alt="" class="img-responsive">
@@ -109,20 +109,20 @@
 			<div class="pt-page page-participa content-wrapper">
 				<div class="container-fluid contenido">
 					<div class="row">
-						<div class="col-sm-10 col-sm-offset-1">
+						<div class="col-sm-10 col-sm-offset-1 col-xs-12">
 							<div class="row">
-								<div class="col-sm-10">
+								<div class="col-sm-10 col-xs-12">
 									<div class="row no-padding">
-										<div class="col-sm-1">
+										<div class="col-sm-1 col-xs-1">
 											<img src="{{url()}}/img/par-izq.png" alt="" class="img-responsive pull-right">
 										</div>
-										<div class="col-sm-10 titulo">
+										<div class="col-sm-10 titulo col-xs-10">
 											<p>
 												Comparte una foto
 												<span> En la que reflejes un momento con tu mamá. </span>
 											</p>
 										</div>
-										<div class="col-sm-1">
+										<div class="col-sm-1 col-xs-10">
 											<img src="{{url()}}/img/par-der.png" alt="" class="img-responsive pull-left">
 										</div>
 									</div>
