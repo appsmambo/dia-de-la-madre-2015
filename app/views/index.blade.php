@@ -210,7 +210,7 @@
 			</a>
 			<div class="container-formulario contenido">
 				<p class="parrafo-1">
-					<span>Comparte una foto en la que reflejes un momento con tu mamá.</span> 
+					<span>Comparte una foto en la que reflejes un momento con tu mamá.</span> <br/>
 					La foto puede ser actual o de tu infancia, aparecer tu mamá o no, pero siempre debe
 					recordarte a algún momento con ella. Recuerdos, anécdotas, frases suyas que 
 					te quedaron grabadas para siempre, etc. Además, explícanos en pocas palabras 
