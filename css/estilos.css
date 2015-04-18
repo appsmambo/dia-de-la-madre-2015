@@ -533,6 +533,7 @@ input.error{
 }
 .sociales-footer a{
 	margin-right:3%;
+	display: inline-block;
 }
 .no-padding div{
 	padding-left: 0;
