@@ -86,4 +86,11 @@ $(document).ready(function () {
 			href: urlBase,
 		}, function(response){});
 	})
+	$('.compartir').click(function() {
+		FB.ui({
+			method: 'share',
+			href: urlBase,
+		}, function(response){});
+	});
+	
 });

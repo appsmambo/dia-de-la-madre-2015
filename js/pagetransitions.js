@@ -1,124 +1,138 @@
-var PageTransitions = (function() {
+var PageTransitions = (function () {
 
-	var $main = $( '#pt-main' ),
-		$pages = $main.children( 'div.pt-page' ),
-		pagesCount = $pages.length,
-		current = 0,
-		flag = true,
-		isAnimating = false,
-		endCurrPage = false,
-		endNextPage = false,
-		animEndEventNames = {
-			'WebkitAnimation' : 'webkitAnimationEnd',
-			'OAnimation' : 'oAnimationEnd',
-			'msAnimation' : 'MSAnimationEnd',
-			'animation' : 'animationend'
-		},
-		// animation end event name
-		animEndEventName = animEndEventNames[ Modernizr.prefixed( 'animation' ) ],
-		// support css animations
-		support = Modernizr.cssanimations;
-	
-	function menu(){
+	var $main = $('#pt-main'),
+			$pages = $main.children('div.pt-page'),
+			pagesCount = $pages.length,
+			current = 0,
+			flag = true,
+			isAnimating = false,
+			endCurrPage = false,
+			endNextPage = false,
+			animEndEventNames = {
+				'WebkitAnimation': 'webkitAnimationEnd',
+				'OAnimation': 'oAnimationEnd',
+				'msAnimation': 'MSAnimationEnd',
+				'animation': 'animationend'
+			},
+	// animation end event name
+	animEndEventName = animEndEventNames[ Modernizr.prefixed('animation') ],
+			// support css animations
+			support = Modernizr.cssanimations;
+
+	function menu() {
 		$('.goMenu').removeClass("active");
-		if(current == 1){
+		if (current == 1) {
 			$('.go').fadeIn('fast');
 			$('#menu-home').addClass("active")
 		}
-		if(current == 2){
+		if (current == 2) {
 			$('.go').fadeIn('fast');
 			$('#menu-participa').addClass("active")
 		}
-		if(current == 3){
+		if (current == 3) {
 			$('.go').fadeIn('fast');
-			$('#menu-reto').addClass("active")
+			$('#menu-reto').addClass("active");
+			setTimeout(function () {
+				$(".reto-mobile-content").fadeOut("slow", function () {
+					$(".kilos-content").fadeIn("slow");
+				})
+			}, 5000);
+
 		}
-		if(current == 4){
+		if (current == 4) {
 			$('.go').fadeOut('fast');
 			$('#menu-galeria').addClass("active")
 		}
 	}
 	function init() {
 
-		$pages.each( function() {
-			var $page = $( this );
-			$page.data( 'originalClassList', $page.attr( 'class' ) );
-		} );
+		$pages.each(function () {
+			var $page = $(this);
+			$page.data('originalClassList', $page.attr('class'));
+		});
 
-		$pages.eq( current ).addClass( 'pt-page-current' );
+		$pages.eq(current).addClass('pt-page-current');
 
-		$('#subeTuFoto').click(function() {
+		$('#subeTuFoto').click(function () {
 			$('header, #pt-main, footer').delay(250).animate({
 				right: "+820"
-			}, 250, function() {
+			}, 250, function () {
 				// Animation complete.
 			});
 			$('.formulario').animate({
 				right: "0"
-			}, 500, function() {
+			}, 500, function () {
 				// Animation complete.
 			});
 			flag = false;
 		});
-		$('.btn-close').click(function() {
+		$('.btn-close').click(function () {
 			$('header, #pt-main, footer').delay(250).animate({
 				right: "0"
-			}, 250, function() {
+			}, 250, function () {
 				// Animation complete.
 			});
 			$('.formulario, .gracias').animate({
 				right: "-820"
-			}, 500, function() {
+			}, 500, function () {
 				// Animation complete.
 			});
 			flag = true;
 		});
-		
-		$('.go').click(function() {
+
+		$('.go').click(function () {
 			nextPage(48);
 			menu();
 			return false;
 		});
-		$('.saltar').click(function() {
+		$('.saltar').click(function () {
 			nextPage(48, 1);
-			$('.logo-1').hide("fast", function(){
+			$('.logo-1').hide("fast", function () {
 				$('.logo-2').show("fast");
 				$('.navbar-nav').removeClass("hidden");
 				$('.facebook, .twitter, .youtube, .instagram, header, footer').addClass("active");
 				$('footer div, footer a').removeClass("hidden");
+				$('.go').show("fast");
+				setTimeout(function () {
+					$(".mobile-parrafo").fadeOut("slow", function () {
+						$(".parrafo-2-mobile").fadeIn("slow");
+					})
+				}, 5000);
 			});
 		});
-		$('.goMenu').click(function() {
+		$('.goMenu').click(function () {
 			seccion = $(this).data('seccion');
-			if (current == seccion) return false;
+			if (current == seccion)
+				return false;
 			nextPage(48, seccion);
 			menu();
 			return false;
 		});
-		
+
 	}
 
 	function nextPage(options, showPage) {
-		if (!flag) return;
+		if (!flag)
+			return;
 		if (typeof showPage === 'undefined') {
 			showPage = 0;
 		}
-		
+
 		var animation = (options.animation) ? options.animation : options;
 
-		if( isAnimating ) {
+		if (isAnimating) {
 			return false;
 		}
 
 		isAnimating = true;
-		
-		var $currPage = $pages.eq( current );
 
-		if(showPage){
+		var $currPage = $pages.eq(current);
+
+		if (showPage) {
 			current = showPage;
 		}
-		else{
-			if( current < pagesCount - 1 ) {
+		else {
+			if (current < pagesCount - 1) {
 				++current;
 			}
 			else {
@@ -126,10 +140,10 @@ var PageTransitions = (function() {
 			}
 		}
 
-		var $nextPage = $pages.eq( current ).addClass( 'pt-page-current' ),
-			outClass = '', inClass = '';
+		var $nextPage = $pages.eq(current).addClass('pt-page-current'),
+				outClass = '', inClass = '';
 
-		switch( animation ) {
+		switch (animation) {
 
 			case 1:
 				outClass = 'pt-page-moveToLeft';
@@ -402,45 +416,45 @@ var PageTransitions = (function() {
 
 		}
 
-		$currPage.addClass( outClass ).on( animEndEventName, function() {
-			$currPage.off( animEndEventName );
+		$currPage.addClass(outClass).on(animEndEventName, function () {
+			$currPage.off(animEndEventName);
 			endCurrPage = true;
-			if( endNextPage ) {
-				onEndAnimation( $currPage, $nextPage );
+			if (endNextPage) {
+				onEndAnimation($currPage, $nextPage);
 			}
-		} );
+		});
 
-		$nextPage.addClass( inClass ).on( animEndEventName, function() {
-			$nextPage.off( animEndEventName );
+		$nextPage.addClass(inClass).on(animEndEventName, function () {
+			$nextPage.off(animEndEventName);
 			endNextPage = true;
-			if( endCurrPage ) {
-				onEndAnimation( $currPage, $nextPage );
+			if (endCurrPage) {
+				onEndAnimation($currPage, $nextPage);
 			}
-		} );
+		});
 
-		if( !support ) {
-			onEndAnimation( $currPage, $nextPage );
+		if (!support) {
+			onEndAnimation($currPage, $nextPage);
 		}
 
 	}
 
-	function onEndAnimation( $outpage, $inpage ) {
+	function onEndAnimation($outpage, $inpage) {
 		endCurrPage = false;
 		endNextPage = false;
-		resetPage( $outpage, $inpage );
+		resetPage($outpage, $inpage);
 		isAnimating = false;
 	}
 
-	function resetPage( $outpage, $inpage ) {
-		$outpage.attr( 'class', $outpage.data( 'originalClassList' ) );
-		$inpage.attr( 'class', $inpage.data( 'originalClassList' ) + ' pt-page-current' );
+	function resetPage($outpage, $inpage) {
+		$outpage.attr('class', $outpage.data('originalClassList'));
+		$inpage.attr('class', $inpage.data('originalClassList') + ' pt-page-current');
 	}
 
 	init();
 
-	return { 
-		init : init,
-		nextPage : nextPage,
+	return {
+		init: init,
+		nextPage: nextPage,
 	};
 
 })();

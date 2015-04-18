@@ -26,20 +26,20 @@
 		<![endif]-->
 		<script src="{{url()}}/js/queryloader2.min.js"></script>
 		<script>
-			window.addEventListener('DOMContentLoaded', function () {
-				new QueryLoader2(document.querySelector("body"), {
-					barColor: "#ff6702",
-					backgroundColor: "#ffffff",
-					percentage: true,
-					barHeight: 2,
-					minimumTime: 500,
-					maxTime: 20000,
-					fadeOutTime: 1000,
-					onComplete: function () {
+window.addEventListener('DOMContentLoaded', function () {
+	new QueryLoader2(document.querySelector("body"), {
+		barColor: "#ff6702",
+		backgroundColor: "#ffffff",
+		percentage: true,
+		barHeight: 2,
+		minimumTime: 500,
+		maxTime: 20000,
+		fadeOutTime: 1000,
+		onComplete: function () {
 
-					}
-				});
-			});
+		}
+	});
+});
 		</script>
 		<script src="{{url()}}/js/modernizr.custom.js"></script>
 		<script src="{{url()}}/js/jquery-1.11.2.min.js"></script>
@@ -49,25 +49,28 @@
 		<script src="{{url()}}/js/jquery.screwdefaultbuttonsV2.min.js"></script>
 		<script src="{{url()}}/js/funciones.js"></script>
 		<script>
-			var urlBase = '{{url()}}';
+var urlBase = '{{url()}}';
 		</script>
 	</head>
 	<body>
 		<script>
-			window.fbAsyncInit = function() {
-			  FB.init({
-				appId      : '1573812292891806',
-				xfbml      : true,
-				version    : 'v2.3'
-			  });
+			window.fbAsyncInit = function () {
+				FB.init({
+					appId: '1573812292891806',
+					xfbml: true,
+					version: 'v2.3'
+				});
 			};
-			(function(d, s, id){
-			   var js, fjs = d.getElementsByTagName(s)[0];
-			   if (d.getElementById(id)) {return;}
-			   js = d.createElement(s); js.id = id;
-			   js.src = "//connect.facebook.net/en_US/sdk.js";
-			   fjs.parentNode.insertBefore(js, fjs);
-			 }(document, 'script', 'facebook-jssdk'));
+			(function (d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) {
+					return;
+				}
+				js = d.createElement(s);
+				js.id = id;
+				js.src = "//connect.facebook.net/en_US/sdk.js";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
 		</script>
 		<header>
 			<div class="container-fluid">
@@ -75,12 +78,9 @@
 					<div class="container-fluid contenido">
 						<div class="row">
 							<div class="navbar-header col-sm-3">
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
+								<div type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+									<!--img src="{{url()}}/img/bar-toogle.png" /-->
+								</div>
 								<a class="navbar-brand logo-entel" href="#">
 									<img src="{{url()}}/img/logo-intro.png" class="img-responsive logo-1" alt="Entel">
 									<div class="logo-2">
@@ -104,7 +104,7 @@
 		<div id="pt-main" class="pt-perspective">
 			<div class="pt-page page-intro">
 				<div class="row contenido">
-					<div class="col-sm-offset-3 col-sm-6 col-xs-12">
+					<div class="col-sm-offset-3 col-sm-6">
 						<div class="row">
 							<div class="col-sm-12  col-xs-12">
 								<img src="{{url()}}/img/titulo-hashtag.png" alt="" class="img-responsive hashtag center-block">
@@ -112,7 +112,7 @@
 						</div>
 						<br><br>
 						<a class="saltar" href="#">
-							<img src="{{url()}}/img/boton-saltar.png" alt="" class="img-responsive center-block">
+							<img src="{{url()}}/img/boton-saltar.png" alt="" class="img-responsive center-block ">
 						</a>
 					</div>
 				</div>
@@ -120,9 +120,16 @@
 			<div class="pt-page page-inicio content-wrapper">
 				<div class="container-fluid contenido">
 					<div class="row">
-						<div class="col-sm-8 col-sm-offset-2">
-							<img src="{{url()}}/img/titulo-hashtag.png" alt="" class="img-responsive center-block"><br><br>
-							<img src="{{url()}}/img/parrafo-home.png" alt="" class="img-responsive center-block">
+						<div class="col-sm-8 col-sm-offset-2 col-xs-12">
+							<img src="{{url()}}/img/titulo-hashtag.png" alt="" class="img-responsive center-block hidden-xs"><br><br>
+							<img src="{{url()}}/img/parrafo-home.png" alt="" class="img-responsive center-block hidden-xs">
+							<div class="visible-xs">
+								<img src="{{url()}}/img/titulo-hashtag.png" alt="" class="img-responsive center-block mobile-parrafo">
+							</div>
+							<div class="visible-xs" style="text-align:center;">
+								<img src="{{url()}}/img/parrafo-2.png" alt="" class="img-responsive center-block parrafo-2-mobile">
+							</div>
+
 						</div>
 					</div>
 				</div>
@@ -132,14 +139,23 @@
 					<div class="row">
 						<div class="col-sm-10 col-sm-offset-1 col-xs-12">
 							<div class="row">
-								<div class="col-sm-10 col-xs-12">
+								<div class="col-sm-10 hidden-xs">
 									<img src="{{url()}}/img/comparte-foto.png" alt="" class="img-responsive center-block">
 								</div>
-								<div class="col-sm-2">
+								<div class="col-sm-2 hidden-xs">
 									<a href="#" id="subeTuFoto">
 										<img src="{{url()}}/img/btn-sube-tu-foto.png" class="img-responsive" alt="">
 									</a>
 								</div>
+								<div class="col-xs-4 col-xs-offset-4 visible-xs" style="margin-bottom:10px;">
+									<a href="#" id="subeTuFoto">
+										<img src="{{url()}}/img/btn-sube-tu-foto.png" class="img-responsive center-block" alt="">
+									</a>
+								</div>
+								<div class="col-xs-12 visible-xs">
+									<img src="{{url()}}/img/comparte-foto.png" alt="" class="img-responsive center-block">
+								</div>
+								
 							</div>
 						</div>
 					</div>
@@ -164,9 +180,12 @@
 				<div class="container-fluid contenido">
 
 					<div class="row">
-						<div class="col-sm-8 col-sm-offset-2">
-							<img src="{{url()}}/img/titulo-reto.png" alt="" class="img-responsive center-block"><br><br>
+						<div class="col-sm-8 col-sm-offset-2 hidden-xs">
+							<img src="{{url()}}/img/titulo-reto.png" alt="" class="img-responsive center-block "><br><br>
 							<img src="{{url()}}/img/parrafo-participa.png" alt="" class="img-responsive center-block">
+						</div>
+						<div class="visible-xs col-xs-10 col-xs-offset-1 ">
+							<img src="{{url()}}/img/parrafo-reto.png" alt="" class="img-responsive center-block reto-mobile-content">
 						</div>
 					</div>
 				</div>
@@ -176,23 +195,22 @@
 					<div class="row">
 						<div class="col-sm-9 col-sm-offset-2">
 							<p>
-								Aquí puedes ver todas <span class="titulo-galeria">las fotos e historias</span> que han llegado hasta ahora, 
-								por si te falta inspiración para enviar la tuya <span > ;) </span> 
+								<img src="{{url()}}/img/galeria-titulo.png" alt="" class="img-responsive center-block">
 							</p>
 							<div class="row clearfix">
-								<div class="col-sm-4">
+								<div class="col-sm-4 col-xs-12 mobile-galeria">
 									<img src="{{url()}}/img/foto-1.jpg" alt="" class="img-responsive pull-right">
 									<div class="contenido-titulo">
 										<p>Mi viejita sabia que me encanta la música así que no se le ocurrió mejor cosa que regalarme una guitarra para mi cumpleaños, es la mejor.</p>
 									</div>
 								</div>
-								<div class="col-sm-4">
+								<div class="col-sm-4 col-xs-12 mobile-galeria">
 									<img src="{{url()}}/img/foto-2.jpg" alt="parentesis" class="img-responsive"/>
 									<div class="contenido-titulo">
 										<p>Mi viejita sabia que me encanta la música así que no se le ocurrió mejor cosa que regalarme una guitarra para mi cumpleaños, es la mejor.</p>
 									</div>
 								</div>
-								<div class="col-sm-4">
+								<div class="col-sm-4 col-xs-12 mobile-galeria">
 									<img src="{{url()}}/img/foto-3.jpg" alt="parentesis" class="img-responsive"/>
 									<div class="contenido-titulo">
 										<p>Mi viejita sabia que me encanta la música así que no se le ocurrió mejor cosa que regalarme una guitarra para mi cumpleaños, es la mejor.</p>
@@ -203,6 +221,11 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="scroll-bottom visible-xs">
+			<a href="#" class="go">
+				<img src="{{url()}}/img/btn-scroll-2.png" class="img-responsive center-block" alt=""/>
+			</a>
 		</div>
 		<div class="formulario">
 			<a class="btn-close">
@@ -288,7 +311,7 @@
 		<footer>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-sm-4">
+					<div class="col-sm-4 hidden-xs">
 						Síguenos en
 						<ul class="clearfix">
 							<li><a href="https://www.facebook.com/EntelPeru" target="_blank" class="facebook"></a></li>
@@ -299,13 +322,21 @@
 						<div class="clearfix"></div>
 						<a href="{{url()}}/uploads/Bases-Concurso-Dia-de-la-madre.pdf" target="_blank" class="btn-terminos hidden">Términos y Condiciones</a>
 					</div>
-					<div class="col-sm-4 hidden">
+					<div class="col-sm-4 hidden hidden-xs">
 						<a href="#" class="go" style="display:block">
 							<img src="{{url()}}/img/btn-scroll.png" class="img-responsive center-block" alt=""/>
 						</a>
 					</div>
-					<div class="col-sm-4 hidden">
+					<div class="col-sm-4 hidden hidden-xs">
 						<img src="{{url()}}/img/hashtag-mama.png" class="img-responsive pull-right hashtag" alt=""/>
+					</div>
+					<div class="visible-xs">
+						<ul class="clearfix">
+							<li><a href="https://www.facebook.com/EntelPeru" target="_blank" ><img src="img/facebook-mobile.png" alt="" /></a></li>
+							<li><a href="https://twitter.com/EntelPeru" target="_blank" ><img src="img/twitter-mobile.png" alt="" /></a></li>
+							<li><a href="https://instagram.com/entel_peru/" target="_blank" ><img src="img/instagram-mobile.png" alt="" /></a></li>
+							<li><a href="https://www.youtube.com/user/PeruEntel" target="_blank" ><img src="img/youtube-mobile.png" alt="" /></a></li>
+						</ul>
 					</div>
 				</div>
 			</div>

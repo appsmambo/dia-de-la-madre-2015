@@ -1,61 +1,61 @@
 @font-face {
-  font-family: 'DINNextLTPro-UltraLightIt';
-  src: url('../fonts/DINNextLTPro-UltraLightIt.eot?#iefix') format('embedded-opentype'),  
-  	   url('../fonts/DINNextLTPro-UltraLightIt.otf')  format('opentype'),
-	   url('../fonts/DINNextLTPro-UltraLightIt.woff') format('woff'), 
-	   url('../fonts/DINNextLTPro-UltraLightIt.ttf')  format('truetype'), 
-	   url('../fonts/DINNextLTPro-UltraLightIt.svg#DINNextLTPro-UltraLightIt') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'DINNextLTPro-UltraLightIt';
+	src: url('../fonts/DINNextLTPro-UltraLightIt.eot?#iefix') format('embedded-opentype'),  
+		url('../fonts/DINNextLTPro-UltraLightIt.otf')  format('opentype'),
+		url('../fonts/DINNextLTPro-UltraLightIt.woff') format('woff'), 
+		url('../fonts/DINNextLTPro-UltraLightIt.ttf')  format('truetype'), 
+		url('../fonts/DINNextLTPro-UltraLightIt.svg#DINNextLTPro-UltraLightIt') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 @font-face {
-  font-family: 'DINNextLTPro-BlackItalic';
-  src: url('../fonts/DINNextLTPro-BlackItalic.eot?#iefix') format('embedded-opentype'),  
-  	   url('../fonts/DINNextLTPro-BlackItalic.otf')  format('opentype'),
-	   url('../fonts/DINNextLTPro-BlackItalic.woff') format('woff'), 
-	   url('../fonts/DINNextLTPro-BlackItalic.ttf')  format('truetype'), 
-	   url('../fonts/DINNextLTPro-BlackItalic.svg#DINNextLTPro-BlackItalic') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'DINNextLTPro-BlackItalic';
+	src: url('../fonts/DINNextLTPro-BlackItalic.eot?#iefix') format('embedded-opentype'),  
+		url('../fonts/DINNextLTPro-BlackItalic.otf')  format('opentype'),
+		url('../fonts/DINNextLTPro-BlackItalic.woff') format('woff'), 
+		url('../fonts/DINNextLTPro-BlackItalic.ttf')  format('truetype'), 
+		url('../fonts/DINNextLTPro-BlackItalic.svg#DINNextLTPro-BlackItalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 @font-face {
-  font-family: 'DINNextLTPro-Medium';
-  src: url('../fonts/DINNextLTPro-Medium.eot?#iefix') format('embedded-opentype'),  
-  	   url('../fonts/DINNextLTPro-Medium.otf')  format('opentype'),
-	   url('../fonts/DINNextLTPro-Medium.woff') format('woff'), 
-	   url('../fonts/DINNextLTPro-Medium.ttf')  format('truetype'), 
-	   url('../fonts/DINNextLTPro-Medium.svg#DINNextLTPro-Medium') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'DINNextLTPro-Medium';
+	src: url('../fonts/DINNextLTPro-Medium.eot?#iefix') format('embedded-opentype'),  
+		url('../fonts/DINNextLTPro-Medium.otf')  format('opentype'),
+		url('../fonts/DINNextLTPro-Medium.woff') format('woff'), 
+		url('../fonts/DINNextLTPro-Medium.ttf')  format('truetype'), 
+		url('../fonts/DINNextLTPro-Medium.svg#DINNextLTPro-Medium') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 @font-face {
-  font-family: 'DINNextLTPro-Light';
-  src: url('../fonts/DINNextLTPro-Light.eot?#iefix') format('embedded-opentype'),  
-  	   url('../fonts/DINNextLTPro-Light.otf')  format('opentype'),
-	   url('../fonts/DINNextLTPro-Light.woff') format('woff'), 
-	   url('../fonts/DINNextLTPro-Light.ttf')  format('truetype'), 
-	   url('../fonts/DINNextLTPro-Light.svg#DINNextLTPro-Light') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'DINNextLTPro-Light';
+	src: url('../fonts/DINNextLTPro-Light.eot?#iefix') format('embedded-opentype'),  
+		url('../fonts/DINNextLTPro-Light.otf')  format('opentype'),
+		url('../fonts/DINNextLTPro-Light.woff') format('woff'), 
+		url('../fonts/DINNextLTPro-Light.ttf')  format('truetype'), 
+		url('../fonts/DINNextLTPro-Light.svg#DINNextLTPro-Light') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 @font-face {
-  font-family: 'DINNextLTPro-Bold';
-  src: url('../fonts/DINNextLTPro-Bold.eot?#iefix') format('embedded-opentype'),  
-  	   url('../fonts/DINNextLTPro-Bold.otf')  format('opentype'),
-	   url('../fonts/DINNextLTPro-Bold.woff') format('woff'), 
-	   url('../fonts/DINNextLTPro-Bold.ttf')  format('truetype'), 
-	   url('../fonts/DINNextLTPro-Bold.svg#DINNextLTPro-Bold') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'DINNextLTPro-Bold';
+	src: url('../fonts/DINNextLTPro-Bold.eot?#iefix') format('embedded-opentype'),  
+		url('../fonts/DINNextLTPro-Bold.otf')  format('opentype'),
+		url('../fonts/DINNextLTPro-Bold.woff') format('woff'), 
+		url('../fonts/DINNextLTPro-Bold.ttf')  format('truetype'), 
+		url('../fonts/DINNextLTPro-Bold.svg#DINNextLTPro-Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 @font-face {
-  font-family: 'DINNextLTPro-HeavyItalic';
-  src: url('../fonts/DINNextLTPro-HeavyItalic.eot?#iefix') format('embedded-opentype'),  
-  	   url('../fonts/DINNextLTPro-HeavyItalic.otf')  format('opentype'),
-	   url('../fonts/fonts/DINNextLTPro-HeavyItalic.ttf')  format('truetype'), 
-	   url('../fonts/fonts/DINNextLTPro-HeavyItalic.svg#DINNextLTPro-HeavyItalic') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'DINNextLTPro-HeavyItalic';
+	src: url('../fonts/DINNextLTPro-HeavyItalic.eot?#iefix') format('embedded-opentype'),  
+		url('../fonts/DINNextLTPro-HeavyItalic.otf')  format('opentype'),
+		url('../fonts/fonts/DINNextLTPro-HeavyItalic.ttf')  format('truetype'), 
+		url('../fonts/fonts/DINNextLTPro-HeavyItalic.svg#DINNextLTPro-HeavyItalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 body {
 	background-color:#000;
@@ -589,12 +589,95 @@ input.error{
 }
 .kilos-content.cuatro{
 	background:url('../img/kilos-4.png') no-repeat left;
-}
+}                 
 .kilos-content.cinco{
 	background:url('../img/kilos-5.png') no-repeat left;
+}
+.scroll-bottom{
+	position:absolute;
+	bottom:80px;
+	left:50%;
+	margin:0;
+	width:34px;
+}
+.go{
+	display: none;
+}
+.parrafo-2-mobile{
+	display: none;
 }
 @media (max-width:767px) {
 	footer .hashtag{
 		display:none;
+	}
+	.page-inicio{
+		background-image:url('../img/fondos/home-mobile.jpg') !important;
+	}
+	.page-participa{
+		background-image:url('../img/fondos/participa-mobile.jpg') !important;
+	}
+	.page-elReto{
+		background-image:url('../img/fondos/reto-mobile.jpg') !important;
+	}
+	.btn-terminos{
+		display: none;
+	}
+	footer ul{
+		width:auto;
+		text-align: center;
+		margin:10px 0 15px 0;
+	}
+	footer ul li{
+		float: none;
+		display: inline-block;
+		margin:0 20px;
+
+	}
+	.kilos-content{
+		display: none;
+		height: 55px;
+		width: 300px;
+		left:50%;
+		margin: -28px 0 0 -150px;
+	}
+	.kilos-content.uno{
+		background:url('../img/kilos-1-mobile.png') no-repeat left;
+	}
+	.kilos-content.dos{
+		background:url('../img/kilos-2-mobile.png') no-repeat left;
+	}
+	.kilos-content.tres{
+		background:url('../img/kilos-3-mobile.png') no-repeat left;
+	}
+	.kilos-content.cuatro{
+		background:url('../img/kilos-4-mobile.png') no-repeat left;
+	}                 
+	.kilos-content.cinco{
+		background:url('../img/kilos-5-mobile.png') no-repeat left;
+	}
+	.kilos-content {
+		font-size:19px;
+	}
+	.kilos-content.dos div {
+		left: 15px;
+		top:30px;
+	}
+	.kilos-content.tres div {
+		left: 82px;
+		top:30px;
+	}
+	.kilos-content.cuatro div {
+		left:162px;
+		top:30px;
+	}
+	.mobile-galeria{
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.mobile-galeria img{
+		display: inline-block;
+	}
+	.mobile-galeria .contenido-titulo{
+		text-align: left;
 	}
 }
