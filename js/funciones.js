@@ -80,4 +80,10 @@ $(document).ready(function () {
 		}
 		e.preventDefault();
 	});
+	$('.compartir').click(function() {
+		FB.ui({
+			method: 'share',
+			href: urlBase,
+		}, function(response){});
+	})
 });
