@@ -65,7 +65,7 @@ window.addEventListener('DOMContentLoaded', function () {
 									<li><a href="#" class="active goMenu" data-seccion="1" id="menu-home">home</a></li>
 									<li><a href="#" class="goMenu" data-seccion="2" id="menu-participa">participa</a></li>
 									<li><a href="#" class="goMenu" data-seccion="3" id="menu-reto">el reto</a></li>
-									<li><a href="#" class="goMenu" data-seccion="4" id="menu-galeria">galeria</a></li>
+									<li><a href="#" class="goMenu" data-seccion="4" id="menu-galeria">galería</a></li>
 								</ul>
 							</div>
 						</div>
@@ -191,8 +191,7 @@ window.addEventListener('DOMContentLoaded', function () {
 				<p class="parrafo-2">
 					<span class="asterisco">*</span> Las fotos que más nos gusten serán compartidas en nuestras redes sociales. <span>¡Suerte!</span> ;)
 				</p>
-				<form action="#" id="registro" name="registro">
-					{{ Form::token() }}
+				<form action="#" id="registro" name="registro" method="post">
 					<input id="foto" accept=".jpg,.png" name="foto" type="file" style="opacity:0;height:1px">
 					<p class="clearfix">
 						<label>Nombre<span>:</span></label>
@@ -265,7 +264,7 @@ window.addEventListener('DOMContentLoaded', function () {
 							<li><a href="#" target="_blank" class="twitter"></a></li>
 						</ul>
 						<div class="clearfix"></div>
-						<a href="#" class="btn-terminos hidden">Términos y Condiciones</a>
+						<a href="{{url()}}/uploads/Bases-Concurso-Dia-de-la-madre.pdf" target="_blank" class="btn-terminos hidden">Términos y Condiciones</a>
 					</div>
 					<div class="col-sm-4 hidden">
 						<a href="#" class="go" style="display:block">

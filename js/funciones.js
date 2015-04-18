@@ -26,7 +26,7 @@ $(document).ready(function () {
 		rules: {
 			nombre: "required",
 			dni: "required",
-			mail: {
+			email: {
 				required: true,
 				email: true
 			},
@@ -36,29 +36,29 @@ $(document).ready(function () {
 		submitHandler: function(form) {
 			$.ajax({
 				url: urlBase + '/registro',
-				data: new FormData($('#registro')),
+				data: new FormData(this),
 				error: function () {
 					console.log('error');
 				},
 				dataType: 'json',
 				success: function (data) {
+					console.log('111');
+					return;
 					if (data.success == 'error') {
-						$("#error-layer").fadeIn("slow");
-						setTimeout(function () {
-							$("#error-layer").fadeOut("slow");
-						}, 5000);
+						//
 					} else {
-						$("#gracias-layer").fadeIn("slow");
-						setTimeout(function () {
-							$("#gracias-layer").fadeOut("slow", function(){
-								$(".registro-content").addClass("none");
-								$(".content-deportes-3").fadeIn("slow");
+						$('.formulario').fadeTo('fast', 0, function() {
+							$('.gracias').animate({
+								right: "0"
+							}, 500, function() {
+								// Animation complete.
 							});
-						}, 5000);
+						});
 					}
 				},
 				type: 'POST'
 			});
+			return false;
 		}
 	});
 });
