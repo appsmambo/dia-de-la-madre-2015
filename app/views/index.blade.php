@@ -17,21 +17,21 @@
 		<![endif]-->
 		<script src="{{url()}}/js/queryloader2.min.js"></script>
 		<script>
-			var urlBase = '{{url()}}';
-			window.addEventListener('DOMContentLoaded', function () {
-				new QueryLoader2(document.querySelector("body"), {
-					barColor: "#ff6702",
-					backgroundColor: "#ffffff",
-					percentage: true,
-					barHeight: 2,
-					minimumTime: 500,
-					maxTime: 20000,
-					fadeOutTime: 1000,
-					onComplete: function () {
+var urlBase = '{{url()}}';
+window.addEventListener('DOMContentLoaded', function () {
+	new QueryLoader2(document.querySelector("body"), {
+		barColor: "#ff6702",
+		backgroundColor: "#ffffff",
+		percentage: true,
+		barHeight: 2,
+		minimumTime: 500,
+		maxTime: 20000,
+		fadeOutTime: 1000,
+		onComplete: function () {
 
-					}
-				});
-			});
+		}
+	});
+});
 		</script>
 		<script src="{{url()}}/js/modernizr.custom.js"></script>
 		<script src="{{url()}}/js/jquery-1.11.2.min.js"></script>
@@ -92,16 +92,9 @@
 			<div class="pt-page page-inicio content-wrapper">
 				<div class="container-fluid contenido">
 					<div class="row">
-						<div class="col-sm-10 col-sm-offset-1 col-xs-12">
-							<div class="row">
-								<div class="col-sm-8 col-sm-offset-2 col-xs-12 titulo clearfix">
-									<img src="{{url()}}/img/titulo-hashtag.png" alt="" class="img-responsive">
-								</div>
-							</div>
-							<p class="parraf">
-								Sabemos que para ti, tu madre es la mejor, por eso queremos que nos cuentes de ella a través de una imagen. Elige el mejor momento a su lado y gana <span class="sub-1">un equipo Motorola Moto E</span> para que se lo regales. Así podrás tenerla mejor conectada, más cerca. <span class="sub-1">:)</span> 
-								<span class="sub-2">¿Qué tienes que hacer para participar?</span>
-							</p>
+						<div class="col-sm-8 col-sm-offset-2">
+							<img src="{{url()}}/img/titulo-hashtag.png" alt="" class="img-responsive center-block"><br><br>
+							<img src="{{url()}}/img/parrafo-home.png" alt="" class="img-responsive center-block">
 						</div>
 					</div>
 				</div>
@@ -112,24 +105,7 @@
 						<div class="col-sm-10 col-sm-offset-1 col-xs-12">
 							<div class="row">
 								<div class="col-sm-10 col-xs-12">
-									<div class="row no-padding">
-										<div class="col-sm-1 col-xs-1">
-											<img src="{{url()}}/img/par-izq.png" alt="" class="img-responsive pull-right">
-										</div>
-										<div class="col-sm-10 titulo col-xs-10">
-											<p>
-												Comparte una foto
-												<span> En la que reflejes un momento con tu mamá. </span>
-											</p>
-										</div>
-										<div class="col-sm-1 col-xs-10">
-											<img src="{{url()}}/img/par-der.png" alt="" class="img-responsive pull-left">
-										</div>
-									</div>
-									<div class="clearfix"></div>
-									<p class="parraf">
-										El fin es que quede representada de alguna forma, utiliza toda tu creatividad ;)
-									</p>
+									<img src="{{url()}}/img/comparte-foto.png" alt="" class="img-responsive center-block">
 								</div>
 								<div class="col-sm-2">
 									<a href="#" id="subeTuFoto">
@@ -142,8 +118,8 @@
 				</div>
 			</div>
 			<div class="pt-page page-elReto content-wrapper">
-				<div class="kilos-content uno hidden" >
-						
+				<div class="kilos-content uno" >
+
 				</div>
 				<div class="kilos-content dos hidden" >
 					<div>180 <span class="kilos-small">kg</span><br/> <span class="kilos-texto">de ayuda</span></div>
@@ -154,29 +130,15 @@
 				<div class="kilos-content cuatro hidden" >
 					<div>20 <span class="kilos-small">kg</span><br/> <span class="kilos-texto">de ayuda</span></div>
 				</div>
-				<div class="kilos-content cinco" >
-					
+				<div class="kilos-content cinco hidden" >
+
 				</div>
 				<div class="container-fluid contenido">
-					
+
 					<div class="row">
 						<div class="col-sm-8 col-sm-offset-2">
-							<div class="row no-padding">
-								<div class="col-sm-1">
-									<img src="{{url()}}/img/par-izq.png" alt="" class="img-responsive pull-right">
-								</div>
-								<div class="col-sm-10 titulo">
-									Además, <span>nos hemos</span><br/>
-									<span class="reto-1">propuesto un reto</span>
-								</div>
-								<div class="col-sm-1">
-									<img src="{{url()}}/img/par-der.png" alt="" class="img-responsive pull-left">
-								</div>
-							</div>
-							<div class="clearfix"></div>
-							<p class="parraf">
-								<span>Ayudar a nuestros niños de Aldeas infantiles</span>. Por ello, con esa foto, estarás donando <span>1 kilo de alimentos</span> que irá directamente para ellos. Cuantas más fotos, más kilos de ayuda. Convence a tus amigos para que también envíen su foto y entre todos conseguiremos el reto.
-							</p>
+							<img src="{{url()}}/img/titulo-reto.png" alt="" class="img-responsive center-block"><br><br>
+							<img src="{{url()}}/img/parrafo-participa.png" alt="" class="img-responsive center-block">
 						</div>
 					</div>
 				</div>
