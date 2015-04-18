@@ -79,7 +79,7 @@ window.addEventListener('DOMContentLoaded', function () {
 					<div class="col-sm-offset-3 col-sm-6 col-xs-12">
 						<div class="row">
 							<div class="col-sm-12  col-xs-12">
-								<img src="{{url()}}/img/titulo-home.png" alt="" class="img-responsive hashtag center-block">
+								<img src="{{url()}}/img/titulo-hashtag.png" alt="" class="img-responsive hashtag center-block">
 							</div>
 						</div>
 						<br><br>
@@ -250,6 +250,8 @@ window.addEventListener('DOMContentLoaded', function () {
 					<div class="sociales-footer">
 						<a href="#"><img src="{{url()}}/img/facebook-gracias.png" alt="facebook"/></a>
 						<a href="#"><img src="{{url()}}/img/twitter-gracias.png" alt="twitter"/></a>
+						<a href="#"><img src="{{url()}}/img/instagram-gracias.png" alt="instagram"/></a>
+						<a href="#"><img src="{{url()}}/img/youtube-gracias.png" alt="youtube"/></a>
 					</div>
 				</div>
 			</div> 
@@ -262,6 +264,8 @@ window.addEventListener('DOMContentLoaded', function () {
 						<ul class="clearfix">
 							<li><a href="#" target="_blank" class="facebook"></a></li>
 							<li><a href="#" target="_blank" class="twitter"></a></li>
+							<li><a href="#" target="_blank" class="instagram"></a></li>
+							<li><a href="#" target="_blank" class="youtube"></a></li>
 						</ul>
 						<div class="clearfix"></div>
 						<a href="{{url()}}/uploads/Bases-Concurso-Dia-de-la-madre.pdf" target="_blank" class="btn-terminos hidden">Términos y Condiciones</a>
