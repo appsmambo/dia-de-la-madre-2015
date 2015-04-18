@@ -593,3 +593,8 @@ input.error{
 .kilos-content.cinco{
 	background:url('../img/kilos-5.png') no-repeat left;
 }
+@media (max-width:767px) {
+	footer .hashtag{
+		display:none;
+	}
+}
