@@ -136,7 +136,7 @@ footer{
 	color:#ffffff;
 	font-family:'DINNextLTPro-Light';
 	font-style:italic;
-	font-size:16px
+	font-size:14px
 }
 footer.active{
 	background-color:#fff;
@@ -201,7 +201,7 @@ textarea {
 	color:#ffffff;
 	width: auto;
 	padding:2px 8px 1px;
-	font-size: 13px;
+	font-size: 12px;
 	font-family: 'DINNextLTPro-UltraLightIt';
 }
 .btn-terminos:hover{
