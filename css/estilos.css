@@ -437,38 +437,40 @@ input.error{
 .elige-tu-foto img{
 	max-width:528px
 }
-.contenido-titulo{
-	background: #ff6702;
-	font-family: 'DINNextLTPro-Light';
-	font-size: 16px;
-	line-height: 15px;
-	padding:3% 0;
-	color: #ffffff;
-	font-style: normal;
-	text-align: left;
+.contenedor-foto{
+	background:#ff6702;
+	overflow:hidden
 }
-.page-galeria.content-wrapper .contenido-titulo p{
-	width: 90%;
-	margin: 0 auto;
+.contenedor-foto p {
+	color:#ffffff;
+	font-family:'DINNextLTPro-Light';
+	font-size:15px;
+	line-height:15px;
+	padding:10px 14px;
+	margin:0
 }
-.page-galeria.content-wrapper p span.titulo-galeria{
-	font-family: 'DINNextLTPro-HeavyItalic';
-	font-size:38px; 
+.margen-s {
+	margin-top:25px
 }
-.page-galeria.content-wrapper p span{
-	color: #ff6702;
+.margen-m {
+	margin-top:40px
 }
-.page-galeria.content-wrapper{
-	font-size: 30px;
-	color: #555555;
-	font-family: 'DINNextLTPro-Light';
-	font-style: italic;
-	line-height: 30px;
-	text-align: center;
+.margen-l {
+	margin-top:55px
 }
-.page-galeria.content-wrapper p{
-	margin: 0 0 3% 0;
-	padding: 0;
+.ancho-s {
+	width:260px
+}
+.ancho-m {
+	width:280px
+}
+.ancho-l {
+	width:300px
+}
+#galeria {
+	max-height:600px;
+	overflow-x:hidden;
+	overflow-y:auto
 }
 .btn-close{
 	cursor:pointer;

@@ -18,6 +18,7 @@
 		<link rel="stylesheet" href="{{url()}}/css/estilos.css">
 		<link rel="stylesheet" href="{{url()}}/css/componentes.css">
 		<link rel="stylesheet" href="{{url()}}/css/animaciones.css">
+		<link rel="stylesheet" href="{{url()}}/css/video-background.css">
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -26,31 +27,35 @@
 		<![endif]-->
 		<script src="{{url()}}/js/queryloader2.min.js"></script>
 		<script>
-window.addEventListener('DOMContentLoaded', function () {
-	new QueryLoader2(document.querySelector("body"), {
-		barColor: "#ff6702",
-		backgroundColor: "#ffffff",
-		percentage: true,
-		barHeight: 2,
-		minimumTime: 500,
-		maxTime: 20000,
-		fadeOutTime: 1000,
-		onComplete: function () {
-
-		}
-	});
-});
+			var urlBase = '{{url()}}';
+			var api_fsvideo, flagIntro = false
+			window.addEventListener('DOMContentLoaded', function () {
+				new QueryLoader2(document.querySelector("body"), {
+					barColor: "#ff6702",
+					backgroundColor: "#000000",
+					percentage: true,
+					barHeight: 2,
+					minimumTime: 500,
+					maxTime: 20000,
+					fadeOutTime: 1000,
+					onComplete: function () {
+						api_fsvideo = $(".page-intro").videoBG({
+							youtube:"W7pHcAtpdx0",
+							poster:"img/fondos/intro.jpg"
+						});
+					}
+				});
+			});
 		</script>
+		<script src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
 		<script src="{{url()}}/js/modernizr.custom.js"></script>
 		<script src="{{url()}}/js/jquery-1.11.2.min.js"></script>
 		<!--script src="{{url()}}/js/bootstrap.min.js"></script-->
 		<script src="{{url()}}/js/jquery.blockUI.js"></script>
 		<script src="{{url()}}/js/jquery.validate.min.js"></script>
 		<script src="{{url()}}/js/jquery.screwdefaultbuttonsV2.min.js"></script>
+		<script src="{{url()}}/js/jquery.video-background.js"></script>
 		<script src="{{url()}}/js/funciones.js"></script>
-		<script>
-var urlBase = '{{url()}}';
-		</script>
 	</head>
 	<body>
 		<script>
@@ -171,19 +176,19 @@ var urlBase = '{{url()}}';
 				</div>
 			</div>
 			<div class="pt-page page-elReto content-wrapper">
-				<div class="kilos-content uno" >
+				<div class="kilos-content uno hidden">
 
 				</div>
-				<div class="kilos-content dos hidden" >
-					<div>180 <span class="kilos-small">kg</span><br/> <span class="kilos-texto">de ayuda</span></div>
+				<div class="kilos-content dos">
+					<div><span class="total">{{$total}}</span> <span class="kilos-small">kg</span><br/> <span class="kilos-texto">de ayuda</span></div>
 				</div>
-				<div class="kilos-content tres hidden" >
-					<div>120 <span class="kilos-small">kg</span><br/> <span class="kilos-texto">de ayuda</span></div>
+				<div class="kilos-content tres hidden">
+					<div><span class="total">{{$total}}</span> <span class="kilos-small">kg</span><br/> <span class="kilos-texto">de ayuda</span></div>
 				</div>
-				<div class="kilos-content cuatro hidden" >
-					<div>20 <span class="kilos-small">kg</span><br/> <span class="kilos-texto">de ayuda</span></div>
+				<div class="kilos-content cuatro hidden">
+					<div><span class="total">{{$total}}</span> <span class="kilos-small">kg</span><br/> <span class="kilos-texto">de ayuda</span></div>
 				</div>
-				<div class="kilos-content cinco hidden" >
+				<div class="kilos-content cinco hidden">
 
 				</div>
 				<div class="container-fluid contenido">
@@ -202,30 +207,52 @@ var urlBase = '{{url()}}';
 			<div class="pt-page page-galeria content-wrapper">
 				<div class="container-fluid contenido">
 					<div class="row">
-						<div class="col-sm-9 col-sm-offset-2">
+						<div class="col-sm-10 col-sm-offset-1">
 							<p>
 								<img src="{{url()}}/img/galeria-titulo.png" alt="" class="img-responsive center-block">
 							</p>
-							<div class="row clearfix">
-								<div class="col-sm-4 col-xs-12 mobile-galeria">
-									<img src="{{url()}}/img/foto-1.jpg" alt="" class="img-responsive pull-right">
-									<div class="contenido-titulo">
-										<p>Mi viejita sabia que me encanta la música así que no se le ocurrió mejor cosa que regalarme una guitarra para mi cumpleaños, es la mejor.</p>
+							<section id="galeria">
+								<div class="row">
+<?php
+$anchos = array('ancho-s', 'ancho-m', 'ancho-l');
+$margenes = array('margen-s', 'margen-m', 'margen-l');
+$contenido = array();
+foreach ($participantes as $participante):
+	$ancho = array_rand($anchos);
+	$margen = array_rand($margenes);
+	$html = '<div class="contenedor-foto center-block '.$anchos[$ancho].' '.$margenes[$margen].'">';
+	$html.= '<img src="'.url().'/uploads/final/'.$participante->imagen.'.'.$participante->extension.'" alt="" class="img-responsive center-block"><div class="clearfix"></div><p>'.$participante->mensaje.'</p></div>';
+	$contenido[] = $html;
+endforeach;
+$html = '';
+for ($i=0; $i<count($contenido); $i+=3):
+	echo $i;
+	$html.=$contenido[$i];
+endfor;
+?>
+									<div id="columna" class="col-sm-4">
+										{{$html}}
+									</div>
+<?php
+$html = '';
+for ($i=1; $i<count($contenido); $i+=3):
+	$html.=$contenido[$i];
+endfor;
+?>
+									<div class="col-sm-4">
+										{{$html}}
+									</div>
+<?php
+$html = '';
+for ($i=2; $i<count($contenido); $i+=3):
+	$html.=$contenido[$i];
+endfor;
+?>
+									<div class="col-sm-4">
+										{{$html}}
 									</div>
 								</div>
-								<div class="col-sm-4 col-xs-12 mobile-galeria">
-									<img src="{{url()}}/img/foto-2.jpg" alt="parentesis" class="img-responsive"/>
-									<div class="contenido-titulo">
-										<p>Mi viejita sabia que me encanta la música así que no se le ocurrió mejor cosa que regalarme una guitarra para mi cumpleaños, es la mejor.</p>
-									</div>
-								</div>
-								<div class="col-sm-4 col-xs-12 mobile-galeria">
-									<img src="{{url()}}/img/foto-3.jpg" alt="parentesis" class="img-responsive"/>
-									<div class="contenido-titulo">
-										<p>Mi viejita sabia que me encanta la música así que no se le ocurrió mejor cosa que regalarme una guitarra para mi cumpleaños, es la mejor.</p>
-									</div>
-								</div>
-							</div>
+							</section>
 						</div>
 					</div>
 				</div>
@@ -302,7 +329,7 @@ var urlBase = '{{url()}}';
 						Ya tenemos un total de:
 					</p>
 					<div class="kilos-ayuda">
-						<span id="total"></span> <span class="orange">kg</span><br/>
+						<span class="total"></span> <span class="orange">kg</span><br/>
 						<span class="white">de ayuda</span>
 					</div>
 					<a class="compartir" href="#">

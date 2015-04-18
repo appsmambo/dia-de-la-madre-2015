@@ -4,7 +4,7 @@ var PageTransitions = (function () {
 			$pages = $main.children('div.pt-page'),
 			pagesCount = $pages.length,
 			current = 0,
-			flag = true,
+			flag = true, // para detener los eventos de menu y scroll
 			isAnimating = false,
 			endCurrPage = false,
 			endNextPage = false,
@@ -86,6 +86,9 @@ var PageTransitions = (function () {
 			return false;
 		});
 		$('.saltar').click(function () {
+			flagIntro = true;
+			$('header, footer, .hashtag').fadeTo('fast', 1);
+			api_fsvideo.videoBgPause();
 			nextPage(48, 1);
 			$('.logo-1').hide("fast", function () {
 				$('.logo-2').show("fast");

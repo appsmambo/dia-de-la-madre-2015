@@ -11,6 +11,15 @@ function desbloquear() {
 	$('div.formulario').unblock()
 }
 $(document).ready(function () {
+	$('header, footer, .hashtag, .saltar').fadeTo('fast', 0);
+	$(".page-intro")
+		.mouseenter(function() {
+			$('header, footer, .hashtag, .saltar').fadeTo('fast', 1);
+		})
+		.mouseleave(function() {
+			if (flagIntro) return;
+			$('header, footer, .hashtag, .saltar').fadeTo('fast', 0);
+		});
 	$('#archivo').click(function() {
 		$('#foto').trigger('click');
 	});
@@ -66,7 +75,10 @@ $(document).ready(function () {
 						setTimeout('desbloquear()', 5000);
 						return false;
 					} else {
-						$('#total').html(data.total);
+						$('#nombre, #dni, #email, #celular, #mensaje').val('');
+						$("#newsletter").screwDefaultButtons("uncheck");
+						$('.total').html(data.total);
+						$('#columna').prepend(data.html);
 						$('.formulario').fadeTo('fast', 0, function() {
 							$('.gracias').animate({
 								right: "0"
