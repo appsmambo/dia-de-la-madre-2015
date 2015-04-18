@@ -4,7 +4,16 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Prueba</title>
+		<title>Las mejores madres</title>
+		<link rel="canonical" href="{{url()}}/" />
+		<meta property="fb:app_id" content="1573812292891806" />
+		<meta property="fb:admins" content="100008010128050" />
+		<meta property="og:title" content="Las mejores madres" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="{{url()}}/" />
+		<meta property="og:image" content="{{url()}}/img/compartir.png" />
+		<meta property="og:site_name" content="Gana con Ripley y Adidas" />
+		<meta property="og:description" content="Ayudar tiene premio. Participa en nuestro concurso y gana un Motorola Moto E para tu mamá, y por tu imagen compartida estarás ayudando con un kilo de alimentos para los niños de aldeas infantiles." />
 		<link rel="stylesheet" href="{{url()}}/css/bootstrap.min.css">
 		<link rel="stylesheet" href="{{url()}}/css/estilos.css">
 		<link rel="stylesheet" href="{{url()}}/css/componentes.css">
@@ -17,30 +26,49 @@
 		<![endif]-->
 		<script src="{{url()}}/js/queryloader2.min.js"></script>
 		<script>
-var urlBase = '{{url()}}';
-window.addEventListener('DOMContentLoaded', function () {
-	new QueryLoader2(document.querySelector("body"), {
-		barColor: "#ff6702",
-		backgroundColor: "#ffffff",
-		percentage: true,
-		barHeight: 2,
-		minimumTime: 500,
-		maxTime: 20000,
-		fadeOutTime: 1000,
-		onComplete: function () {
+			window.addEventListener('DOMContentLoaded', function () {
+				new QueryLoader2(document.querySelector("body"), {
+					barColor: "#ff6702",
+					backgroundColor: "#ffffff",
+					percentage: true,
+					barHeight: 2,
+					minimumTime: 500,
+					maxTime: 20000,
+					fadeOutTime: 1000,
+					onComplete: function () {
 
-		}
-	});
-});
+					}
+				});
+			});
 		</script>
 		<script src="{{url()}}/js/modernizr.custom.js"></script>
 		<script src="{{url()}}/js/jquery-1.11.2.min.js"></script>
 		<!--script src="{{url()}}/js/bootstrap.min.js"></script-->
+		<script src="{{url()}}/js/jquery.blockUI.js"></script>
 		<script src="{{url()}}/js/jquery.validate.min.js"></script>
 		<script src="{{url()}}/js/jquery.screwdefaultbuttonsV2.min.js"></script>
 		<script src="{{url()}}/js/funciones.js"></script>
+		<script>
+			var urlBase = '{{url()}}';
+		</script>
 	</head>
 	<body>
+		<script>
+			window.fbAsyncInit = function() {
+			  FB.init({
+				appId      : '1573812292891806',
+				xfbml      : true,
+				version    : 'v2.3'
+			  });
+			};
+			(function(d, s, id){
+			   var js, fjs = d.getElementsByTagName(s)[0];
+			   if (d.getElementById(id)) {return;}
+			   js = d.createElement(s); js.id = id;
+			   js.src = "//connect.facebook.net/en_US/sdk.js";
+			   fjs.parentNode.insertBefore(js, fjs);
+			 }(document, 'script', 'facebook-jssdk'));
+		</script>
 		<header>
 			<div class="container-fluid">
 				<nav class="nav-bar clearfix">
@@ -191,7 +219,8 @@ window.addEventListener('DOMContentLoaded', function () {
 				<p class="parrafo-2">
 					<span class="asterisco">*</span> Las fotos que más nos gusten serán compartidas en nuestras redes sociales. <span>¡Suerte!</span> ;)
 				</p>
-				<form action="#" id="registro" name="registro" method="post">
+				<form action="#" id="registro" name="registro">
+					{{ Form::token() }}
 					<input id="foto" accept=".jpg,.png" name="foto" type="file" style="opacity:0;height:1px">
 					<p class="clearfix">
 						<label>Nombre<span>:</span></label>
@@ -241,7 +270,7 @@ window.addEventListener('DOMContentLoaded', function () {
 						Ya tenemos un total de:
 					</p>
 					<div class="kilos-ayuda">
-						1000 <span class="orange">kg</span><br/>
+						<span id="total"></span> <span class="orange">kg</span><br/>
 						<span class="white">de ayuda</span>
 					</div>
 					<a class="compartir" href="#">

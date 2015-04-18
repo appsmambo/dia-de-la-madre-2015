@@ -66,7 +66,7 @@ var PageTransitions = (function() {
 			}, 250, function() {
 				// Animation complete.
 			});
-			$('.formulario').animate({
+			$('.formulario, .gracias').animate({
 				right: "-820"
 			}, 500, function() {
 				// Animation complete.

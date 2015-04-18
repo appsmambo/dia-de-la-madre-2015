@@ -7,11 +7,14 @@ function readURL(input) {
 		reader.readAsDataURL(input.files[0]);
 	}
 }
+function desbloquear() {
+	$('div.formulario').unblock()
+}
 $(document).ready(function () {
 	$('#archivo').click(function() {
-		$("#foto").trigger('click');
+		$('#foto').trigger('click');
 	});
-	$("#foto").change(function(){
+	$('#foto').change(function(){
 		readURL(this);
 	});
 	$('input:checkbox').screwDefaultButtons({
@@ -32,21 +35,38 @@ $(document).ready(function () {
 			},
 			celular: "required",
 			mensaje: "required"
-		},
-		submitHandler: function(form) {
+		}
+	});
+	$("#registro").submit( function(e) {
+		if ($("#registro").valid()) {
 			$.ajax({
 				url: urlBase + '/registro',
+				type: 'POST',
 				data: new FormData(this),
+				processData: false,
+				contentType: false,
 				error: function () {
 					console.log('error');
 				},
 				dataType: 'json',
 				success: function (data) {
-					console.log('111');
-					return;
 					if (data.success == 'error') {
-						//
+						$('div.formulario').block({
+							message: '<h1>Hubo un error al registrar sus datos, vuelva a intentarlo.</h1>',
+							css: {
+								border: 'none',
+								padding: '15px',
+								backgroundColor: '#000',
+								'-webkit-border-radius': '10px',
+								'-moz-border-radius': '10px',
+								opacity: .85,
+								color: '#fff'
+							}
+						});
+						setTimeout('desbloquear()', 5000);
+						return false;
 					} else {
+						$('#total').html(data.total);
 						$('.formulario').fadeTo('fast', 0, function() {
 							$('.gracias').animate({
 								right: "0"
@@ -55,10 +75,9 @@ $(document).ready(function () {
 							});
 						});
 					}
-				},
-				type: 'POST'
+				}
 			});
-			return false;
 		}
+		e.preventDefault();
 	});
 });

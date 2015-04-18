@@ -77,7 +77,7 @@ class HomeController extends BaseController {
 
 				$participante->save();
 
-				$respuesta = array('success' => 'ok', 'last_insert_id' => $participante->id);
+				$respuesta = array('success' => 'ok', 'total' => $participante->count());
 				return Response::json($respuesta, 200);
 			} else {
 				$respuesta = array('success' => 'error', 'messages' => 'Error con el archivo.');
