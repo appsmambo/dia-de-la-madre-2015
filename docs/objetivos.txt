@@ -1,0 +1,9 @@
+Objetivos: 
+
+1. Poder contabilizar las veces que se ve cada página, incluso la que se abre para subir la foto.
+
+2. Poder medir la respuesta de la gente frente al video, si lo ven o lo cierran. Si se pudiera medir el tiempo q lo ven seria genial.
+
+3. Poder ver el flujo hasta que la gente suba su foto
+
+4. Poder medir las veces que se comparten las fotos
