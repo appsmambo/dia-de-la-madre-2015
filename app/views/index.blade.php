@@ -262,10 +262,10 @@ window.addEventListener('DOMContentLoaded', function () {
 					<div class="col-sm-4">
 						Síguenos en
 						<ul class="clearfix">
-							<li><a href="#" target="_blank" class="facebook"></a></li>
-							<li><a href="#" target="_blank" class="twitter"></a></li>
-							<li><a href="#" target="_blank" class="instagram"></a></li>
-							<li><a href="#" target="_blank" class="youtube"></a></li>
+							<li><a href="https://www.facebook.com/EntelPeru" target="_blank" class="facebook"></a></li>
+							<li><a href="https://twitter.com/EntelPeru" target="_blank" class="twitter"></a></li>
+							<li><a href="https://instagram.com/entel_peru/" target="_blank" class="instagram"></a></li>
+							<li><a href="https://www.youtube.com/user/PeruEntel" target="_blank" class="youtube"></a></li>
 						</ul>
 						<div class="clearfix"></div>
 						<a href="{{url()}}/uploads/Bases-Concurso-Dia-de-la-madre.pdf" target="_blank" class="btn-terminos hidden">Términos y Condiciones</a>

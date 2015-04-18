@@ -98,10 +98,10 @@ nav ul{
 }
 nav ul li{
 	float:left;
-	margin:0 0 0 5%;
+	margin:0 0 0 2%;
 	padding:0;
-	width:188px;
-	height:48px;
+	width:170px;
+	height:45px;
 }
 nav ul li:first-child{
 	margin-left:0;
@@ -119,8 +119,8 @@ nav a.navbar-brand.logo-entel img{
 }
 nav ul li a{
 	color:#555555;
-	width:188px;
-	height:48px;
+	width:170px;
+	height:45px;
 	display: block;
 }
 nav ul li a:hover, nav ul li a.active{
@@ -330,7 +330,8 @@ textarea {
 	font-size:14px;
 	font-family:'DINNextLTPro-Light';
 	text-align:center;
-	font-style:italic
+	font-style:italic;
+	overflow: auto;
 }
 .gracias{
 	background:url('../img/bg-gracias.jpg') repeat;
@@ -338,7 +339,7 @@ textarea {
 	font-style: normal;
 }
 .container-formulario{
-	width:765px;
+	width:650px;
 	margin: 0 auto;
 }
 .formulario p{
@@ -473,7 +474,7 @@ input.error{
 	cursor:pointer;
 	position:absolute;
 	right:0;
-	top:0;
+	top:5%;
 	width:80px;
 	height:73px;
 }
