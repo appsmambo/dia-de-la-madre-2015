@@ -345,20 +345,20 @@ textarea {
 	margin: 2% 0 0 0;
 	padding: 0;
 }
-.formulario p.parrrafo-footer-1 span{
+.formulario p.parrafo-1 span{
 	font-family: 'DINNextLTPro-Bold';
 	font-style: italic;
 	font-size: 18px;
 }
-.formulario p.parrrafo-footer-2{
+.formulario p.parrafo-2{
 	font-size: 16px;
 	margin-top: 4px;
 }
-.formulario p.parrrafo-footer-2 span{
+.formulario p.parrafo-2 span{
 	font-size: 18px;
 	font-family: 'DINNextLTPro-Medium';
 }
-.formulario p.parrrafo-footer-2 span.asterisco{
+.formulario p.parrafo-2 span.asterisco{
 	font-size: 12px;
 	color: #ff6702;
 }
@@ -402,18 +402,22 @@ textarea {
 	height:60px;
 	text-align: center;
 }
-.formulario form p.caja-texto{
-	height: 60px;
-}
 .formulario form p.btn-enviar-text{
 	text-align: center;
 }
 .formulario form p.btn-enviar-text input{
 	width:140px;
 	height:34px;
-	float: none;
-	margin-top:-20px;
-	display: inline-block;
+	float:none;
+	display:inline-block
+}
+textarea {
+	background:#fcfcfc;
+	border:0;
+	height:90px;
+	padding:12px;
+	text-align:center;
+	width:528px
 }
 .styledCheckbox{
 	float:right;
@@ -430,7 +434,7 @@ input.error{
 	text-align: center;
 }
 .elige-tu-foto img{
-	cursor: pointer;
+	max-width:528px
 }
 .contenido-titulo{
 	background: #ff6702;
@@ -469,7 +473,7 @@ input.error{
 	cursor:pointer;
 	position:absolute;
 	right:0;
-	top:16.5%;
+	top:0;
 	width:80px;
 	height:73px;
 }
