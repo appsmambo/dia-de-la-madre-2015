@@ -50,6 +50,7 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
 		<script src="{{url()}}/js/modernizr.custom.js"></script>
 		<script src="{{url()}}/js/jquery-1.11.2.min.js"></script>
+		<script src="{{url()}}/js/jquery.mousewheel.js"></script>
 		<!--script src="{{url()}}/js/bootstrap.min.js"></script-->
 		<script src="{{url()}}/js/jquery.blockUI.js"></script>
 		<script src="{{url()}}/js/jquery.validate.min.js"></script>

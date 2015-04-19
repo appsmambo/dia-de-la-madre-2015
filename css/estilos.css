@@ -562,7 +562,7 @@ input.error{
 	padding:11px 0 0 0;
 }
 .kilos-content.dos div{
-	bottom: 75px;
+	bottom: 0px;
 }
 .kilos-content.tres div{
 	bottom: 195px;
@@ -584,7 +584,7 @@ input.error{
 	background:url('../img/kilos-1.png') no-repeat left;
 }
 .kilos-content.dos{
-	background:url('../img/kilos-2.png') no-repeat left;
+	background:url('../img/kilos-0.png') no-repeat left;
 }
 .kilos-content.tres{
 	background:url('../img/kilos-3.png') no-repeat left;

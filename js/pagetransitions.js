@@ -4,7 +4,8 @@ var PageTransitions = (function () {
 			$pages = $main.children('div.pt-page'),
 			pagesCount = $pages.length,
 			current = 0,
-			flag = true, // para detener los eventos de menu y scroll
+			scroll = 0,
+			flag = true, // para detener los eventos de menu y boton en footer
 			isAnimating = false,
 			endCurrPage = false,
 			endNextPage = false,
@@ -80,9 +81,39 @@ var PageTransitions = (function () {
 			flag = true;
 		});
 
+		$('body').mousewheel(function(event, intDelta){
+			if (intDelta > 0){
+				scroll++;
+			} else if (intDelta < 0){
+				scroll--;
+			}
+			if (scroll >= 12) {
+				var tCurrent = current;
+				scroll = 0;
+				if (current < 2)
+					return;
+				tCurrent--;
+			}
+			if (scroll <= -12) {
+				var tCurrent = current;
+				scroll = 0;
+				if (current == 0) {
+					$('.saltar').trigger('click');
+					return;
+				}
+				tCurrent++;
+			}
+			if (tCurrent == 1)
+				$('#menu-home').trigger('click');
+			if (tCurrent == 2)
+				$('#menu-participa').trigger('click');
+			if (tCurrent == 3)
+				$('#menu-reto').trigger('click');
+			if (tCurrent == 4)
+				$('#menu-galeria').trigger('click');
+		});
 		$('.go').click(function () {
 			nextPage(48);
-			menu();
 			return false;
 		});
 		$('.saltar').click(function () {
@@ -108,7 +139,6 @@ var PageTransitions = (function () {
 			if (current == seccion)
 				return false;
 			nextPage(48, seccion);
-			menu();
 			return false;
 		});
 
@@ -418,6 +448,8 @@ var PageTransitions = (function () {
 				break;
 
 		}
+		
+		menu();
 
 		$currPage.addClass(outClass).on(animEndEventName, function () {
 			$currPage.off(animEndEventName);
