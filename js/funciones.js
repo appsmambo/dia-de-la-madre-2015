@@ -72,6 +72,7 @@ $(document).ready(function () {
 								color: '#fff'
 							}
 						});
+						ga('send', 'event', 'sube tu foto', 'error');
 						setTimeout('desbloquear()', 5000);
 						return false;
 					} else {
@@ -84,6 +85,7 @@ $(document).ready(function () {
 								right: "0"
 							}, 500, function() {
 								// Animation complete.
+								ga('send', 'event', 'sube tu foto', 'exito');
 							});
 						});
 					}
@@ -98,11 +100,4 @@ $(document).ready(function () {
 			href: urlBase,
 		}, function(response){});
 	})
-	$('.compartir').click(function() {
-		FB.ui({
-			method: 'share',
-			href: urlBase,
-		}, function(response){});
-	});
-	
 });
