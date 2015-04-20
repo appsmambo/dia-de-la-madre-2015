@@ -121,7 +121,7 @@
 				<div class="row contenido">
 					<div class="col-sm-offset-3 col-sm-6">
 						<div class="row">
-							<div class="col-sm-12  col-xs-12">
+							<div class="col-sm-12">
 								<img src="{{url()}}/img/titulo-hashtag.png" alt="" class="img-responsive hashtag center-block">
 							</div>
 						</div>
@@ -240,11 +240,6 @@ endfor;
 				</div>
 			</div>
 		</div>
-		<div class="scroll-bottom visible-xs">
-			<a href="#" class="go">
-				<img src="{{url()}}/img/btn-scroll-2.png" class="img-responsive center-block" alt=""/>
-			</a>
-		</div>
 		<div class="formulario">
 			<a class="btn-close">
 				<img src="{{url()}}/img/btn-close-formulario.jpg" alt="">
@@ -329,7 +324,7 @@ endfor;
 		<footer>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-sm-4 hidden-xs">
+					<div class="col-sm-4">
 						Síguenos en
 						<ul class="clearfix">
 							<li><a href="https://www.facebook.com/EntelPeru" target="_blank" class="facebook"></a></li>
@@ -340,21 +335,13 @@ endfor;
 						<div class="clearfix"></div>
 						<a href="{{url()}}/uploads/Bases-Concurso-Dia-de-la-madre.pdf" target="_blank" class="btn-terminos hidden">Términos y Condiciones</a>
 					</div>
-					<div class="col-sm-4 hidden hidden-xs">
+					<div class="col-sm-4 hidden">
 						<a href="#" class="go" style="display:block">
 							<img src="{{url()}}/img/btn-scroll.png" class="img-responsive center-block" alt=""/>
 						</a>
 					</div>
-					<div class="col-sm-4 hidden hidden-xs">
+					<div class="col-sm-4 hidden">
 						<img src="{{url()}}/img/hashtag-mama.png" class="img-responsive pull-right hashtag" alt=""/>
-					</div>
-					<div class="visible-xs">
-						<ul class="clearfix">
-							<li><a href="https://www.facebook.com/EntelPeru" target="_blank" ><img src="img/facebook-mobile.png" alt="" /></a></li>
-							<li><a href="https://twitter.com/EntelPeru" target="_blank" ><img src="img/twitter-mobile.png" alt="" /></a></li>
-							<li><a href="https://instagram.com/entel_peru/" target="_blank" ><img src="img/instagram-mobile.png" alt="" /></a></li>
-							<li><a href="https://www.youtube.com/user/PeruEntel" target="_blank" ><img src="img/youtube-mobile.png" alt="" /></a></li>
-						</ul>
 					</div>
 				</div>
 			</div>
