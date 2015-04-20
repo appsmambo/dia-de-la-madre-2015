@@ -6,7 +6,10 @@ class HomeController extends BaseController {
 	{
 		$total = Participante::count();
 		$participantes = Participante::orderBy('created_at', 'desc')->get();
-		return View::make('index')->with('total', $total)->with('participantes', $participantes);
+		if (Agent::isMobile())
+			return View::make('index-mobile')->with('total', $total)->with('participantes', $participantes);
+		else
+			return View::make('index')->with('total', $total)->with('participantes', $participantes);
 	}
 
 	public function ajaxRegistro()

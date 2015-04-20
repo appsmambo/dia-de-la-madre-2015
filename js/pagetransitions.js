@@ -63,6 +63,7 @@ var PageTransitions = (function () {
 			$('.formulario').animate({
 				right: "0"
 			}, 500, function () {
+				ga('send', 'event', 'navegar', 'click', 'Sube tu foto');
 				// Animation complete.
 			});
 			flag = false;
@@ -103,14 +104,22 @@ var PageTransitions = (function () {
 				}
 				tCurrent++;
 			}
-			if (tCurrent == 1)
+			if (tCurrent == 1) {
+				ga('send', 'event', 'navegar', 'click', 'Inicio');
 				$('#menu-home').trigger('click');
-			if (tCurrent == 2)
+			}
+			if (tCurrent == 2) {
+				ga('send', 'event', 'navegar', 'click', 'Participa');
 				$('#menu-participa').trigger('click');
-			if (tCurrent == 3)
+			}
+			if (tCurrent == 3) {
+				ga('send', 'event', 'navegar', 'click', 'Reto');
 				$('#menu-reto').trigger('click');
-			if (tCurrent == 4)
+			}
+			if (tCurrent == 4) {
+				ga('send', 'event', 'navegar', 'click', 'Galeria');
 				$('#menu-galeria').trigger('click');
+			}
 		});
 		$('.go').click(function () {
 			nextPage(48);
