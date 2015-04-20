@@ -15,10 +15,7 @@
 		<meta property="og:site_name" content="Gana con Ripley y Adidas" />
 		<meta property="og:description" content="Ayudar tiene premio. Participa en nuestro concurso y gana un Motorola Moto E para tu mamá, y por tu imagen compartida estarás ayudando con un kilo de alimentos para los niños de aldeas infantiles." />
 		<link rel="stylesheet" href="{{url()}}/css/bootstrap.min.css">
-		<link rel="stylesheet" href="{{url()}}/css/estilos.css">
-		<link rel="stylesheet" href="{{url()}}/css/componentes.css">
-		<link rel="stylesheet" href="{{url()}}/css/animaciones.css">
-		<link rel="stylesheet" href="{{url()}}/css/video-background.css">
+		<link rel="stylesheet" href="{{url()}}/css/estilos-mobile.css">
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -37,26 +34,17 @@
 					barHeight: 2,
 					minimumTime: 500,
 					maxTime: 20000,
-					fadeOutTime: 1000,
-					onComplete: function () {
-						api_fsvideo = $(".page-intro").videoBG({
-							youtube:"W7pHcAtpdx0",
-							poster:"img/fondos/intro.jpg"
-						});
-					}
+					fadeOutTime: 1000
 				});
 			});
 		</script>
-		<script src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
 		<script src="{{url()}}/js/modernizr.custom.js"></script>
 		<script src="{{url()}}/js/jquery-1.11.2.min.js"></script>
 		<script src="{{url()}}/js/jquery.mousewheel.js"></script>
 		<!--script src="{{url()}}/js/bootstrap.min.js"></script-->
 		<script src="{{url()}}/js/jquery.blockUI.js"></script>
 		<script src="{{url()}}/js/jquery.validate.min.js"></script>
-		<script src="{{url()}}/js/jquery.screwdefaultbuttonsV2.min.js"></script>
-		<script src="{{url()}}/js/jquery.video-background.js"></script>
-		<script src="{{url()}}/js/funciones.js"></script>
+		<script src="{{url()}}/js/funciones-mobile.js"></script>
 	</head>
 	<body>
 		<script>
@@ -92,7 +80,7 @@
 				<nav class="nav-bar clearfix">
 					<div class="container-fluid contenido">
 						<div class="row">
-							<div class="navbar-header col-sm-3">
+							<div class="navbar-header col-xs-3">
 								<div type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 									<!--img src="{{url()}}/img/bar-toogle.png" /-->
 								</div>
@@ -103,7 +91,7 @@
 									</div>
 								</a>
 							</div>
-							<div class="collapse navbar-collapse col-sm-9" id="bs-example-navbar-collapse-1 ">
+							<div class="collapse navbar-collapse col-xs-9" id="bs-example-navbar-collapse-1 ">
 								<ul class="nav navbar-nav hidden">
 									<li><a href="#" class="active goMenu" data-seccion="1" id="menu-home">home</a></li>
 									<li><a href="#" class="goMenu" data-seccion="2" id="menu-participa">participa</a></li>
@@ -121,7 +109,7 @@
 				<div class="row contenido">
 					<div class="col-sm-offset-3 col-sm-6">
 						<div class="row">
-							<div class="col-sm-12  col-xs-12">
+							<div class="col-xs-12">
 								<img src="{{url()}}/img/titulo-hashtag.png" alt="" class="img-responsive hashtag center-block">
 							</div>
 						</div>
@@ -135,16 +123,13 @@
 			<div class="pt-page page-inicio content-wrapper">
 				<div class="container-fluid contenido">
 					<div class="row">
-						<div class="col-sm-8 col-sm-offset-2 col-xs-12">
-							<img src="{{url()}}/img/titulo-hashtag.png" alt="" class="img-responsive center-block hidden-xs"><br><br>
-							<img src="{{url()}}/img/parrafo-home.png" alt="" class="img-responsive center-block hidden-xs">
-							<div class="visible-xs">
+						<div class="col-xs-12">
+							<div >
 								<img src="{{url()}}/img/titulo-hashtag.png" alt="" class="img-responsive center-block mobile-parrafo">
 							</div>
-							<div class="visible-xs" style="text-align:center;">
+							<div  style="text-align:center;">
 								<img src="{{url()}}/img/parrafo-2.png" alt="" class="img-responsive center-block parrafo-2-mobile">
 							</div>
-
 						</div>
 					</div>
 				</div>
@@ -152,17 +137,9 @@
 			<div class="pt-page page-participa content-wrapper">
 				<div class="container-fluid contenido">
 					<div class="row">
-						<div class="col-sm-10 col-sm-offset-1 col-xs-12">
+						<div class="col-xs-12">
 							<div class="row">
-								<div class="col-sm-10 hidden-xs">
-									<img src="{{url()}}/img/comparte-foto.png" alt="" class="img-responsive center-block">
-								</div>
-								<div class="col-sm-2 hidden-xs">
-									<a href="#" id="subeTuFoto">
-										<img src="{{url()}}/img/btn-sube-tu-foto.png" class="img-responsive" alt="">
-									</a>
-								</div>
-								<div class="col-xs-4 col-xs-offset-4 visible-xs" style="margin-bottom:10px;">
+								<div class="col-xs-4 col-xs-offset-4" style="margin-bottom:10px;">
 									<a href="#" id="subeTuFoto">
 										<img src="{{url()}}/img/btn-sube-tu-foto.png" class="img-responsive center-block" alt="">
 									</a>
@@ -170,7 +147,6 @@
 								<div class="col-xs-12 visible-xs">
 									<img src="{{url()}}/img/comparte-foto.png" alt="" class="img-responsive center-block">
 								</div>
-								
 							</div>
 						</div>
 					</div>
@@ -195,11 +171,7 @@
 				<div class="container-fluid contenido">
 
 					<div class="row">
-						<div class="col-sm-8 col-sm-offset-2 hidden-xs">
-							<img src="{{url()}}/img/titulo-reto.png" alt="" class="img-responsive center-block "><br><br>
-							<img src="{{url()}}/img/parrafo-participa.png" alt="" class="img-responsive center-block">
-						</div>
-						<div class="visible-xs col-xs-10 col-xs-offset-1 ">
+						<div class="col-xs-10 col-xs-offset-1 ">
 							<img src="{{url()}}/img/parrafo-reto.png" alt="" class="img-responsive center-block reto-mobile-content">
 						</div>
 					</div>
@@ -378,6 +350,5 @@ endfor;
 				</div>
 			</div>
 		</footer>
-		<script src="{{url()}}/js/pagetransitions.js"></script>
 	</body>
 </html>
