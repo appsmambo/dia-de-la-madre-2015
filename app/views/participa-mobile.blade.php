@@ -88,47 +88,19 @@ window.fbAsyncInit = function () {
 			<div class="container-fluid">
 				<div class="container-fluid">
 					<img src="{{url()}}/img/header-mobile.png" alt="" class="img-responsive hashtag pull-left">
-					<a href="#4thpage"><img src="{{url()}}/img/bar-toogle.png" alt="" class="img-responsive hashtag pull-right"></a>
+					<a href="#secondPage"><img src="{{url()}}/img/bar-toogle.png" alt="" class="img-responsive hashtag pull-right"></a>
 				</div>
 			</div>
 		</header>
-		<div id="fullpage">
-			<div class="section" id="section0">
-				intro
-				<div class="pie-movil">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-xs-12">
-								<a href="#secondPage"><img src="{{url()}}/img/boton-saltar.png" alt="" class="img-responsive center-block"></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="section home" id="section1">
+		<div id="fullpage" class="participa">
+			<div class="section home" id="section0">
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-xs-12">
-							<img src="{{url()}}/img/titulo-hashtag.png" alt="" class="img-responsive center-block">
+						<div class="col-xs-6 col-xs-offset-3 btn-sube-foto">
+							<img src="{{url()}}/img/btn-sube-tu-foto.png" alt="" class="img-responsive center-block">
 						</div>
-					</div>
-				</div>
-				<div class="pie-movil">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-xs-12">
-								<a href="#3rdPage"><img src="{{url()}}/img/btn-scroll-2.png" alt="" class="img-responsive center-block"></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="section home" id="section2">
-				<div class="container-fluid">
-					<div class="row">
 						<div class="col-xs-12">
-							<img src="{{url()}}/img/parrafo-mobile.png" alt="" class="img-responsive center-block"><br/>
-							<a href="participa"><img src="{{url()}}/img/parrafo-mobile-2.png" alt="" class="img-responsive center-block"></a>
+							<img src="{{url()}}/img/participa-mobile.png" alt="" class="img-responsive center-block">
 						</div>
 					</div>
 				</div>
@@ -142,15 +114,15 @@ window.fbAsyncInit = function () {
 					</div>
 				</div>
 			</div>
-			<div class="section home" id="section3">
+			<div class="section home" id="section1">
 				<div class="row">
 					<div class="col-xs-6 menu-mobile">
-						<a href="#"><img src="{{url()}}/img/home-menu-1.jpg" alt="" class="img-responsive"></a>
-						<a href="#"><img src="{{url()}}/img/home-menu-2.jpg" alt="" class="img-responsive activo"></a>
+						<a href="/"><img src="{{url()}}/img/home-menu-1.jpg" alt="" class="img-responsive"></a>
+						<a href="/"><img src="{{url()}}/img/home-menu-2.jpg" alt="" class="img-responsive activo"></a>
 					</div>
 					<div class="col-xs-6 menu-mobile">
-						<a href="participa"><img src="{{url()}}/img/participa-menu-1.jpg" alt="" class="img-responsive"></a>
-						<a href="participa"><img src="{{url()}}/img/participa-menu-2.jpg" alt="" class="img-responsive activo"></a>
+						<a href="#"><img src="{{url()}}/img/participa-menu-1.jpg" alt="" class="img-responsive"></a>
+						<a href="#"><img src="{{url()}}/img/participa-menu-2.jpg" alt="" class="img-responsive activo"></a>
 					</div>
 					<div class="col-xs-6 menu-mobile">
 						<a href="reto"><img src="{{url()}}/img/reto-menu-1.jpg" alt="" class="img-responsive"></a>
@@ -173,7 +145,6 @@ window.fbAsyncInit = function () {
 							<li><a href="https://instagram.com/entel_peru/" target="_blank" ><img src="img/instagram-mobile.png" alt="" /></a></li>
 							<li><a href="https://www.youtube.com/user/PeruEntel" target="_blank" ><img src="img/youtube-mobile.png" alt="" /></a></li>
 						</ul>
-						<a href="{{url()}}/uploads/Bases-Concurso-Dia-de-la-madre.pdf" target="_blank" ><img src="img/btn-terminos-mobile.png" alt="" class="center-block"/></a>
 					</div>
 				</div>
 			</div>

@@ -11,7 +11,17 @@ class HomeController extends BaseController {
 		else
 			return View::make('index')->with('total', $total)->with('participantes', $participantes);
 	}
-
+	
+	public function participa()
+	{
+		return View::make('participa-mobile');
+	}
+	
+	public function reto()
+	{
+		return View::make('reto-mobile');
+	}
+	
 	public function ajaxRegistro()
 	{
 		Session::regenerate();
