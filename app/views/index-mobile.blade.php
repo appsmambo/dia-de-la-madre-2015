@@ -28,7 +28,7 @@
 		<script src="{{url()}}/js/queryloader2.min.js"></script>
 		<script>
 			var urlBase = '{{url()}}';
-			var api_fsvideo, flagIntro = false;
+			var api_fsvideo, flagIntro = false
 			window.addEventListener('DOMContentLoaded', function () {
 				new QueryLoader2(document.querySelector("body"), {
 					barColor: "#ff6702",
@@ -135,9 +135,16 @@
 			<div class="pt-page page-inicio content-wrapper">
 				<div class="container-fluid contenido">
 					<div class="row">
-						<div class="col-sm-8 col-sm-offset-2">
-							<img src="{{url()}}/img/titulo-hashtag.png" alt="" class="img-responsive center-block "><br><br>
-							<img src="{{url()}}/img/parrafo-home.png" alt="" class="img-responsive center-block ">
+						<div class="col-sm-8 col-sm-offset-2 col-xs-12">
+							<img src="{{url()}}/img/titulo-hashtag.png" alt="" class="img-responsive center-block hidden-xs"><br><br>
+							<img src="{{url()}}/img/parrafo-home.png" alt="" class="img-responsive center-block hidden-xs">
+							<div class="visible-xs">
+								<img src="{{url()}}/img/titulo-hashtag.png" alt="" class="img-responsive center-block mobile-parrafo">
+							</div>
+							<div class="visible-xs" style="text-align:center;">
+								<img src="{{url()}}/img/parrafo-2.png" alt="" class="img-responsive center-block parrafo-2-mobile">
+							</div>
+
 						</div>
 					</div>
 				</div>
@@ -145,16 +152,25 @@
 			<div class="pt-page page-participa content-wrapper">
 				<div class="container-fluid contenido">
 					<div class="row">
-						<div class="col-sm-10 col-sm-offset-1">
+						<div class="col-sm-10 col-sm-offset-1 col-xs-12">
 							<div class="row">
-								<div class="col-sm-10">
+								<div class="col-sm-10 hidden-xs">
 									<img src="{{url()}}/img/comparte-foto.png" alt="" class="img-responsive center-block">
 								</div>
-								<div class="col-sm-2">
+								<div class="col-sm-2 hidden-xs">
 									<a href="#" id="subeTuFoto">
 										<img src="{{url()}}/img/btn-sube-tu-foto.png" class="img-responsive" alt="">
 									</a>
 								</div>
+								<div class="col-xs-4 col-xs-offset-4 visible-xs" style="margin-bottom:10px;">
+									<a href="#" id="subeTuFoto">
+										<img src="{{url()}}/img/btn-sube-tu-foto.png" class="img-responsive center-block" alt="">
+									</a>
+								</div>
+								<div class="col-xs-12 visible-xs">
+									<img src="{{url()}}/img/comparte-foto.png" alt="" class="img-responsive center-block">
+								</div>
+								
 							</div>
 						</div>
 					</div>
@@ -179,9 +195,12 @@
 				<div class="container-fluid contenido">
 
 					<div class="row">
-						<div class="col-sm-8 col-sm-offset-2">
+						<div class="col-sm-8 col-sm-offset-2 hidden-xs">
 							<img src="{{url()}}/img/titulo-reto.png" alt="" class="img-responsive center-block "><br><br>
 							<img src="{{url()}}/img/parrafo-participa.png" alt="" class="img-responsive center-block">
+						</div>
+						<div class="visible-xs col-xs-10 col-xs-offset-1 ">
+							<img src="{{url()}}/img/parrafo-reto.png" alt="" class="img-responsive center-block reto-mobile-content">
 						</div>
 					</div>
 				</div>
