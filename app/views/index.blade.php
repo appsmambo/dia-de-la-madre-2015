@@ -28,7 +28,7 @@
 		<script src="{{url()}}/js/queryloader2.min.js"></script>
 		<script>
 			var urlBase = '{{url()}}';
-			var api_fsvideo, flagIntro = false
+			var api_fsvideo, flagIntro = false;
 			window.addEventListener('DOMContentLoaded', function () {
 				new QueryLoader2(document.querySelector("body"), {
 					barColor: "#ff6702",
