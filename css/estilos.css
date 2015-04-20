@@ -468,7 +468,7 @@ input.error{
 	width:300px
 }
 #galeria {
-	max-height:600px;
+	max-height:360px;
 	overflow-x:hidden;
 	overflow-y:auto
 }

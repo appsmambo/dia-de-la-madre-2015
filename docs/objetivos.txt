@@ -5,6 +5,7 @@ Pendientes:
 * galeria y scroll
 * intro, que al detener el mouse se oculte los elementos
 * fixear la transicion en el formulario
+* compartir en twitter
 
 RESPONSIVE
 

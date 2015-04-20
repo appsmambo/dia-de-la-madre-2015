@@ -76,6 +76,7 @@ $(document).ready(function () {
 						setTimeout('desbloquear()', 5000);
 						return false;
 					} else {
+						$('#flujo').val('Registro');
 						$('#nombre, #dni, #email, #celular, #mensaje').val('');
 						$("#newsletter").screwDefaultButtons("uncheck");
 						$('.total').html(data.total);
@@ -95,6 +96,7 @@ $(document).ready(function () {
 		e.preventDefault();
 	});
 	$('.compartir').click(function() {
+		ga('send', 'event', 'compartir', 'click');
 		FB.ui({
 			method: 'share',
 			href: urlBase,

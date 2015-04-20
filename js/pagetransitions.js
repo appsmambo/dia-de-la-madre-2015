@@ -21,16 +21,20 @@ var PageTransitions = (function () {
 			support = Modernizr.cssanimations;
 
 	function menu() {
+		api_fsvideo.videoBgPause();
 		$('.goMenu').removeClass("active");
 		if (current == 1) {
+			$('#flujo').val( $('#flujo').val() + '|Home');
 			$('.go').fadeIn('fast');
 			$('#menu-home').addClass("active")
 		}
 		if (current == 2) {
+			$('#flujo').val( $('#flujo').val() + '|Participa');
 			$('.go').fadeIn('fast');
 			$('#menu-participa').addClass("active")
 		}
 		if (current == 3) {
+			$('#flujo').val( $('#flujo').val() + '|Reto');
 			$('.go').fadeIn('fast');
 			$('#menu-reto').addClass("active");
 			setTimeout(function () {
@@ -38,9 +42,9 @@ var PageTransitions = (function () {
 					$(".kilos-content").fadeIn("slow");
 				})
 			}, 5000);
-
 		}
 		if (current == 4) {
+			$('#flujo').val( $('#flujo').val() + '|Galeria');
 			$('.go').fadeOut('fast');
 			$('#menu-galeria').addClass("active")
 		}
@@ -105,7 +109,7 @@ var PageTransitions = (function () {
 				tCurrent++;
 			}
 			if (tCurrent == 1) {
-				ga('send', 'event', 'navegar', 'click', 'Inicio');
+				ga('send', 'event', 'navegar', 'click', 'Home');
 				$('#menu-home').trigger('click');
 			}
 			if (tCurrent == 2) {
@@ -126,6 +130,9 @@ var PageTransitions = (function () {
 			return false;
 		});
 		$('.saltar').click(function () {
+			var timerFin = new Date(), tiempoVideo;
+			tiempoVideo = Math.floor((timerFin.getTime() - timerInicio.getTime()) / 1000);
+			$('#video').val(tiempoVideo);
 			flagIntro = true;
 			$('header, footer, .hashtag').fadeTo('fast', 1);
 			api_fsvideo.videoBgPause();

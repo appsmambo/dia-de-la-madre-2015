@@ -28,7 +28,7 @@
 		<script src="{{url()}}/js/queryloader2.min.js"></script>
 		<script>
 			var urlBase = '{{url()}}';
-			var api_fsvideo, flagIntro = false;
+			var timerInicio = null, api_fsvideo, flagIntro = false;
 			window.addEventListener('DOMContentLoaded', function () {
 				new QueryLoader2(document.querySelector("body"), {
 					barColor: "#ff6702",
@@ -43,6 +43,7 @@
 							youtube:"W7pHcAtpdx0",
 							poster:"img/fondos/intro.jpg"
 						});
+						timerInicio = new Date();
 					}
 				});
 			});
@@ -137,7 +138,10 @@
 					<div class="row">
 						<div class="col-sm-8 col-sm-offset-2">
 							<img src="{{url()}}/img/titulo-hashtag.png" alt="" class="img-responsive center-block "><br><br>
-							<img src="{{url()}}/img/parrafo-home.png" alt="" class="img-responsive center-block ">
+							<img src="{{url()}}/img/parrafo-home-2.png" alt="" class="img-responsive center-block "><br>
+							<a href="#" class="goMenu" data-seccion="2">
+								<img src="{{url()}}/img/parrafo-home-3.png" alt="" class="img-responsive center-block">
+							</a>
 						</div>
 					</div>
 				</div>
@@ -188,11 +192,11 @@
 			</div>
 			<div class="pt-page page-galeria content-wrapper">
 				<div class="container-fluid contenido">
+					<p>
+						<img src="{{url()}}/img/galeria-titulo.png" alt="" class="img-responsive center-block">
+					</p>
 					<div class="row">
 						<div class="col-sm-10 col-sm-offset-1">
-							<p>
-								<img src="{{url()}}/img/galeria-titulo.png" alt="" class="img-responsive center-block">
-							</p>
 							<section id="galeria">
 								<div class="row">
 <?php
@@ -257,6 +261,8 @@ endfor;
 				</p>
 				<form action="#" id="registro" name="registro">
 					{{ Form::token() }}
+					<input type="hidden" name="video" id="video">
+					<input type="hidden" name="flujo" id="flujo" val="Intro">
 					<input id="foto" accept=".jpg,.png" name="foto" type="file" style="opacity:0;height:1px">
 					<p class="clearfix">
 						<label>Nombre<span>:</span></label>
@@ -284,7 +290,7 @@ endfor;
 						</a>
 					</div>
 					<p class="caja-texto">
-						<textarea name="mensaje" id="mensaje" placeholder="Coloca aquí tu texto (máx. 500 caracteres)"></textarea>
+						<textarea maxlength="500" name="mensaje" id="mensaje" placeholder="Coloca aquí tu texto (máx. 500 caracteres)"></textarea>
 					</p>
 					<p class="btn-enviar-text">
 						<input type="image" src="img/btn-enviar.png" class="btn-enviar"/>

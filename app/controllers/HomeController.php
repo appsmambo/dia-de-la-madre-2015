@@ -7,7 +7,7 @@ class HomeController extends BaseController {
 		$total = Participante::count();
 		$participantes = Participante::orderBy('created_at', 'desc')->get();
 		if (Agent::isMobile())
-			return View::make('index-mobile')->with('total', $total)->with('participantes', $participantes);
+			return View::make('index-mobile')->with('total', ($total*2))->with('participantes', $participantes);
 		else
 			return View::make('index')->with('total', $total)->with('participantes', $participantes);
 	}
@@ -95,6 +95,8 @@ class HomeController extends BaseController {
 				$participante->imagen		= $sessionId;
 				$participante->extension	= $extension;
 				$participante->ip			= Request::getClientIp(true);
+				$participante->video		= Input::get('video');
+				$participante->flujo		= Input::get('flujo');
 
 				$participante->save();
 				
