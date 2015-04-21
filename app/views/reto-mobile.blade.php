@@ -120,7 +120,7 @@ window.fbAsyncInit = function () {
 							<div class="kilos-reto">
 								<img src="{{url()}}/img/back-8-kilos.png" alt="" class="img-responsive center-block">
 								<p>
-									8kgs  <span>de ayuda</span>
+									12kgs  <span>de ayuda</span>
 								</p>
 							</div>
 						</div>
