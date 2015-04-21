@@ -118,7 +118,7 @@ window.fbAsyncInit = function () {
 					<div class="container-fluid">
 						<div class="row">
 							<div class="col-xs-12">
-								<a href="#3rdPage"><img src="{{url()}}/img/btn-scroll-2.png" alt="" class="img-responsive center-block"></a>
+								<a href="#3rdPage"><img src="{{url()}}/img/btn-scroll-2.png" alt="" class="img-responsive center-block scroll-movil"></a>
 							</div>
 						</div>
 					</div>

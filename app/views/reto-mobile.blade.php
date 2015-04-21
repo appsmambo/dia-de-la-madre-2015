@@ -105,7 +105,7 @@ window.fbAsyncInit = function () {
 					<div class="container-fluid">
 						<div class="row">
 							<div class="col-xs-12">
-								<a href="#secondPage"><img src="{{url()}}/img/btn-scroll-2.png" alt="" class="img-responsive scroll-reto"></a>
+								<a href="#secondPage"><img src="{{url()}}/img/btn-scroll-2.png" alt="" class="img-responsive scroll-reto scroll-movil"></a>
 								<img src="{{url()}}/img/hashtag-mama-footer.png" alt="" class="img-responsive pull-right">
 							</div>
 						</div>
@@ -120,7 +120,7 @@ window.fbAsyncInit = function () {
 							<div class="kilos-reto">
 								<img src="{{url()}}/img/back-8-kilos.png" alt="" class="img-responsive center-block">
 								<p>
-									24kgs  <span>de ayuda</span>
+									28kgs  <span>de ayuda</span>
 								</p>
 							</div>
 						</div>

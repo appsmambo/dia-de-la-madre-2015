@@ -157,7 +157,7 @@ footer ul li{
 }
 .kilos-reto p{
 	margin:0;
-	padding:0 0 0 15px;
+	padding:0 0 0 0;
 	color:#ff6702;
 	font-size:24px;
 	font-family: 'DINNextLTPro-Medium';
@@ -411,6 +411,9 @@ footer.galeria{
 }
 .menu-content-mobile .content-a{
 	background: #ffffff;
+}
+.scroll-movil{
+	margin-top: 42px;
 }
 @media only screen  
 and (orientation : landscape) { 
