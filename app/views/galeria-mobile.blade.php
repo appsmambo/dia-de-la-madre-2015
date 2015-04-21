@@ -15,7 +15,6 @@
 		<meta property="og:site_name" content="Gana con Ripley y Adidas" />
 		<meta property="og:description" content="Ayudar tiene premio. Participa en nuestro concurso y gana un Motorola Moto E para tu mamá, y por tu imagen compartida estarás ayudando con un kilo de alimentos para los niños de aldeas infantiles." />
 		<link rel="stylesheet" href="{{url()}}/css/bootstrap.min.css">
-		<link rel="stylesheet" href="{{url()}}/css/jquery.fullPage.css">
 		<link rel="stylesheet" href="{{url()}}/css/estilos-mobile.css">
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -45,8 +44,6 @@ window.addEventListener('DOMContentLoaded', function () {
 		<!--script src="{{url()}}/js/bootstrap.min.js"></script-->
 		<script src="{{url()}}/js/jquery.blockUI.js"></script>
 		<script src="{{url()}}/js/jquery.validate.min.js"></script>
-		<script src="{{url()}}/js/jquery.fullPage.min.js"></script>
-	</head>
 	<body>
 		<script>
 window.fbAsyncInit = function () {
@@ -83,7 +80,7 @@ window.fbAsyncInit = function () {
 			ga('require', 'displayfeatures');
 			ga('send', 'pageview');
 		</script>
-		<header class="home">
+		<header>
 			<div class="container-fluid">
 				<div class="container-fluid">
 					<img src="{{url()}}/img/header-mobile.png" alt="" class="img-responsive hashtag pull-left">
@@ -91,81 +88,81 @@ window.fbAsyncInit = function () {
 				</div>
 			</div>
 		</header>
-		<div id="fullpage">
-			<div class="section" id="section0">
-				<video autoplay loop controls="false" id="myVideo">
-					<source src="{{url()}}/video/Las-Mejores-Madres-Entel.mp4" type="video/mp4">
-				</video>
-				<div class="pie-movil">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-xs-12">
-								<a href="#secondPage"><img src="{{url()}}/img/boton-saltar.png" alt="" class="img-responsive center-block saltar-mobile"></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="section home" id="section1">
-				<div class="container-fluid">
+		
+		<div id="galeriacontent">
+			<p>
+						<img src="{{url()}}/img/galeria-titulo.png" alt="" class="img-responsive center-block">
+					</p>
 					<div class="row">
-						<div class="col-xs-12">
-							<img src="{{url()}}/img/titulo-hashtag.png" alt="" class="img-responsive center-block">
+						<div class="col-sm-10 col-sm-offset-1">
+							<section id="galeria">
+								<div class="row">
+<?php
+$anchos = array('ancho-s', 'ancho-m', 'ancho-l');
+$margenes = array('margen-s', 'margen-m', 'margen-l');
+$contenido = array();
+foreach ($participantes as $participante):
+	$ancho = array_rand($anchos);
+	$margen = array_rand($margenes);
+	$html = '<div class="contenedor-foto center-block '.$anchos[$ancho].' '.$margenes[$margen].'">';
+	$html.= '<img src="'.url().'/uploads/final/'.$participante->imagen.'.'.$participante->extension.'" alt="" class="img-responsive center-block"><div class="clearfix"></div><p>'.$participante->mensaje.'</p></div>';
+	$contenido[] = $html;
+endforeach;
+$html = '';
+for ($i=0; $i<count($contenido); $i+=3):
+	echo $i;
+	$html.=$contenido[$i];
+endfor;
+?>
+									<div id="columna" class="col-xs-12">
+										{{$html}}
+									</div>
+<?php
+$html = '';
+for ($i=1; $i<count($contenido); $i+=3):
+	$html.=$contenido[$i];
+endfor;
+?>
+									<div class="col-xs-12">
+										{{$html}}
+									</div>
+<?php
+$html = '';
+for ($i=2; $i<count($contenido); $i+=3):
+	$html.=$contenido[$i];
+endfor;
+?>
+									<div class="col-xs-12">
+										{{$html}}
+									</div>
+								</div>
+							</section>
 						</div>
 					</div>
 				</div>
-				<div class="pie-movil">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-xs-12">
-								<a href="#3rdPage"><img src="{{url()}}/img/btn-scroll-2.png" alt="" class="img-responsive center-block"></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="section home" id="section2">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-xs-12">
-							<img src="{{url()}}/img/parrafo-mobile.png" alt="" class="img-responsive center-block"><br/>
-							<a href="participa"><img src="{{url()}}/img/parrafo-mobile-2.png" alt="" class="img-responsive center-block"></a>
-						</div>
-					</div>
-				</div>
-				<div class="pie-movil">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-xs-12">
-								<img src="{{url()}}/img/hashtag-mama-footer.png" alt="" class="img-responsive pull-right">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="section home" id="section3">
-				<div class="row">
-					<div class="col-xs-6 menu-mobile">
-						<a href="#"><img src="{{url()}}/img/home-menu-1.jpg" alt="" class="img-responsive center-block"></a>
-						<a href="#"><img src="{{url()}}/img/home-menu-2.jpg" alt="" class="img-responsive center-block activo"></a>
-					</div>
-					<div class="col-xs-6 menu-mobile">
-						<a href="participa"><img src="{{url()}}/img/participa-menu-1.jpg" alt="" class="img-responsive center-block"></a>
-						<a href="participa"><img src="{{url()}}/img/participa-menu-2.jpg" alt="" class="img-responsive center-block activo"></a>
-					</div>
-					<div class="col-xs-6 menu-mobile">
-						<a href="reto"><img src="{{url()}}/img/reto-menu-1.jpg" alt="" class="img-responsive center-block"></a>
-						<a href="reto"><img src="{{url()}}/img/reto-menu-2.jpg" alt="" class="img-responsive center-block activo"></a>
-					</div>
-					<div class="col-xs-6 menu-mobile">
-						<a href="galeria"><img src="{{url()}}/img/galeria-menu-1.jpg" alt="" class="img-responsive center-block"></a>
-						<a href="galeria"><img src="{{url()}}/img/galeria-menu-2.jpg" alt="" class="img-responsive center-block activo"></a>
-					</div>
-				</div>
-			</div>
 
+
+		<div id="galeriamenu">
+			<div class="row">
+				<div class="col-xs-6 menu-mobile">
+					<a href="#"><img src="{{url()}}/img/home-menu-1.jpg" alt="" class="img-responsive center-block"></a>
+					<a href="#"><img src="{{url()}}/img/home-menu-2.jpg" alt="" class="img-responsive center-block activo"></a>
+				</div>
+				<div class="col-xs-6 menu-mobile">
+					<a href="participa"><img src="{{url()}}/img/participa-menu-1.jpg" alt="" class="img-responsive center-block"></a>
+					<a href="participa"><img src="{{url()}}/img/participa-menu-2.jpg" alt="" class="img-responsive center-block activo"></a>
+				</div>
+				<div class="col-xs-6 menu-mobile">
+					<a href="reto"><img src="{{url()}}/img/reto-menu-1.jpg" alt="" class="img-responsive center-block"></a>
+					<a href="reto"><img src="{{url()}}/img/reto-menu-2.jpg" alt="" class="img-responsive center-block activo"></a>
+				</div>
+				<div class="col-xs-6 menu-mobile">
+					<a href="galeria"><img src="{{url()}}/img/galeria-menu-1.jpg" alt="" class="img-responsive center-block"></a>
+					<a href="galeria"><img src="{{url()}}/img/galeria-menu-2.jpg" alt="" class="img-responsive center-block activo"></a>
+				</div>
+			</div>
 		</div>
-		<footer class="home">
+		<footer>
 			<div class="container-fluid">
 				<div class="row">
 					<div class="visible-xs">
@@ -182,23 +179,6 @@ window.fbAsyncInit = function () {
 		</footer>
 		<script>
 			$(document).ready(function () {
-				$('#fullpage').fullpage({
-					anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-					menu: '#menu',
-					scrollingSpeed: 1000,
-					afterRender: function () {
-						//playing the video
-						$('video').get(0).play();
-					},
-					afterLoad: function (anchorLink, index) {
-						if (index !== 1) {
-							$('video').get(0).pause();
-							$('footer, header').css( "z-index", "2" );
-						} else {
-							$('video').get(0).play();
-						}
-					}
-				});
 				$('.col-xs-6 img').click(function () {
 					$('this').hide("fast", function () {
 						$('.activo').show('fast');

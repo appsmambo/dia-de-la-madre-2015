@@ -21,7 +21,12 @@ class HomeController extends BaseController {
 	{
 		return View::make('reto-mobile');
 	}
-	
+	public function galeria()
+	{
+		$participantes = Participante::orderBy('created_at', 'desc')->get();
+		return View::make('galeria-mobile')->with('participantes', $participantes);
+		
+	}
 	public function ajaxRegistro()
 	{
 		Session::regenerate();

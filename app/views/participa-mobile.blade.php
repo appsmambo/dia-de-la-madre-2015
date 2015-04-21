@@ -46,6 +46,7 @@ window.addEventListener('DOMContentLoaded', function () {
 		<script src="{{url()}}/js/jquery.blockUI.js"></script>
 		<script src="{{url()}}/js/jquery.validate.min.js"></script>
 		<script src="{{url()}}/js/jquery.fullPage.min.js"></script>
+		<script src="{{url()}}/js/jquery.screwdefaultbuttonsV2.min.js"></script>
 		<script src="{{url()}}/js/funciones-mobile.js"></script>
 	</head>
 	<body>
@@ -117,25 +118,28 @@ window.fbAsyncInit = function () {
 			<div class="section home" id="section1">
 				<div class="row">
 					<div class="col-xs-6 menu-mobile">
-						<a href="/"><img src="{{url()}}/img/home-menu-1.jpg" alt="" class="img-responsive"></a>
-						<a href="/"><img src="{{url()}}/img/home-menu-2.jpg" alt="" class="img-responsive activo"></a>
+						<a href="/"><img src="{{url()}}/img/home-menu-1.jpg" alt="" class="img-responsive center-block"></a>
+						<a href="/"><img src="{{url()}}/img/home-menu-2.jpg" alt="" class="img-responsive activo center-block"></a>
 					</div>
 					<div class="col-xs-6 menu-mobile">
-						<a href="#"><img src="{{url()}}/img/participa-menu-1.jpg" alt="" class="img-responsive"></a>
-						<a href="#"><img src="{{url()}}/img/participa-menu-2.jpg" alt="" class="img-responsive activo"></a>
+						<a href="#"><img src="{{url()}}/img/participa-menu-1.jpg" alt="" class="img-responsive center-block"></a>
+						<a href="#"><img src="{{url()}}/img/participa-menu-2.jpg" alt="" class="img-responsive activo center-block"></a>
 					</div>
 					<div class="col-xs-6 menu-mobile">
-						<a href="reto"><img src="{{url()}}/img/reto-menu-1.jpg" alt="" class="img-responsive"></a>
-						<a href="reto"><img src="{{url()}}/img/reto-menu-2.jpg" alt="" class="img-responsive activo"></a>
+						<a href="reto"><img src="{{url()}}/img/reto-menu-1.jpg" alt="" class="img-responsive center-block"></a>
+						<a href="reto"><img src="{{url()}}/img/reto-menu-2.jpg" alt="" class="img-responsive activo center-block"></a>
 					</div>
 					<div class="col-xs-6 menu-mobile">
-						<a href="galeria"><img src="{{url()}}/img/galeria-menu-1.jpg" alt="" class="img-responsive"></a>
-						<a href="galeria"><img src="{{url()}}/img/galeria-menu-2.jpg" alt="" class="img-responsive activo"></a>
+						<a href="galeria"><img src="{{url()}}/img/galeria-menu-1.jpg" alt="" class="img-responsive center-block"></a>
+						<a href="galeria"><img src="{{url()}}/img/galeria-menu-2.jpg" alt="" class="img-responsive activo center-block"></a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="content-registro">
+		<div class="content-registro gracias-registro">
+			<div class="close-mobile">
+				<img src="{{url()}}/img/btn-close-formulario.jpg" alt="" class="img-responsive">
+			</div>
 			<div class="registro-formulario">
 				<p class="parrafo-1">
 					<span>Comparte una foto en la que reflejes un momento con tu mamá.</span>
@@ -170,35 +174,64 @@ window.fbAsyncInit = function () {
 					</p>
 					<div class="elige-tu-foto">
 						<a href="#" id="archivo">
-							<img id="previo" src="{{url()}}/img/fondo-preview.jpg" alt=""/>
+							<img id="previo" src="{{url()}}/img/sube-tu-foto-mobile.png" class="img-responsive center-block" alt=""/>
 						</a>
 					</div>
 					<p class="caja-texto">
 						<textarea name="mensaje" id="mensaje" placeholder="Coloca aquí tu texto (máx. 500 caracteres)"></textarea>
 					</p>
-					<p class="btn-enviar-text">
+					<p class="btn-enviar-text clearfix">
 						<input type="image" src="img/btn-enviar.png" class="btn-enviar"/>
 					</p>
 				</form>
 				<p class="parrafo-2">
-					<span class="asterisco">*</span> Las fotos que más nos gusten serán compartidas en nuestras redes sociales. <span>¡Suerte!</span> ;)
+					<span class="asterisco">*</span> Las fotos que más nos gusten serán compartidas en nuestras redes sociales. <span class="suerte">¡Suerte!</span> ;)
 				</p>
 			</div>
 		</div>
-		<footer>
-			<div class="container-fluid">
-				<div class="row">
-					<div class="visible-xs">
-						<ul class="clearfix">
-							<li><a href="https://www.facebook.com/EntelPeru" target="_blank" ><img src="img/facebook-mobile.png" alt="" /></a></li>
-							<li><a href="https://twitter.com/EntelPeru" target="_blank" ><img src="img/twitter-mobile.png" alt="" /></a></li>
-							<li><a href="https://instagram.com/entel_peru/" target="_blank" ><img src="img/instagram-mobile.png" alt="" /></a></li>
-							<li><a href="https://www.youtube.com/user/PeruEntel" target="_blank" ><img src="img/youtube-mobile.png" alt="" /></a></li>
-						</ul>
-						<a href="{{url()}}/uploads/Bases-Concurso-Dia-de-la-madre.pdf" target="_blank" ><img src="img/btn-terminos-mobile.png" alt="" class="center-block"/></a>
+		<div class="content-gracias gracias-registro">
+			<div class="close-mobile">
+				<img src="{{url()}}/img/btn-close-formulario.jpg" alt="" class="img-responsive">
+			</div>
+			<div class="content-a">
+				<div class="content-b">
+					<div class="gracias-mobile-content">
+						<h2>
+							<span>¡</span>Muchas gracias<span>!</span>
+						</h2>
+						<p>
+							Con tu foto, hemos sumado <span>otro kilo de alimentos</span> a nuestro reto.<br/>
+							Ya tenemos un total de:
+						</p>
+						<div class="kilos-ayuda">
+							<span class="total">120</span> <span class="orange">kg</span><br/>
+							<span class="white">de ayuda</span>
+						</div>
+						<img src="{{url()}}/img/comparte.png" alt="compartir" class="img-responsive"/>
+						<div class="sociales-footer">
+							<a class="compartir" href="#"><img src="{{url()}}/img/facebook-gracias.png" alt="facebook"/></a>
+							<a target="_blank" href="https://twitter.com/home?status=http://lasmejoresmadres.pe%20Participa%20en%20nuestro%20concurso%20y%20gana%20un%20Motorola%20Moto%20E%20para%20tu%20mam%C3%A1"><img src="{{url()}}/img/twitter-gracias.png" alt="twitter"/></a>
+						</div>
 					</div>
 				</div>
 			</div>
-		</footer>
-	</body>
+		</div>
+	</div> 
+</div>
+<footer>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="visible-xs">
+				<ul class="clearfix">
+					<li><a href="https://www.facebook.com/EntelPeru" target="_blank" ><img src="img/facebook-mobile.png" alt="" /></a></li>
+					<li><a href="https://twitter.com/EntelPeru" target="_blank" ><img src="img/twitter-mobile.png" alt="" /></a></li>
+					<li><a href="https://instagram.com/entel_peru/" target="_blank" ><img src="img/instagram-mobile.png" alt="" /></a></li>
+					<li><a href="https://www.youtube.com/user/PeruEntel" target="_blank" ><img src="img/youtube-mobile.png" alt="" /></a></li>
+				</ul>
+				<a href="{{url()}}/uploads/Bases-Concurso-Dia-de-la-madre.pdf" target="_blank" ><img src="img/btn-terminos-mobile.png" alt="" class="center-block"/></a>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
 </html>

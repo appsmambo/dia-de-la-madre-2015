@@ -65,6 +65,7 @@ header, footer{
 	width: 100%;
 	border:0;
 	background-color: #fff;
+	z-index:1;
 }
 header.home, footer.home{
 	z-index: 0;
@@ -189,22 +190,30 @@ footer ul li{
 	font-family: 'DINNextLTPro-Light';
 }
 .content-registro{
-	height:100%;
-	width:100%;
 	overflow: auto;
 	background: #e9e6e6;
 	color: #818181;
 	font-family: 'DINNextLTPro-Light';
 	font-size:13px;
-	z-index: 3;
-	position: absolute;
-	top:0;
-	left:0;
 	display: none;
+	z-index: 3;
 }
 .parrafo-1{
 	margin: 0;
 	padding: 0;
+}
+.parrafo-2{
+	margin: 0 0 12px 0;
+	padding: 0;
+	font-style: italic;
+	text-align: center;
+}
+.parrafo-2 span.asterisco{
+	color: #ff6702;
+}
+.parrafo-2 span.suerte{
+	font-family: 'DINNextLTPro-Medium';
+	font-style: normal;
 }
 .parrafo-1 span{
 	font-family: 'DINNextLTPro-Bold';
@@ -253,16 +262,108 @@ footer ul li{
 	border: 0;
 	background:#ffffff;
 }
+.registro-formulario form p.btn-enviar-text input{
+	width:140px;
+	height: 34px;
+	float:none;
+	display: block;
+	margin: 0 auto;
+}
 .styledCheckbox{
-	float:right;
+	float:left;
+	margin-left: 10px;
 }
 .saltar-mobile{
 	position:relative;
 	z-index:3;
 }
+textarea{
+	border:0;
+	height:80px;
+	width:100%;
+}
+.registro-formulario form p.caja-texto{
+	margin:19px 0 0 0;
+}
+.registro-formulario form p.btn-enviar-text{
+	margin-top:-20px;
+}
+#galeriacontent{
+	padding:100px;
+}
+.close-mobile{
+	width:8%;
+	height:auto;
+	right:0;
+	top:20px;
+	position: absolute;
+}
+.content-gracias{
+	background:url('../img/bg-gracias-mobile.png');
+	z-index:4;
+	color: #fff;
+	text-align: center;
+}
+.gracias-registro{
+	position: absolute;
+	top:0;
+	left:0;
+	height: 100%;
+	width:100%;
+}
+.gracias-mobile-content{
+	width:90%;
+	margin: 0 auto;
+	overflow: auto;
+}
+.gracias-registro h2{
+	font-family: 'DINNextLTPro-Bold';
+	font-size: 35px;
+}
+.gracias-registro h2 span{
+	color:#ff6702;
+}
+.gracias-registro p{
+	font-family: 'DINNextLTPro-Light';
+	font-size: 15px;
+	font-style: italic;
+}
+.content-a{
+	display: table;
+	width:100%;
+	height:100%;
+}
+.content-b{
+	display: table-cell;
+	vertical-align: middle;
+}
+.kilos-ayuda{
+	height:65px;
+	width:280px;
+	margin:0 auto 10px 0;
+	padding: 0;
+	background:url('../img/kilos-mobile.png') no-repeat bottom;
+	border: 0;
+	font-style: italic;
+	line-height: 22px;
+	padding-top: 7px;
+}
+.kilos-ayuda .total{
+	font-size: 40px;
+}
+.kilos-ayuda .orange{
+	color: #ff6702;
+	font-size:30px;
+}
+.kilos-ayuda .white{
+	font-size: 20px;
+}
+.sociales-footer{
+	margin-top: 10px;
+}
 @media only screen  
 and (orientation : landscape) { 
-	#fullpage img{
+	#fullpage img, #galeriamenu img{
 		max-width:40%;
 	}
 	.pie-movil{
