@@ -110,7 +110,7 @@
 									<li><a href="#" class="goMenu" data-seccion="2" id="menu-participa">participa</a></li>
 									<li><a href="#" class="goMenu" data-seccion="3" id="menu-reto">el reto</a></li>
 									<li><a href="#" class="goMenu" data-seccion="4" id="menu-galeria">galería</a></li>
-									<!--li><a href="#" class="goMenu" data-seccion="0" id="menu-video">ver video</a></li-->
+									<li><a href="#" class="goMenu" data-seccion="0" id="menu-video">ver video</a></li>
 								</ul>
 							</div>
 						</div>
@@ -206,9 +206,11 @@ foreach ($participantes as $participante):
 	$html = '<div class="contenedor-foto center-block '.$anchos[$ancho].' '.$margenes[$margen].'">';
 	$html.= '<img src="'.url().'/uploads/final/'.$participante->imagen.'.'.$participante->extension.'" alt="" class="img-responsive center-block"><div class="clearfix"></div>'
 			. '<p>'.$parrafo1.'<span id="elipsis-'.$participante->id.'" class="elipsis">...</span><span id="parrafo-'.$participante->id.'" class="parrafo hidden">'.$parrafo2.'</span>'.'</p>'
-			. '<span><strong>Por: </strong>'.$participante->nombre
+			. '<div class="row"><div class="col-sm-7">'
+			. '<span><strong>Por: </strong>'.$participante->nombre.'</span>'
+			. '</div><div class="col-sm-5">'
 			. '<a data-id="'.$participante->id.'" class="pull-right ver-mas" href="#"><img class="pull-right" src="'.url().'/img/ver-mas.png" alt=""></a>'
-			. '</span></div>';
+			. '</div></div></div>';
 	$contenido[] = $html;
 endforeach;
 $html = '';

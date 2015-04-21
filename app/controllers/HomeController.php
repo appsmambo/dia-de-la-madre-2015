@@ -5,7 +5,7 @@ class HomeController extends BaseController {
 	public function index()
 	{
 		$total = Participante::count();
-		$participantes = Participante::orderBy('created_at', 'desc')->get();
+		$participantes = Participante::where('estado', 1)->orderBy('created_at', 'desc')->get();
 		if (Agent::isMobile())
 			return View::make('index-mobile')->with('total', ($total*2))->with('participantes', $participantes);
 		else
