@@ -412,9 +412,7 @@ input.error{
 	width:300px
 }
 #galeria {
-	max-height:360px;
-	overflow-x:hidden;
-	overflow-y:auto!important
+	height:360px
 }
 a.saltar {
 	margin-top:72%

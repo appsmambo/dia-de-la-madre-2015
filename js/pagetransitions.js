@@ -59,6 +59,7 @@ var PageTransitions = (function () {
 			}, 5000);
 		}
 		if (current == 4) {
+			fleXenv.fleXcrollMain("galeria");
 			$('#flujo').val( $('#flujo').val() + '|Galeria');
 			$('.go').fadeOut('fast');
 			$('#menu-galeria').addClass("active")
