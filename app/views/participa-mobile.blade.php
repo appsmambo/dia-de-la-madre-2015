@@ -195,6 +195,7 @@ window.fbAsyncInit = function () {
 							<li><a href="https://instagram.com/entel_peru/" target="_blank" ><img src="img/instagram-mobile.png" alt="" /></a></li>
 							<li><a href="https://www.youtube.com/user/PeruEntel" target="_blank" ><img src="img/youtube-mobile.png" alt="" /></a></li>
 						</ul>
+						<a href="{{url()}}/uploads/Bases-Concurso-Dia-de-la-madre.pdf" target="_blank" ><img src="img/btn-terminos-mobile.png" alt="" class="center-block"/></a>
 					</div>
 				</div>
 			</div>

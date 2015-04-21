@@ -64,8 +64,10 @@ header, footer{
 	left:0;
 	width: 100%;
 	border:0;
-	z-index: 2;
 	background-color: #fff;
+}
+header.home, footer.home{
+	z-index: 0;
 }
 footer{
 	padding:6px;
@@ -97,7 +99,7 @@ footer ul li{
 	height: 100%;
 	background-size: 100% 100%;
 	background-color: black; /* in case the video doesn't fit the whole page*/
-	
+
 	background-position: center center;
 	background-size: contain;
 	object-fit: cover; /*cover video background */
@@ -251,6 +253,10 @@ footer ul li{
 .styledCheckbox{
 	float:right;
 }
+.saltar-mobile{
+	position:relative;
+	z-index:3;
+}
 @media only screen  
 and (orientation : landscape) { 
 	#fullpage img{
@@ -267,5 +273,8 @@ and (orientation : landscape) {
 	}
 	.pie-movil img.pull-right{
 		max-width:15% !important;
+	}
+	.pie-movil img.saltar-mobile{
+		max-width: 14% !important;
 	}
 }
