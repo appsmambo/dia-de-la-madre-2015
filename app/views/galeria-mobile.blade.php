@@ -65,6 +65,24 @@ window.fbAsyncInit = function () {
 }(document, 'script', 'facebook-jssdk'));
 		</script>
 		<script>
+			$(document).ready(function () {
+				$(".menu-mobile a").click(function () {
+					var imagen = $(this).data("image");
+					var href = $(this).prop("href");
+					$("img", this).prop("src", imagen);
+					setTimeout(location.href(href), 500);
+					return false;
+				});
+				$(".ver-mas").click(function () {
+					var id;
+					id = $(this).data('id');
+					$('#elipsis-' + id).fadeOut();
+					$('#parrafo-' + id).removeClass('hidden');
+					$(this).fadeOut();
+				});
+			});
+		</script>
+		<script>
 			(function (i, s, o, g, r, a, m) {
 				i['GoogleAnalyticsObject'] = r;
 				i[r] = i[r] || function () {
@@ -84,87 +102,85 @@ window.fbAsyncInit = function () {
 			<div class="container-fluid">
 				<div class="container-fluid">
 					<img src="{{url()}}/img/header-mobile.png" alt="" class="img-responsive hashtag pull-left">
-					<a href="#4thpage"><img src="{{url()}}/img/bar-toogle.png" alt="" class="img-responsive hashtag pull-right"></a>
+					<a href="#galeriamenu"><img src="{{url()}}/img/bar-toogle.png" alt="" class="img-responsive hashtag pull-right"></a>
 				</div>
 			</div>
 		</header>
-		
+
 		<div id="galeriacontent">
-			<p>
-						<img src="{{url()}}/img/galeria-titulo.png" alt="" class="img-responsive center-block">
-					</p>
-					<div class="row">
-						<div class="col-sm-10 col-sm-offset-1">
-							<section id="galeria">
-								<div class="row">
-<?php
-$anchos = array('ancho-s', 'ancho-m', 'ancho-l');
-$margenes = array('margen-s', 'margen-m', 'margen-l');
-$contenido = array();
-foreach ($participantes as $participante):
-	$ancho = array_rand($anchos);
-	$margen = array_rand($margenes);
-	$parrafo1 = substr($participante->mensaje, 0, 126);
-	$parrafo2 = substr($participante->mensaje, 126);
-	$html = '<div class="contenedor-foto center-block '.$anchos[$ancho].' '.$margenes[$margen].'">';
-	$html.= '<img src="'.url().'/uploads/final/'.$participante->imagen.'.'.$participante->extension.'" alt="" class="img-responsive center-block"><div class="clearfix"></div>'
-			. '<p>'.$parrafo1.'<span id="elipsis-'.$participante->id.'" class="elipsis">...</span><span id="parrafo-'.$participante->id.'" class="parrafo hidden">'.$parrafo2.'</span>'.'</p>'
-			. '<span><strong>Por: </strong>'.$participante->nombre
-			. '<a data-id="'.$participante->id.'" class="pull-right ver-mas" href="#"><img class="pull-right" src="'.url().'/img/ver-mas.png" alt=""></a>'
-			. '</span></div>';
-	$contenido[] = $html;
-endforeach;
-$html = '';
-for ($i=0; $i<count($contenido); $i+=3):
-	echo $i;
-	$html.=$contenido[$i];
-endfor;
-?>
-									<div id="columna" class="col-xs-12">
-										{{$html}}
-									</div>
-<?php
-$html = '';
-for ($i=1; $i<count($contenido); $i+=3):
-	$html.=$contenido[$i];
-endfor;
-?>
-									<div class="col-xs-12">
-										{{$html}}
-									</div>
-<?php
-$html = '';
-for ($i=2; $i<count($contenido); $i+=3):
-	$html.=$contenido[$i];
-endfor;
-?>
-									<div class="col-xs-12">
-										{{$html}}
-									</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12">
+						<p>
+							<img src="{{url()}}/img/galeria-titulo.png" alt="" class="img-responsive center-block">
+						</p>
+						<section id="galeria">
+							<div class="row">
+								<?php
+								$anchos = array('ancho-s', 'ancho-m', 'ancho-l');
+								$margenes = array('margen-s', 'margen-m', 'margen-l');
+								$contenido = array();
+								foreach ($participantes as $participante):
+									$ancho = array_rand($anchos);
+									$margen = array_rand($margenes);
+									$parrafo1 = substr($participante->mensaje, 0, 126);
+									$parrafo2 = substr($participante->mensaje, 126);
+									$html = '<div class="contenedor-foto center-block ' . $anchos[$ancho] . ' ' . $margenes[$margen] . '">';
+									$html.= '<img src="' . url() . '/uploads/final/' . $participante->imagen . '.' . $participante->extension . '" alt="" class="img-responsive center-block"><div class="clearfix"></div>'
+											. '<p>' . $parrafo1 . '<span id="elipsis-' . $participante->id . '" class="elipsis">...</span><span id="parrafo-' . $participante->id . '" class="parrafo hidden">' . $parrafo2 . '</span>' . '</p>'
+											. '<span><strong>Por: </strong>' . $participante->nombre
+											. '<a data-id="' . $participante->id . '" class="pull-right ver-mas" href="#"><img class="pull-right" src="' . url() . '/img/ver-mas.png" alt=""></a>'
+											. '</span></div>';
+									$contenido[] = $html;
+								endforeach;
+								$html = '';
+								for ($i = 0; $i < count($contenido); $i+=3):
+
+									$html.=$contenido[$i];
+								endfor;
+								?>
+								<div id="columna" class="col-xs-12">
+									{{$html}}
 								</div>
-							</section>
-						</div>
+								<?php
+								$html = '';
+								for ($i = 1; $i < count($contenido); $i+=3):
+									$html.=$contenido[$i];
+								endfor;
+								?>
+								<div class="col-xs-12">
+									{{$html}}
+								</div>
+								<?php
+								$html = '';
+								for ($i = 2; $i < count($contenido); $i+=3):
+									$html.=$contenido[$i];
+								endfor;
+								?>
+								<div class="col-xs-12">
+									{{$html}}
+								</div>
+							</div>
+						</section>
 					</div>
 				</div>
+			</div>
+		</div>
 
 
 		<div id="galeriamenu">
 			<div class="row">
 				<div class="col-xs-6 menu-mobile">
-					<a href="#"><img src="{{url()}}/img/home-menu-1.jpg" alt="" class="img-responsive center-block"></a>
-					<a href="#"><img src="{{url()}}/img/home-menu-2.jpg" alt="" class="img-responsive center-block activo"></a>
+					<a href="{{url()}}/" data-image="{{url()}}/img/home-menu-2.jpg" ><img src="{{url()}}/img/home-menu-1.jpg" alt="" class="img-responsive"></a>
 				</div>
 				<div class="col-xs-6 menu-mobile">
-					<a href="participa"><img src="{{url()}}/img/participa-menu-1.jpg" alt="" class="img-responsive center-block"></a>
-					<a href="participa"><img src="{{url()}}/img/participa-menu-2.jpg" alt="" class="img-responsive center-block activo"></a>
+					<a data-image="{{url()}}/img/participa-menu-2.jpg" href="{{url()}}/participa"><img src="{{url()}}/img/participa-menu-1.jpg" alt="" class="img-responsive"></a>
 				</div>
 				<div class="col-xs-6 menu-mobile">
-					<a href="reto"><img src="{{url()}}/img/reto-menu-1.jpg" alt="" class="img-responsive center-block"></a>
-					<a href="reto"><img src="{{url()}}/img/reto-menu-2.jpg" alt="" class="img-responsive center-block activo"></a>
+					<a data-image="{{url()}}/img/reto-menu-2.jpg" href="{{url()}}/reto"><img src="{{url()}}/img/reto-menu-1.jpg" alt="" class="img-responsive"></a>	
 				</div>
 				<div class="col-xs-6 menu-mobile">
-					<a href="galeria"><img src="{{url()}}/img/galeria-menu-1.jpg" alt="" class="img-responsive center-block"></a>
-					<a href="galeria"><img src="{{url()}}/img/galeria-menu-2.jpg" alt="" class="img-responsive center-block activo"></a>
+					<a data-image="{{url()}}/img/galeria-menu-2.jpg" href="#"><img src="{{url()}}/img/galeria-menu-1.jpg" alt="" class="img-responsive"></a>
 				</div>
 			</div>
 		</div>
@@ -183,14 +199,5 @@ endfor;
 				</div>
 			</div>
 		</footer>
-		<script>
-			$(document).ready(function () {
-				$('.col-xs-6 img').click(function () {
-					$('this').hide("fast", function () {
-						$('.activo').show('fast');
-					});
-				});
-			});
-		</script>
 	</body>
 </html>

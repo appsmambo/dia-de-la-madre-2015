@@ -139,20 +139,16 @@ window.fbAsyncInit = function () {
 			<div class="section home" id="section2">
 				<div class="row">
 					<div class="col-xs-6 menu-mobile">
-						<a href="/"><img src="{{url()}}/img/home-menu-1.jpg" alt="" class="img-responsive center-block"></a>
-						<a href="/"><img src="{{url()}}/img/home-menu-2.jpg" alt="" class="img-responsive center-block activo"></a>
+						<a href="{{url()}}/" data-image="{{url()}}/img/home-menu-2.jpg" ><img src="{{url()}}/img/home-menu-1.jpg" alt="" class="img-responsive"></a>
 					</div>
 					<div class="col-xs-6 menu-mobile">
-						<a href="participa"><img src="{{url()}}/img/participa-menu-1.jpg" alt="" class="img-responsive center-block"></a>
-						<a href="participa"><img src="{{url()}}/img/participa-menu-2.jpg" alt="" class="img-responsive center-block activo"></a>
+						<a data-image="{{url()}}/img/participa-menu-2.jpg" href="{{url()}}/participa"><img src="{{url()}}/img/participa-menu-1.jpg" alt="" class="img-responsive"></a>
 					</div>
 					<div class="col-xs-6 menu-mobile">
-						<a href="#"><img src="{{url()}}/img/reto-menu-1.jpg" alt="" class="img-responsive center-block"></a>
-						<a href="#"><img src="{{url()}}/img/reto-menu-2.jpg" alt="" class="img-responsive center-block activo"></a>
+						<a data-image="{{url()}}/img/reto-menu-2.jpg" href="#"><img src="{{url()}}/img/reto-menu-1.jpg" alt="" class="img-responsive"></a>	
 					</div>
 					<div class="col-xs-6 menu-mobile">
-						<a href="galeria"><img src="{{url()}}/img/galeria-menu-1.jpg" alt="" class="img-responsive center-block"></a>
-						<a href="galeria"><img src="{{url()}}/img/galeria-menu-2.jpg" alt="" class="img-responsive center-block activo"></a>
+						<a data-image="{{url()}}/img/galeria-menu-2.jpg" href="{{url()}}/galeria"><img src="{{url()}}/img/galeria-menu-1.jpg" alt="" class="img-responsive"></a>
 					</div>
 				</div>
 			</div>

@@ -258,7 +258,7 @@ footer ul li{
 .registro-formulario form input{
 	float:left;
 	width: 65%;
-	height:20px;
+	height:33px;
 	border: 0;
 	background:#ffffff;
 }
@@ -289,7 +289,7 @@ textarea{
 	margin-top:-20px;
 }
 #galeriacontent{
-	padding:100px;
+	padding:100px 0;
 }
 .close-mobile{
 	width:8%;
@@ -310,6 +310,7 @@ textarea{
 	left:0;
 	height: 100%;
 	width:100%;
+	display: none;
 }
 .gracias-mobile-content{
 	width:90%;
@@ -360,6 +361,41 @@ textarea{
 }
 .sociales-footer{
 	margin-top: 10px;
+}
+.contenedor-foto {
+	font-family: 'DINNextLTPro-Light';
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.contenedor-foto p {
+	background: #0154a0;
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 15px;
+	padding: 10px 14px;
+	letter-spacing: .5px;
+	margin: 0;
+}
+.contenedor-foto span {
+	color: #0154a0;
+	display: block;
+	height: 28px;
+	line-height: 32px;
+	margin-top: 4px;
+	width: 100%;
+}
+.contenedor-foto span.elipsis, .contenedor-foto span.parrafo{
+	color: #fff;
+	display: initial;
+	line-height: 18px;
+	margin-top: 4px;
+	width: auto;
+}
+label.error{
+	display:none !important;
+}
+input.error{
+	border:1px solid red !important;
 }
 @media only screen  
 and (orientation : landscape) { 
