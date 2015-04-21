@@ -185,7 +185,7 @@ window.fbAsyncInit = function () {
 				</div>
 			</div>
 		</div>
-		<footer>
+		<footer class="galeria">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="visible-xs">

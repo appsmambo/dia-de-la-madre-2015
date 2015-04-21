@@ -18,6 +18,7 @@
 		<link rel="stylesheet" href="{{url()}}/css/estilos.css">
 		<link rel="stylesheet" href="{{url()}}/css/componentes.css">
 		<link rel="stylesheet" href="{{url()}}/css/animaciones.css">
+		<link rel="stylesheet" href="{{url()}}/css/flexcrollstyles.css">
 		<link rel="stylesheet" href="{{url()}}/css/video-background.css">
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -57,6 +58,7 @@
 		<script src="{{url()}}/js/jquery.validate.min.js"></script>
 		<script src="{{url()}}/js/jquery.screwdefaultbuttonsV2.min.js"></script>
 		<script src="{{url()}}/js/jquery.video-background.js"></script>
+		<script src="{{url()}}/js/flexcroll.js"></script>
 		<script src="{{url()}}/js/funciones.js"></script>
 	</head>
 	<body>
@@ -192,7 +194,7 @@
 					</p>
 					<div class="row">
 						<div class="col-sm-10 col-sm-offset-1">
-							<section id="galeria">
+							<section id="galeria" class='flexcroll'>
 								<div class="row">
 <?php
 $anchos = array('ancho-s', 'ancho-m', 'ancho-l');

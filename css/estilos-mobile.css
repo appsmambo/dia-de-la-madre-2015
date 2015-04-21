@@ -272,7 +272,7 @@ textarea{
 	margin-top:4px;
 }
 #galeriacontent{
-	padding:100px 0;
+	padding:60px 0 0 0;
 }
 .close-mobile{
 	width:8%;
@@ -393,6 +393,12 @@ input.error{
 }
 .pie-movil.home img.saltar-mobile{
 	max-width: 20%;
+}
+footer.galeria{
+	position:inherit;
+}
+#galeriamenu{
+	margin-bottom: 12px;
 }
 @media only screen  
 and (orientation : landscape) { 
