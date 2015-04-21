@@ -110,6 +110,7 @@
 									<li><a href="#" class="goMenu" data-seccion="2" id="menu-participa">participa</a></li>
 									<li><a href="#" class="goMenu" data-seccion="3" id="menu-reto">el reto</a></li>
 									<li><a href="#" class="goMenu" data-seccion="4" id="menu-galeria">galería</a></li>
+									<!--li><a href="#" class="goMenu" data-seccion="0" id="menu-video">ver video</a></li-->
 								</ul>
 							</div>
 						</div>
@@ -315,14 +316,10 @@ endfor;
 						<span class="total"></span> <span class="orange">kg</span><br/>
 						<span class="white">de ayuda</span>
 					</div>
-					<a class="compartir" href="#">
-						<img src="{{url()}}/img/comparte.png" alt="compartir"/>
-					</a>
+					<img src="{{url()}}/img/comparte.png" alt="compartir"/>
 					<div class="sociales-footer">
-						<a href="#"><img src="{{url()}}/img/facebook-gracias.png" alt="facebook"/></a>
-						<a href="#"><img src="{{url()}}/img/twitter-gracias.png" alt="twitter"/></a>
-						<a href="#"><img src="{{url()}}/img/instagram-gracias.png" alt="instagram"/></a>
-						<a href="#"><img src="{{url()}}/img/youtube-gracias.png" alt="youtube"/></a>
+						<a class="compartir" href="#"><img src="{{url()}}/img/facebook-gracias.png" alt="facebook"/></a>
+						<a target="_blank" href="https://twitter.com/home?status=http://lasmejoresmadres.pe%20Participa%20en%20nuestro%20concurso%20y%20gana%20un%20Motorola%20Moto%20E%20para%20tu%20mam%C3%A1"><img src="{{url()}}/img/twitter-gracias.png" alt="twitter"/></a>
 					</div>
 				</div>
 			</div> 

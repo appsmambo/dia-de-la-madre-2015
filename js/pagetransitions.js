@@ -23,6 +23,23 @@ var PageTransitions = (function () {
 	function menu() {
 		api_fsvideo.videoBgPause();
 		$('.goMenu').removeClass("active");
+		/*if (current == 0) {
+			$('#flujo').val( $('#flujo').val() + '|verVideo');
+			//$('.go').fadeIn('fast');
+			//$('#menu-home').addClass("active")
+			
+			$('header, footer, .hashtag').fadeTo('fast', 0);
+			$('.logo-1').show("fast", function () {
+				$('.logo-2').hide("fast");
+				$('.navbar-nav').addClass("hidden");
+				$('.facebook, .twitter, .youtube, .instagram, header, footer').removeClass("active");
+				$('footer div, footer a').addClass("hidden");
+				$('.go').hide("fast");
+				api_fsvideo.videoBgRewind();
+				api_fsvideo.videoBgPlay();
+				nextPage(48, 0);
+			});
+		}*/
 		if (current == 1) {
 			$('#flujo').val( $('#flujo').val() + '|Home');
 			$('.go').fadeIn('fast');

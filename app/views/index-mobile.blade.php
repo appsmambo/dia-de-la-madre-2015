@@ -94,7 +94,9 @@ window.fbAsyncInit = function () {
 		</header>
 		<div id="fullpage">
 			<div class="section" id="section0">
-				intro
+				<video autoplay loop controls="false" id="myVideo">
+					<source src="{{url()}}/video/Las-Mejores-Madres-Entel.mp4" type="video/mp4">
+				</video>
 				<div class="pie-movil">
 					<div class="container-fluid">
 						<div class="row">
