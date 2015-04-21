@@ -98,7 +98,7 @@
 									<!--img src="{{url()}}/img/bar-toogle.png" /-->
 								</div>
 								<a class="navbar-brand logo-entel" href="#">
-									<img src="{{url()}}/img/logo-intro.png" class="img-responsive logo-1" alt="Entel">
+									<img src="{{url()}}/img/hashtag-intro.png" class="img-responsive logo-1" alt="">
 									<div class="logo-2">
 										<img src="{{url()}}/img/logo-entel.png" class="img-responsive" alt="Entel">
 									</div>
@@ -122,13 +122,7 @@
 			<div class="pt-page page-intro">
 				<div class="row contenido">
 					<div class="col-sm-offset-3 col-sm-6">
-						<div class="row">
-							<div class="col-sm-12">
-								<img src="{{url()}}/img/titulo-hashtag.png" alt="" class="img-responsive hashtag center-block">
-							</div>
-						</div>
-						<br><br>
-						<a class="saltar" href="#">
+						<a class="saltar" href="#" style="margin-top:65%">
 							<img src="{{url()}}/img/boton-saltar.png" alt="" class="img-responsive center-block ">
 						</a>
 					</div>
@@ -207,8 +201,14 @@ $contenido = array();
 foreach ($participantes as $participante):
 	$ancho = array_rand($anchos);
 	$margen = array_rand($margenes);
+	$parrafo1 = substr($participante->mensaje, 0, 126);
+	$parrafo2 = substr($participante->mensaje, 126);
 	$html = '<div class="contenedor-foto center-block '.$anchos[$ancho].' '.$margenes[$margen].'">';
-	$html.= '<img src="'.url().'/uploads/final/'.$participante->imagen.'.'.$participante->extension.'" alt="" class="img-responsive center-block"><div class="clearfix"></div><p>'.$participante->mensaje.'</p></div>';
+	$html.= '<img src="'.url().'/uploads/final/'.$participante->imagen.'.'.$participante->extension.'" alt="" class="img-responsive center-block"><div class="clearfix"></div>'
+			. '<p>'.$parrafo1.'<span id="elipsis-'.$participante->id.'" class="elipsis">...</span><span id="parrafo-'.$participante->id.'" class="parrafo hidden">'.$parrafo2.'</span>'.'</p>'
+			. '<span><strong>Por: </strong>'.$participante->nombre
+			. '<a data-id="'.$participante->id.'" class="pull-right ver-mas" href="#"><img class="pull-right" src="'.url().'/img/ver-mas.png" alt=""></a>'
+			. '</span></div>';
 	$contenido[] = $html;
 endforeach;
 $html = '';
@@ -218,7 +218,7 @@ for ($i=0; $i<count($contenido); $i+=3):
 endfor;
 ?>
 									<div id="columna" class="col-sm-4">
-										{{$html}}
+										{{$html}}<br><br>
 									</div>
 <?php
 $html = '';
@@ -227,7 +227,7 @@ for ($i=1; $i<count($contenido); $i+=3):
 endfor;
 ?>
 									<div class="col-sm-4">
-										{{$html}}
+										{{$html}}<br><br>
 									</div>
 <?php
 $html = '';
@@ -236,7 +236,7 @@ for ($i=2; $i<count($contenido); $i+=3):
 endfor;
 ?>
 									<div class="col-sm-4">
-										{{$html}}
+										{{$html}}<br><br>
 									</div>
 								</div>
 							</section>
