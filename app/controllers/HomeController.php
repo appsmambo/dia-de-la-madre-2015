@@ -111,7 +111,7 @@ class HomeController extends BaseController {
 				$respuesta = array('success' => 'ok', 'total' => $participante->count(), 'html' => $html);
 				return Response::json($respuesta, 200);
 			} else {
-				$respuesta = array('success' => 'error', 'messages' => 'Error, no subió archivo.');
+				$this->grabarError($sessionId, '', 'Error, no subió archivo.');
 				$respuesta = array('success' => 'error', 'messages' => 'Error, no subió archivo.');
 				return Response::json($respuesta, 200);
 			}

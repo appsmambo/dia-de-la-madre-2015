@@ -118,16 +118,16 @@ window.fbAsyncInit = function () {
 			<div class="section home" id="section1">
 				<div class="row">
 					<div class="col-xs-6 menu-mobile">
-						<a href="{{url()}}/" data-image="{{url()}}/img/home-menu-2.jpg" ><img src="{{url()}}/img/home-menu-1.jpg" alt="" class="img-responsive"></a>
+						<a href="{{url()}}/" data-image="{{url()}}/img/home-menu-2.jpg" ><img src="{{url()}}/img/home-menu-1.jpg" alt="" class="img-responsive center-block"></a>
 					</div>
 					<div class="col-xs-6 menu-mobile">
-						<a data-image="{{url()}}/img/participa-menu-2.jpg" href="#"><img src="{{url()}}/img/participa-menu-1.jpg" alt="" class="img-responsive"></a>
+						<a data-image="{{url()}}/img/participa-menu-2.jpg" href="#"><img src="{{url()}}/img/participa-menu-1.jpg" alt="" class="img-responsive center-block"></a>
 					</div>
 					<div class="col-xs-6 menu-mobile">
-						<a data-image="{{url()}}/img/reto-menu-2.jpg" href="{{url()}}/reto"><img src="{{url()}}/img/reto-menu-1.jpg" alt="" class="img-responsive"></a>	
+						<a data-image="{{url()}}/img/reto-menu-2.jpg" href="{{url()}}/reto"><img src="{{url()}}/img/reto-menu-1.jpg" alt="" class="img-responsive center-block"></a>	
 					</div>
 					<div class="col-xs-6 menu-mobile">
-						<a data-image="{{url()}}/img/galeria-menu-2.jpg" href="{{url()}}/galeria"><img src="{{url()}}/img/galeria-menu-1.jpg" alt="" class="img-responsive"></a>
+						<a data-image="{{url()}}/img/galeria-menu-2.jpg" href="{{url()}}/galeria"><img src="{{url()}}/img/galeria-menu-1.jpg" alt="" class="img-responsive center-block"></a>
 					</div>
 				</div>
 			</div>
@@ -136,7 +136,7 @@ window.fbAsyncInit = function () {
 			<div class="close-mobile">
 				<img src="{{url()}}/img/btn-close-formulario.jpg" alt="" class="img-responsive">
 			</div>
-			<div class="registro-formulario">
+			<div class="formulario registro-formulario">
 				<p class="parrafo-1">
 					<span>Comparte una foto en la que reflejes un momento con tu mamá.</span>
 					La foto puede ser actual o de tu infancia, aparecer tu mamá o no, pero siempre debe
@@ -146,6 +146,8 @@ window.fbAsyncInit = function () {
 				</p>
 				<form action="#" id="registro" name="registro">
 					{{ Form::token() }}
+					<input type="hidden" name="video" id="video" value="mobile">
+					<input type="hidden" name="flujo" id="flujo" val="mobile">
 					<input id="foto" accept=".jpg,.png" name="foto" type="file" style="opacity:0;height:1px">
 					<div class="clearfix"></div>
 					<p class="clearfix">
@@ -171,6 +173,7 @@ window.fbAsyncInit = function () {
 					<div class="elige-tu-foto">
 						<a href="#" id="archivo">
 							<img id="previo" src="{{url()}}/img/sube-tu-foto-mobile.png" class="img-responsive center-block" alt=""/>
+							<p class="archivo text-center"></p>
 						</a>
 					</div>
 					<p class="caja-texto">

@@ -1,12 +1,3 @@
-function readURL(input) {
-	if (input.files && input.files[0]) {
-		var reader = new FileReader();
-		reader.onload = function (e) {
-			$('#previo').attr('src', e.target.result);
-		}
-		reader.readAsDataURL(input.files[0]);
-	}
-}
 function desbloquear() {
 	$('div.registro-formulario').unblock()
 }
@@ -63,7 +54,6 @@ $(document).ready(function () {
 						setTimeout('desbloquear()', 5000);
 						return false;
 					} else {
-						$('#flujo').val('Registro');
 						$('#nombre, #dni, #email, #celular, #mensaje').val('');
 						$("#newsletter").screwDefaultButtons("uncheck");
 						$('.total').html(data.total);
@@ -85,11 +75,8 @@ $(document).ready(function () {
 	$('#archivo').click(function() {
 		$('#foto').trigger('click');
 	});
-	$('#dni').keyup(function () {
-		this.value = this.value.replace(/[^0-9\.]/g, '');
-	});
 	$('#foto').change(function(){
-		readURL(this);
+		$('p.archivo').html(this.files[0].name);
 	});
 	$('.compartir').click(function () {
 		ga('send', 'event', 'compartir', 'click');
