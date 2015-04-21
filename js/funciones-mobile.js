@@ -13,4 +13,9 @@ $(document).ready(function () {
 			$('.activo').show('fast');
 		});
 	});
+	$('input:checkbox').screwDefaultButtons({
+		image: 'url("img/checkbox.jpg")',
+		width: 35,
+		height: 31
+	});
 });

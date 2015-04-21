@@ -183,6 +183,74 @@ footer ul li{
 	font-style: normal;
 	font-family: 'DINNextLTPro-Light';
 }
+.content-registro{
+	height:100%;
+	width:100%;
+	overflow: auto;
+	background: #e9e6e6;
+	color: #818181;
+	font-family: 'DINNextLTPro-Light';
+	font-size:13px;
+	z-index: 3;
+	position: absolute;
+	top:0;
+	left:0;
+	display: none;
+}
+.parrafo-1{
+	margin: 0;
+	padding: 0;
+}
+.parrafo-1 span{
+	font-family: 'DINNextLTPro-Bold';
+	font-style: italic;
+	display: block;
+	text-align: center;
+	font-size:20px;
+	line-height: 22px;
+	margin-bottom: 10px;
+}
+.registro-formulario{
+	width:82%;
+	margin:10px auto 0 auto;
+}
+.registro-formulario form{
+	margin:12px 0;
+}
+.registro-formulario form p{
+	width: 100%;
+}
+.registro-formulario form p{
+	margin:0 0 7px 0;
+}
+.registro-formulario form p.terminos-condiciones{
+	font-size:12px;
+}
+.registro-formulario form p.terminos-condiciones label{
+	width:80%;
+	text-align: right;
+}
+.registro-formulario form p.terminos-condiciones input{
+	width:20%;
+}
+.registro-formulario form label{
+	float:left;
+	width: 35%;
+	font-size: 15px;
+}
+.registro-formulario form label span{
+	color:#ff6702 ;
+}
+.registro-formulario form input{
+	float:left;
+	width: 65%;
+	height:20px;
+	border: 0;
+	background:#ffffff;
+}
+.styledCheckbox{
+	float:right;
+}
 @media only screen  
 and (orientation : landscape) { 
 	#fullpage img{

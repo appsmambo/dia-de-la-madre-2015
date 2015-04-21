@@ -135,6 +135,56 @@ window.fbAsyncInit = function () {
 				</div>
 			</div>
 		</div>
+		<div class="content-registro">
+			<div class="registro-formulario">
+				<p class="parrafo-1">
+					<span>Comparte una foto en la que reflejes un momento con tu mamá.</span>
+					La foto puede ser actual o de tu infancia, aparecer tu mamá o no, pero siempre debe
+					recordarte a algún momento con ella. Recuerdos, anécdotas, frases suyas que 
+					te quedaron grabadas para siempre, etc. Además, explícanos en pocas palabras 
+					el porqué de la imagen, la historia que hay detrás.
+				</p>
+				<form action="#" id="registro" name="registro">
+					{{ Form::token() }}
+					<input id="foto" accept=".jpg,.png" name="foto" type="file" style="opacity:0;height:1px">
+					<div class="clearfix"></div>
+					<p class="clearfix">
+						<label>Nombre<span>:</span></label>
+						<input type="text" name="nombre" id="nombre" maxlength="100">
+					</p>
+					<p  class="clearfix">
+						<label>Dni<span>:</span></label>
+						<input type="tel" name="dni" id="dni" maxlength="8">
+					</p>
+					<p  class="clearfix">
+						<label>e-mail<span>:</span></label>
+						<input type="email" name="email" id="email" maxlength="100">
+					</p>
+					<p  class="clearfix">
+						<label>Nº celular<span>:</span></label>
+						<input type="text" name="celular" id="celular" maxlength="20">
+					</p>
+					<p  class="clearfix terminos-condiciones">
+						<label >Acepto los Términos y Condiciones:</label>
+						<input type="checkbox" name="newsletter" id="newsletter" value="1"/>
+					</p>
+					<div class="elige-tu-foto">
+						<a href="#" id="archivo">
+							<img id="previo" src="{{url()}}/img/fondo-preview.jpg" alt=""/>
+						</a>
+					</div>
+					<p class="caja-texto">
+						<textarea name="mensaje" id="mensaje" placeholder="Coloca aquí tu texto (máx. 500 caracteres)"></textarea>
+					</p>
+					<p class="btn-enviar-text">
+						<input type="image" src="img/btn-enviar.png" class="btn-enviar"/>
+					</p>
+				</form>
+				<p class="parrafo-2">
+					<span class="asterisco">*</span> Las fotos que más nos gusten serán compartidas en nuestras redes sociales. <span>¡Suerte!</span> ;)
+				</p>
+			</div>
+		</div>
 		<footer>
 			<div class="container-fluid">
 				<div class="row">
