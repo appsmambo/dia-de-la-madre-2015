@@ -28,7 +28,6 @@ $(document).ready(function () {
 	});
 	$('body').on('click', '.ver-mas', function() {
 		var id;
-		console.log('asdasd');
 		id = $(this).data('id');
 		$('#elipsis-'+id).fadeOut();
 		$('#parrafo-'+id).removeClass('hidden');

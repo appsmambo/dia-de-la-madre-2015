@@ -110,7 +110,7 @@
 									<li><a href="#" class="goMenu" data-seccion="2" id="menu-participa">participa</a></li>
 									<li><a href="#" class="goMenu" data-seccion="3" id="menu-reto">el reto</a></li>
 									<li><a href="#" class="goMenu" data-seccion="4" id="menu-galeria">galería</a></li>
-									<!--li><a href="#" class="goMenu" data-seccion="0" id="menu-video">ver video</a></li-->
+									<li><a href="#" class="goMenu" data-seccion="0" id="menu-video">ver video</a></li>
 								</ul>
 							</div>
 						</div>
