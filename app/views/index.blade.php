@@ -253,8 +253,9 @@ endfor;
 			<a class="btn-close">
 				<img src="{{url()}}/img/btn-close-formulario.jpg" alt="">
 			</a>
-			<div class="container-formulario contenido">
+			<div class="container-formulario">
 				<p class="parrafo-1">
+					<br><br>
 					<span>Comparte una foto en la que reflejes un momento con tu mamá.</span> <br/>
 					La foto puede ser actual o de tu infancia, aparecer tu mamá o no, pero siempre debe
 					recordarte a algún momento con ella. Recuerdos, anécdotas, frases suyas que 
