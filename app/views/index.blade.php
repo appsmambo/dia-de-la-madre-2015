@@ -98,7 +98,7 @@
 									<!--img src="{{url()}}/img/bar-toogle.png" /-->
 								</div>
 								<a class="navbar-brand logo-entel" href="#">
-									<img src="{{url()}}/img/logo-intro.png" class="img-responsive logo-1" alt="Entel">
+									<img src="{{url()}}/img/hashtag-intro.png" class="img-responsive logo-1" alt="">
 									<div class="logo-2">
 										<img src="{{url()}}/img/logo-entel.png" class="img-responsive" alt="Entel">
 									</div>
@@ -122,13 +122,7 @@
 			<div class="pt-page page-intro">
 				<div class="row contenido">
 					<div class="col-sm-offset-3 col-sm-6">
-						<div class="row">
-							<div class="col-sm-12">
-								<img src="{{url()}}/img/titulo-hashtag.png" alt="" class="img-responsive hashtag center-block">
-							</div>
-						</div>
-						<br><br>
-						<a class="saltar" href="#">
+						<a class="saltar" href="#" style="margin-top:65%">
 							<img src="{{url()}}/img/boton-saltar.png" alt="" class="img-responsive center-block ">
 						</a>
 					</div>

@@ -12,7 +12,7 @@ function desbloquear() {
 }
 $(document).ready(function () {
 	$('header, footer, .hashtag, .saltar').fadeTo('fast', 0);
-	$(".page-intro")
+	$(".page-intro, .intro.saltar")
 		.mouseenter(function() {
 			$('header, footer, .hashtag, .saltar').fadeTo('fast', 1);
 		})

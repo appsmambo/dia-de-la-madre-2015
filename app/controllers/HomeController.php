@@ -9,7 +9,7 @@ class HomeController extends BaseController {
 		if (Agent::isMobile())
 			return View::make('index-mobile')->with('total', ($total*2))->with('participantes', $participantes);
 		else
-			return View::make('index')->with('total', $total)->with('participantes', $participantes);
+			return View::make('index')->with('total', ($total*2))->with('participantes', $participantes);
 	}
 	
 	public function participa()
