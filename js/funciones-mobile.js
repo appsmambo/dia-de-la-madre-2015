@@ -1,11 +1,19 @@
 $(document).ready(function () {
 	$('#fullpage').fullpage({
-		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+		anchors: [],
+		animateAnchor: false,
 		menu: '#menu',
 		scrollingSpeed: 1000,
 		afterRender: function(){
 			//playing the video
 			$('video').get(0).play();
+		},
+		afterLoad: function(anchorLink, index){
+			if (index !== 1) {
+				$('video').get(0).pause();
+			} else {
+				$('video').get(0).play();
+			}
 		}
 	});
 	$('.col-xs-6 img').click(function() {
