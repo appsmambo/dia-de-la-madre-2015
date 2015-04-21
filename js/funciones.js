@@ -12,7 +12,7 @@ function desbloquear() {
 }
 $(document).ready(function () {
 	$('header, footer, .hashtag, .saltar').fadeTo('fast', 0);
-	$(".page-intro")
+	$(".page-intro, .intro.saltar")
 		.mouseenter(function() {
 			$('header, footer, .hashtag, .saltar').fadeTo('fast', 1);
 		})
@@ -25,6 +25,14 @@ $(document).ready(function () {
 	});
 	$('#foto').change(function(){
 		readURL(this);
+	});
+	$('body').on('click', '.ver-mas', function() {
+		var id;
+		console.log('asdasd');
+		id = $(this).data('id');
+		$('#elipsis-'+id).fadeOut();
+		$('#parrafo-'+id).removeClass('hidden');
+		$(this).fadeOut();
 	});
 	$('input:checkbox').screwDefaultButtons({
 		image: 'url("img/checkbox.jpg")',
