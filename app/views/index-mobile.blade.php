@@ -87,7 +87,7 @@ window.fbAsyncInit = function () {
 			<div class="container-fluid">
 				<div class="container-fluid">
 					<img src="{{url()}}/img/header-mobile.png" alt="" class="img-responsive hashtag pull-left">
-					<a href="#4thpage"><img src="{{url()}}/img/bar-toogle.png" alt="" class="img-responsive hashtag pull-right"></a>
+					<a href="#" style="display: block;" class="menu-toogle"><img src="{{url()}}/img/bar-toogle.png" alt="" class="img-responsive hashtag pull-right"></a>
 				</div>
 			</div>
 		</header>
@@ -100,7 +100,7 @@ window.fbAsyncInit = function () {
 					<div class="container-fluid">
 						<div class="row">
 							<div class="col-xs-12">
-								<a href="#secondPage"><img src="{{url()}}/img/boton-saltar.png" alt="" class="img-responsive center-block saltar-mobile"></a>
+								<a href="#secondPage" style="display:block;"><img src="{{url()}}/img/boton-saltar.png" alt="" class="img-responsive center-block saltar-mobile"></a>
 							</div>
 						</div>
 					</div>
@@ -143,23 +143,24 @@ window.fbAsyncInit = function () {
 					</div>
 				</div>
 			</div>
-			<div class="section home" id="section3">
-				<div class="row">
-					<div class="col-xs-6 menu-mobile">
-						<a href="#" data-image="{{url()}}/img/home-menu-2.jpg" ><img src="{{url()}}/img/home-menu-1.jpg" alt="" class="img-responsive"></a>
-					</div>
-					<div class="col-xs-6 menu-mobile">
-						<a data-image="{{url()}}/img/participa-menu-2.jpg" href="{{url()}}/participa"><img src="{{url()}}/img/participa-menu-1.jpg" alt="" class="img-responsive"></a>
-					</div>
-					<div class="col-xs-6 menu-mobile">
-						<a data-image="{{url()}}/img/reto-menu-2.jpg" href="{{url()}}/reto"><img src="{{url()}}/img/reto-menu-1.jpg" alt="" class="img-responsive"></a>	
-					</div>
-					<div class="col-xs-6 menu-mobile">
-						<a data-image="{{url()}}/img/galeria-menu-2.jpg" href="{{url()}}/galeria"><img src="{{url()}}/img/galeria-menu-1.jpg" alt="" class="img-responsive"></a>
-					</div>
+
+
+		</div>
+		<div class="menu-content-mobile">
+			<div class="row">
+				<div class="col-xs-6 menu-mobile">
+					<a href="#" data-image="{{url()}}/img/home-menu-2.jpg" ><img src="{{url()}}/img/home-menu-1.jpg" alt="" class="img-responsive"></a>
+				</div>
+				<div class="col-xs-6 menu-mobile">
+					<a data-image="{{url()}}/img/participa-menu-2.jpg" href="{{url()}}/participa"><img src="{{url()}}/img/participa-menu-1.jpg" alt="" class="img-responsive"></a>
+				</div>
+				<div class="col-xs-6 menu-mobile">
+					<a data-image="{{url()}}/img/reto-menu-2.jpg" href="{{url()}}/reto"><img src="{{url()}}/img/reto-menu-1.jpg" alt="" class="img-responsive"></a>	
+				</div>
+				<div class="col-xs-6 menu-mobile">
+					<a data-image="{{url()}}/img/galeria-menu-2.jpg" href="{{url()}}/galeria"><img src="{{url()}}/img/galeria-menu-1.jpg" alt="" class="img-responsive"></a>
 				</div>
 			</div>
-
 		</div>
 		<footer class="home">
 			<div class="container-fluid">
@@ -190,7 +191,7 @@ window.fbAsyncInit = function () {
 						if (index !== 1) {
 							$('video').get(0).pause();
 							$('footer, header').css("z-index", "2");
-							
+
 						} else {
 							$('video').get(0).play();
 						}
@@ -202,6 +203,9 @@ window.fbAsyncInit = function () {
 					$("img", this).prop("src", imagen);
 					setTimeout(location.href(href), 500);
 					return false;
+				});
+				$(".menu-toogle").click(function () {
+					$(".menu-content-mobile").fadeToggle("fast");
 				});
 			});
 		</script>

@@ -400,6 +400,18 @@ footer.galeria{
 #galeriamenu{
 	margin-bottom: 12px;
 }
+.menu-content-mobile{
+	height: 100%;
+	width:100%;
+	position: absolute;
+	top:50px;
+	left:0;
+	background:#fff;
+	display: none;
+}
+.menu-content-mobile .content-a{
+	background: #ffffff;
+}
 @media only screen  
 and (orientation : landscape) { 
 	#fullpage img, #galeriamenu img{
