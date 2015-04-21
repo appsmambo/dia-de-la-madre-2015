@@ -21,7 +21,7 @@ $(document).ready(function () {
 			mensaje: "required"
 		}
 	});
-	$("#registro").submit( function(e) {
+	$("#registro").submit(function (e) {
 		if ($("#registro").valid()) {
 			$.ajax({
 				url: urlBase + '/registro',
@@ -56,31 +56,26 @@ $(document).ready(function () {
 						$("#newsletter").screwDefaultButtons("uncheck");
 						$('.total').html(data.total);
 						$('#columna').prepend(data.html);
-						$('.formulario').fadeTo('fast', 0, function() {
-							$('.gracias').animate({
-								right: "0"
-							}, 500, function() {
-								// Animation complete.
-								ga('send', 'event', 'sube tu foto', 'exito');
-							});
-						});
+						$('.content-gracias').fadeIn("fast");
+
 					}
 				}
 			});
 		}
 		e.preventDefault();
 	});
-	$('.compartir').click(function() {
+	$('.compartir').click(function () {
 		ga('send', 'event', 'compartir', 'click');
 		FB.ui({
 			method: 'share',
 			href: urlBase,
-		}, function(response){});
+		}, function (response) {
+		});
 	});
-	$(".btn-sube-foto").click(function(){
+	$(".btn-sube-foto").click(function () {
 		$(".gracias-registro").fadeIn("fast");
 	});
-	$(".close-mobile").click(function(){
+	$(".close-mobile").click(function () {
 		$(".gracias-registro").fadeOut("fast");
 	});
 });
