@@ -397,6 +397,13 @@ label.error{
 input.error{
 	border:1px solid red !important;
 }
+.blockUI.blockMsg.blockElement{
+	width:90% !important;
+	left:5% !important;
+}
+.blockUI.blockMsg.blockElement h1{
+	font-size: 24px;
+}
 @media only screen  
 and (orientation : landscape) { 
 	#fullpage img, #galeriamenu img{
