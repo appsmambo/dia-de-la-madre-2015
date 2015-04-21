@@ -37,7 +37,9 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
+strong {
+	font-family: 'DINNextLTPro-Bold';
+}
 header, footer{
 	position:fixed;
 	height:50px;

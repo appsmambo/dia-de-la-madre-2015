@@ -52,6 +52,9 @@ body {
 	font-family: 'DINNextLTPro-Medium';
 	overflow:hidden
 }
+strong {
+	font-family: 'DINNextLTPro-Bold';
+}
 a {
 	display:block;
 	text-decoration:none
@@ -369,12 +372,14 @@ input.error{
 	letter-spacing:.5px;
 	margin:0
 }
+.contenedor-foto .row {
+	margin-top:4px
+}
 .contenedor-foto span {
 	color:#0154a0;
 	display:block;
 	height:28px;
 	line-height:32px;
-	margin-top:4px;
 	width:100%
 }
 .contenedor-foto span.elipsis,

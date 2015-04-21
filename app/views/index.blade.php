@@ -206,9 +206,11 @@ foreach ($participantes as $participante):
 	$html = '<div class="contenedor-foto center-block '.$anchos[$ancho].' '.$margenes[$margen].'">';
 	$html.= '<img src="'.url().'/uploads/final/'.$participante->imagen.'.'.$participante->extension.'" alt="" class="img-responsive center-block"><div class="clearfix"></div>'
 			. '<p>'.$parrafo1.'<span id="elipsis-'.$participante->id.'" class="elipsis">...</span><span id="parrafo-'.$participante->id.'" class="parrafo hidden">'.$parrafo2.'</span>'.'</p>'
-			. '<span><strong>Por: </strong>'.$participante->nombre
+			. '<div class="row"><div class="col-sm-7">'
+			. '<span><strong>Por: </strong>'.$participante->nombre.'</span>'
+			. '</div><div class="col-sm-5">'
 			. '<a data-id="'.$participante->id.'" class="pull-right ver-mas" href="#"><img class="pull-right" src="'.url().'/img/ver-mas.png" alt=""></a>'
-			. '</span></div>';
+			. '</div></div></div>';
 	$contenido[] = $html;
 endforeach;
 $html = '';
