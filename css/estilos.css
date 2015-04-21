@@ -415,7 +415,7 @@ input.error{
 	height:360px
 }
 a.saltar {
-	margin-top:72%
+	margin-top:85%
 }
 .btn-close{
 	cursor:pointer;
@@ -552,21 +552,21 @@ a.saltar {
 }
 @media screen and (min-height: 780px) {
 	#galeria {
-		max-height:460px;
+		height:460px;
 	}
 }
 @media screen and (min-height: 880px) {
 	#galeria {
-		max-height:560px;
+		height:560px;
 	}
 }
 @media screen and (min-height: 980px) {
 	#galeria {
-		max-height:660px;
+		height:660px;
 	}
 }
 @media screen and (min-height: 1080px) {
 	#galeria {
-		max-height:760px;
+		height:760px;
 	}
 }
