@@ -122,7 +122,7 @@
 			<div class="pt-page page-intro">
 				<div class="row contenido">
 					<div class="col-sm-offset-3 col-sm-6">
-						<a class="saltar" href="#" style="margin-top:65%">
+						<a class="saltar" href="#">
 							<img src="{{url()}}/img/boton-saltar.png" alt="" class="img-responsive center-block ">
 						</a>
 					</div>
@@ -133,7 +133,7 @@
 					<div class="row">
 						<div class="col-sm-8 col-sm-offset-2">
 							<img src="{{url()}}/img/titulo-hashtag.png" alt="" class="img-responsive center-block "><br><br>
-							<img src="{{url()}}/img/parrafo-home-2.png" alt="" class="img-responsive center-block "><br>
+							<a href="http://www.entel.pe/producto/nuevo-moto-e-lte/?modo_compra=27 " target="_blank"><img src="{{url()}}/img/parrafo-home-2.png" alt="" class="img-responsive center-block "></a><br>
 							<a href="#" class="goMenu" data-seccion="2">
 								<img src="{{url()}}/img/parrafo-home-3.png" alt="" class="img-responsive center-block">
 							</a>

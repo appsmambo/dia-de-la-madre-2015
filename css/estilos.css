@@ -414,7 +414,10 @@ input.error{
 #galeria {
 	max-height:360px;
 	overflow-x:hidden;
-	overflow-y:scroll
+	overflow-y:auto!important
+}
+a.saltar {
+	margin-top:72%
 }
 .btn-close{
 	cursor:pointer;
