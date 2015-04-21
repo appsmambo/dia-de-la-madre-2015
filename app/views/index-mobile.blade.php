@@ -85,15 +85,14 @@ window.fbAsyncInit = function () {
 			ga('send', 'pageview');
 		</script>
 		<header class="home">
+			<div class="container-fluid">
 				<div class="container-fluid">
-					<div class="container-fluid">
-						<img src="{{url()}}/img/header-mobile.png" alt="" class="img-responsive hashtag pull-left">
-						<a href="#4thpage"><img src="{{url()}}/img/bar-toogle.png" alt="" class="img-responsive hashtag pull-right"></a>
-					</div>
+					<img src="{{url()}}/img/header-mobile.png" alt="" class="img-responsive hashtag pull-left">
+					<a href="#4thpage"><img src="{{url()}}/img/bar-toogle.png" alt="" class="img-responsive hashtag pull-right"></a>
 				</div>
-			</header>
+			</div>
+		</header>
 		<div id="fullpage">
-			
 			<div class="section" id="section0">
 				<video autoplay loop controls="false" id="myVideo">
 					<source src="{{url()}}/video/Las-Mejores-Madres-Entel.mp4" type="video/mp4">
@@ -165,23 +164,23 @@ window.fbAsyncInit = function () {
 					</div>
 				</div>
 			</div>
-			
+
 		</div>
 		<footer class="home">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="visible-xs">
-							<ul class="clearfix">
-								<li><a href="https://www.facebook.com/EntelPeru" target="_blank" ><img src="img/facebook-mobile.png" alt="" /></a></li>
-								<li><a href="https://twitter.com/EntelPeru" target="_blank" ><img src="img/twitter-mobile.png" alt="" /></a></li>
-								<li><a href="https://instagram.com/entel_peru/" target="_blank" ><img src="img/instagram-mobile.png" alt="" /></a></li>
-								<li><a href="https://www.youtube.com/user/PeruEntel" target="_blank" ><img src="img/youtube-mobile.png" alt="" /></a></li>
-							</ul>
-							<a href="{{url()}}/uploads/Bases-Concurso-Dia-de-la-madre.pdf" target="_blank" ><img src="img/btn-terminos-mobile.png" alt="" class="center-block"/></a>
-						</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="visible-xs">
+						<ul class="clearfix">
+							<li><a href="https://www.facebook.com/EntelPeru" target="_blank" ><img src="img/facebook-mobile.png" alt="" /></a></li>
+							<li><a href="https://twitter.com/EntelPeru" target="_blank" ><img src="img/twitter-mobile.png" alt="" /></a></li>
+							<li><a href="https://instagram.com/entel_peru/" target="_blank" ><img src="img/instagram-mobile.png" alt="" /></a></li>
+							<li><a href="https://www.youtube.com/user/PeruEntel" target="_blank" ><img src="img/youtube-mobile.png" alt="" /></a></li>
+						</ul>
+						<a href="{{url()}}/uploads/Bases-Concurso-Dia-de-la-madre.pdf" target="_blank" ><img src="img/btn-terminos-mobile.png" alt="" class="center-block"/></a>
 					</div>
 				</div>
-			</footer>
+			</div>
+		</footer>
 
 	</body>
 </html>

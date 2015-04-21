@@ -72,6 +72,9 @@ header.home, footer.home{
 footer{
 	padding:6px;
 }
+footer.home{
+	z-index: -1;
+}
 header{
 	top:0;
 }
