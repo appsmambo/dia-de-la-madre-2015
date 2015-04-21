@@ -404,7 +404,7 @@ footer.galeria{
 	height: 100%;
 	width:100%;
 	position: absolute;
-	top:50px;
+	top:0;
 	left:0;
 	background:#fff;
 	display: none;
@@ -414,7 +414,7 @@ footer.galeria{
 }
 @media only screen  
 and (orientation : landscape) { 
-	#fullpage img, #galeriamenu img{
+	#fullpage img, .menu-content-mobile img{
 		max-width:40%;
 	}
 	.pie-movil{
