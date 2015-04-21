@@ -96,7 +96,7 @@ window.fbAsyncInit = function () {
 				<video autoplay loop controls="false" id="myVideo">
 					<source src="{{url()}}/video/Las-Mejores-Madres-Entel.mp4" type="video/mp4">
 				</video>
-				<div class="pie-movil">
+				<div class="pie-movil home">
 					<div class="container-fluid">
 						<div class="row">
 							<div class="col-xs-12">
@@ -190,6 +190,7 @@ window.fbAsyncInit = function () {
 						if (index !== 1) {
 							$('video').get(0).pause();
 							$('footer, header').css("z-index", "2");
+							
 						} else {
 							$('video').get(0).play();
 						}
