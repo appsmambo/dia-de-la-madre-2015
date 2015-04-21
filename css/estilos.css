@@ -544,3 +544,23 @@ input.error{
 .go{
 	display: none;
 }
+@media screen and (min-height: 780px) {
+	#galeria {
+		max-height:460px;
+	}
+}
+@media screen and (min-height: 880px) {
+	#galeria {
+		max-height:560px;
+	}
+}
+@media screen and (min-height: 980px) {
+	#galeria {
+		max-height:660px;
+	}
+}
+@media screen and (min-height: 1080px) {
+	#galeria {
+		max-height:760px;
+	}
+}
