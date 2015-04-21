@@ -438,16 +438,36 @@ input.error{
 	max-width:528px
 }
 .contenedor-foto{
-	background:#ff6702;
+	font-family:'DINNextLTPro-Light';
 	overflow:hidden
 }
 .contenedor-foto p {
+	background:#0154a0;
 	color:#ffffff;
-	font-family:'DINNextLTPro-Light';
 	font-size:15px;
-	line-height:15px;
+	line-height:18px;
 	padding:10px 14px;
+	letter-spacing:.5px;
 	margin:0
+}
+.contenedor-foto span {
+	color:#0154a0;
+	display:block;
+	height:28px;
+	line-height:32px;
+	margin-top:4px;
+	width:100%
+}
+.contenedor-foto span.elipsis,
+.contenedor-foto span.parrafo {
+	color:#fff;
+	display:initial;
+	line-height:18px;
+	margin-top:4px;
+	width:auto
+}
+.contenedor-foto a {
+	display:inline-block
 }
 .margen-s {
 	margin-top:25px
