@@ -79,6 +79,7 @@ window.fbAsyncInit = function () {
 					$('#elipsis-' + id).fadeOut();
 					$('#parrafo-' + id).removeClass('hidden');
 					$(this).fadeOut();
+					return false;
 				});
 			});
 		</script>

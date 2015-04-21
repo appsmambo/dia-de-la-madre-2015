@@ -105,10 +105,16 @@ class HomeController extends BaseController {
 
 				$participante->save();
 				
+				$parrafo1 = substr($participante->mensaje, 0, 126);
+				$parrafo2 = substr($participante->mensaje, 126);
 				$html = '<div class="contenedor-foto center-block ancho-l margen-l">'.
-						'<img src="'.url().'/uploads/final/'.$participante->imagen.'.'.$participante->extension.'" alt="" class="img-responsive center-block"><div class="clearfix"></div><p>'.$participante->mensaje.'</p></div>';
+						'<img src="'.url().'/uploads/final/'.$participante->imagen.'.'.$participante->extension.'" alt="" class="img-responsive center-block"><div class="clearfix"></div>'
+						. '<p>'.$parrafo1.'<span id="elipsis-'.$participante->id.'" class="elipsis">...</span><span id="parrafo-'.$participante->id.'" class="parrafo hidden">'.$parrafo2.'</span>'.'</p>'
+						. '<span><strong>Por: </strong>'.$participante->nombre
+						. '<a data-id="'.$participante->id.'" class="pull-right ver-mas" href="#"><img class="pull-right" src="'.url().'/img/ver-mas.png" alt=""></a>'
+						. '</span></div>';
 
-				$respuesta = array('success' => 'ok', 'total' => $participante->count(), 'html' => $html);
+				$respuesta = array('success' => 'ok', 'total' => ($participante->count()*2), 'html' => $html);
 				return Response::json($respuesta, 200);
 			} else {
 				$this->grabarError($sessionId, '', 'Error, no subió archivo.');
