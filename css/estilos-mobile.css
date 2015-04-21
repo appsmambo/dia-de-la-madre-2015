@@ -387,6 +387,13 @@ input.error{
 .blockUI.blockMsg.blockElement h1{
 	font-size: 24px;
 }
+.pie-movil.home{
+	bottom: 0;
+	height:47px;
+}
+.pie-movil.home img.saltar-mobile{
+	max-width: 20%;
+}
 @media only screen  
 and (orientation : landscape) { 
 	#fullpage img, #galeriamenu img{
