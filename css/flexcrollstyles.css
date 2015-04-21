@@ -34,12 +34,13 @@ is always a good idea, this way the scrollbars are visible until images load */
 .vscrollerbase {
 /* vscrollerbase is the div that holds the scrollbar (parent of vscrollerbar)
 this represents the whole background of the scrolltrack */
-width: 20px;
-background: #005580;
+width: 12px;
+background: #f1f1f1;
 }
 
 .vscrollerbar {
-width: 20px;
+width: 12px;
+background:#bcbcbc;
 /* it is advisable to use a background-color this element for times when there are problems
 loading images or when the user agent does not load them, but since we are using an alpha
 transparent scrollbar body and cap images, we cannot do this for this type of style.*/
@@ -72,7 +73,7 @@ be automatically be turned off by the script. The greater the padding, the furth
 the scrollbar stops away from both ends. This may be used, for example, to provide space
 for our arrow heads. It has to be in px.
 */
-padding: 15px;
+padding: 0px 0;
 }
 
 .vscrollerbarbeg {
