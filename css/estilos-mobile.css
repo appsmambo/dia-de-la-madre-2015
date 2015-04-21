@@ -157,7 +157,7 @@ footer ul li{
 }
 .kilos-reto p{
 	margin:0;
-	padding: 0;
+	padding:0 0 0 15px;
 	color:#ff6702;
 	font-size:24px;
 	font-family: 'DINNextLTPro-Medium';
