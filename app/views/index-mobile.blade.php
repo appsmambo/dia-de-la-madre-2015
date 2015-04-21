@@ -46,7 +46,6 @@ window.addEventListener('DOMContentLoaded', function () {
 		<script src="{{url()}}/js/jquery.blockUI.js"></script>
 		<script src="{{url()}}/js/jquery.validate.min.js"></script>
 		<script src="{{url()}}/js/jquery.fullPage.min.js"></script>
-		<script src="{{url()}}/js/funciones-mobile.js"></script>
 	</head>
 	<body>
 		<script>
@@ -147,20 +146,16 @@ window.fbAsyncInit = function () {
 			<div class="section home" id="section3">
 				<div class="row">
 					<div class="col-xs-6 menu-mobile">
-						<a href="#"><img src="{{url()}}/img/home-menu-1.jpg" alt="" class="img-responsive"></a>
-						<a href="#"><img src="{{url()}}/img/home-menu-2.jpg" alt="" class="img-responsive activo"></a>
+						<a href="#" data-image="{{url()}}/img/home-menu-2.jpg" ><img src="{{url()}}/img/home-menu-1.jpg" alt="" class="img-responsive"></a>
 					</div>
 					<div class="col-xs-6 menu-mobile">
-						<a href="participa"><img src="{{url()}}/img/participa-menu-1.jpg" alt="" class="img-responsive"></a>
-						<a href="participa"><img src="{{url()}}/img/participa-menu-2.jpg" alt="" class="img-responsive activo"></a>
+						<a data-image="{{url()}}/img/participa-menu-2.jpg" href="{{url()}}/participa"><img src="{{url()}}/img/participa-menu-1.jpg" alt="" class="img-responsive"></a>
 					</div>
 					<div class="col-xs-6 menu-mobile">
-						<a href="reto"><img src="{{url()}}/img/reto-menu-1.jpg" alt="" class="img-responsive"></a>
-						<a href="reto"><img src="{{url()}}/img/reto-menu-2.jpg" alt="" class="img-responsive activo"></a>
+						<a data-image="{{url()}}/img/reto-menu-2.jpg" href="{{url()}}/reto"><img src="{{url()}}/img/reto-menu-1.jpg" alt="" class="img-responsive"></a>	
 					</div>
 					<div class="col-xs-6 menu-mobile">
-						<a href="galeria"><img src="{{url()}}/img/galeria-menu-1.jpg" alt="" class="img-responsive"></a>
-						<a href="galeria"><img src="{{url()}}/img/galeria-menu-2.jpg" alt="" class="img-responsive activo"></a>
+						<a data-image="{{url()}}/img/galeria-menu-2.jpg" href="{{url()}}/galeria"><img src="{{url()}}/img/galeria-menu-1.jpg" alt="" class="img-responsive"></a>
 					</div>
 				</div>
 			</div>
@@ -181,6 +176,33 @@ window.fbAsyncInit = function () {
 				</div>
 			</div>
 		</footer>
-
+		<script>
+			$(document).ready(function () {
+				$('#fullpage').fullpage({
+					anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+					menu: '#menu',
+					scrollingSpeed: 1000,
+					afterRender: function () {
+						//playing the video
+						$('video').get(0).play();
+					},
+					afterLoad: function (anchorLink, index) {
+						if (index !== 1) {
+							$('video').get(0).pause();
+							$('footer, header').css("z-index", "2");
+						} else {
+							$('video').get(0).play();
+						}
+					}
+				});
+				$(".menu-mobile a").click(function () {
+					var imagen = $(this).data("image");
+					var href = $(this).prop("href");
+					$("img", this).prop("src", imagen);
+					setTimeout(location.href(href), 500);
+					return false;
+				});
+			});
+		</script>
 	</body>
 </html>
