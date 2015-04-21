@@ -58,14 +58,7 @@ $(document).ready(function () {
 						$("#newsletter").screwDefaultButtons("uncheck");
 						$('.total').html(data.total);
 						$('#columna').prepend(data.html);
-						$('.formulario').fadeTo('fast', 0, function() {
-							$('.gracias').animate({
-								right: "0"
-							}, 500, function() {
-								// Animation complete.
-								ga('send', 'event', 'sube tu foto', 'exito');
-							});
-						});
+						$('.content-gracias').fadeIn("fast");
 					}
 				}
 			});
