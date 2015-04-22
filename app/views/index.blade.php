@@ -1,5 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 7]>
+<html class="ie ie7" lang="es-ES"
+	xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:og="http://ogp.me/ns#" 
+	xmlns:fb="http://www.facebook.com/2008/fbml" >
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="es-ES"
+	xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:og="http://ogp.me/ns#" 
+	xmlns:fb="http://www.facebook.com/2008/fbml" >
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8) ]><!-->
+<html lang="es-ES"
+	xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:og="http://ogp.me/ns#" 
+	xmlns:fb="http://www.facebook.com/2008/fbml" >
+<!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +30,7 @@
 		<meta property="og:url" content="{{url()}}/" />
 		<meta property="og:image" content="{{url()}}/img/compartir.png" />
 		<meta property="og:site_name" content="Gana con Ripley y Adidas" />
-		<meta property="og:description" content="Ayudar tiene premio. Participa en nuestro concurso y gana un Motorola Moto E para tu mamá, y por tu imagen compartida estarás ayudando con un kilo de alimentos para los niños de aldeas infantiles." />
+		<meta property="og:description" content="Ayudar tiene premio. Participa en nuestro concurso y gana un Motorola Nuevo Moto E para tu mamá, y por tu imagen compartida estarás ayudando con dos kilos de alimentos para los niños de aldeas infantiles." />
 		<link rel="stylesheet" href="{{url()}}/css/bootstrap.min.css">
 		<link rel="stylesheet" href="{{url()}}/css/estilos.css">
 		<link rel="stylesheet" href="{{url()}}/css/componentes.css">
