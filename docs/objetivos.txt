@@ -1,3 +1,15 @@
+Pendientes:
+* Objetivos
+* galeria y titulo
+* galeria y leer mas
+* galeria y scroll
+* intro, que al detener el mouse se oculte los elementos
+* fixear la transicion en el formulario
+
+
+RESPONSIVE
+
+
 Objetivos: 
 
 1. Poder contabilizar las veces que se ve cada página, incluso la que se abre para subir la foto.

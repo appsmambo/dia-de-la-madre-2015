@@ -5,10 +5,33 @@ class HomeController extends BaseController {
 	public function index()
 	{
 		$total = Participante::count();
-		$participantes = Participante::orderBy('created_at', 'desc')->get();
-		return View::make('index')->with('total', $total)->with('participantes', $participantes);
+		$participantes = Participante::where('estado', 1)->orderBy('created_at', 'desc')->get();
+		if (Agent::isMobile())
+			return View::make('index-mobile')->with('total', ($total*2))->with('participantes', $participantes);
+		else
+			return View::make('index')->with('total', ($total*2))->with('participantes', $participantes);
 	}
-
+	
+	public function participa()
+	{
+		$flag_FB = '0';
+		$ua = strtolower($_SERVER['HTTP_USER_AGENT']);
+		if (stripos($ua, 'fb_iab') !== false) {
+			$flag_FB = '1';
+		}
+		return View::make('participa-mobile')->with('flag_FB', $flag_FB);
+	}
+	
+	public function reto()
+	{
+		return View::make('reto-mobile');
+	}
+	public function galeria()
+	{
+		$participantes = Participante::orderBy('created_at', 'desc')->get();
+		return View::make('galeria-mobile')->with('participantes', $participantes);
+		
+	}
 	public function ajaxRegistro()
 	{
 		Session::regenerate();
@@ -82,16 +105,24 @@ class HomeController extends BaseController {
 				$participante->imagen		= $sessionId;
 				$participante->extension	= $extension;
 				$participante->ip			= Request::getClientIp(true);
+				$participante->video		= Input::get('video');
+				$participante->flujo		= Input::get('flujo');
 
 				$participante->save();
 				
+				$parrafo1 = substr($participante->mensaje, 0, 126);
+				$parrafo2 = substr($participante->mensaje, 126);
 				$html = '<div class="contenedor-foto center-block ancho-l margen-l">'.
-						'<img src="'.url().'/uploads/final/'.$participante->imagen.'.'.$participante->extension.'" alt="" class="img-responsive center-block"><div class="clearfix"></div><p>'.$participante->mensaje.'</p></div>';
+						'<img src="'.url().'/uploads/final/'.$participante->imagen.'.'.$participante->extension.'" alt="" class="img-responsive center-block"><div class="clearfix"></div>'
+						. '<p>'.$parrafo1.'<span id="elipsis-'.$participante->id.'" class="elipsis">...</span><span id="parrafo-'.$participante->id.'" class="parrafo hidden">'.$parrafo2.'</span>'.'</p>'
+						. '<span><strong>Por: </strong>'.$participante->nombre
+						. '<a data-id="'.$participante->id.'" class="pull-right ver-mas" href="#"><img class="pull-right" src="'.url().'/img/ver-mas.png" alt=""></a>'
+						. '</span></div>';
 
-				$respuesta = array('success' => 'ok', 'total' => $participante->count(), 'html' => $html);
+				$respuesta = array('success' => 'ok', 'total' => ($participante->count()*2), 'html' => $html);
 				return Response::json($respuesta, 200);
 			} else {
-				$respuesta = array('success' => 'error', 'messages' => 'Error, no subió archivo.');
+				$this->grabarError($sessionId, '', 'Error, no subió archivo.');
 				$respuesta = array('success' => 'error', 'messages' => 'Error, no subió archivo.');
 				return Response::json($respuesta, 200);
 			}

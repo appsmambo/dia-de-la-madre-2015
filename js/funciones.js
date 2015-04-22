@@ -12,7 +12,7 @@ function desbloquear() {
 }
 $(document).ready(function () {
 	$('header, footer, .hashtag, .saltar').fadeTo('fast', 0);
-	$(".page-intro")
+	$(".page-intro, .intro.saltar")
 		.mouseenter(function() {
 			$('header, footer, .hashtag, .saltar').fadeTo('fast', 1);
 		})
@@ -25,6 +25,13 @@ $(document).ready(function () {
 	});
 	$('#foto').change(function(){
 		readURL(this);
+	});
+	$('body').on('click', '.ver-mas', function() {
+		var id;
+		id = $(this).data('id');
+		$('#elipsis-'+id).fadeOut();
+		$('#parrafo-'+id).removeClass('hidden');
+		$(this).fadeOut();
 	});
 	$('input:checkbox').screwDefaultButtons({
 		image: 'url("img/checkbox.jpg")',
@@ -72,9 +79,11 @@ $(document).ready(function () {
 								color: '#fff'
 							}
 						});
+						ga('send', 'event', 'sube tu foto', 'error');
 						setTimeout('desbloquear()', 5000);
 						return false;
 					} else {
+						$('#flujo').val('Registro');
 						$('#nombre, #dni, #email, #celular, #mensaje').val('');
 						$("#newsletter").screwDefaultButtons("uncheck");
 						$('.total').html(data.total);
@@ -84,6 +93,7 @@ $(document).ready(function () {
 								right: "0"
 							}, 500, function() {
 								// Animation complete.
+								ga('send', 'event', 'sube tu foto', 'exito');
 							});
 						});
 					}
@@ -93,16 +103,10 @@ $(document).ready(function () {
 		e.preventDefault();
 	});
 	$('.compartir').click(function() {
+		ga('send', 'event', 'compartir', 'click');
 		FB.ui({
 			method: 'share',
 			href: urlBase,
 		}, function(response){});
 	})
-	$('.compartir').click(function() {
-		FB.ui({
-			method: 'share',
-			href: urlBase,
-		}, function(response){});
-	});
-	
 });
