@@ -122,7 +122,7 @@ window.fbAsyncInit = function () {
 					<div class="container-fluid">
 						<div class="row">
 							<div class="col-xs-12">
-								<a href="#secondPage"><img src="{{url()}}/img/btn-scroll-2.png" alt="" class="img-responsive scroll-reto"></a>
+								<a href="#secondPage"><img src="{{url()}}/img/btn-scroll-2.png" alt="" class="img-responsive scroll-reto scroll-movil"></a>
 								<img src="{{url()}}/img/hashtag-mama-footer.png" alt="" class="img-responsive pull-right">
 							</div>
 						</div>
@@ -137,7 +137,7 @@ window.fbAsyncInit = function () {
 							<div class="kilos-reto">
 								<img src="{{url()}}/img/back-8-kilos.png" alt="" class="img-responsive center-block">
 								<p>
-									24kgs  <span>de ayuda</span>
+									28kgs  <span>de ayuda</span>
 								</p>
 							</div>
 						</div>
@@ -153,19 +153,25 @@ window.fbAsyncInit = function () {
 					</div>
 				</div>
 			</div>
-			<div class="section home" id="section2">
-				<div class="row">
-					<div class="col-xs-6 menu-mobile">
-						<a href="{{url()}}/" data-image="{{url()}}/img/home-menu-2.jpg" ><img src="{{url()}}/img/home-menu-1.jpg" alt="" class="img-responsive"></a>
-					</div>
-					<div class="col-xs-6 menu-mobile">
-						<a data-image="{{url()}}/img/participa-menu-2.jpg" href="{{url()}}/participa"><img src="{{url()}}/img/participa-menu-1.jpg" alt="" class="img-responsive"></a>
-					</div>
-					<div class="col-xs-6 menu-mobile">
-						<a data-image="{{url()}}/img/reto-menu-2.jpg" href="#"><img src="{{url()}}/img/reto-menu-1.jpg" alt="" class="img-responsive"></a>	
-					</div>
-					<div class="col-xs-6 menu-mobile">
-						<a data-image="{{url()}}/img/galeria-menu-2.jpg" href="{{url()}}/galeria"><img src="{{url()}}/img/galeria-menu-1.jpg" alt="" class="img-responsive"></a>
+		</div>
+		<div class="menu-content-mobile">
+			<div class="content-a">
+				<div class="content-b">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-6 menu-mobile">
+								<a href="{{url()}}/" data-image="{{url()}}/img/home-menu-2.jpg" ><img src="{{url()}}/img/home-menu-1.jpg" alt="" class="img-responsive center-block"></a>
+							</div>
+							<div class="col-xs-6 menu-mobile">
+								<a data-image="{{url()}}/img/participa-menu-2.jpg" href="{{url()}}/participa"><img src="{{url()}}/img/participa-menu-1.jpg" alt="" class="img-responsive center-block"></a>
+							</div>
+							<div class="col-xs-6 menu-mobile">
+								<a data-image="{{url()}}/img/reto-menu-2.jpg" href="#"><img src="{{url()}}/img/reto-menu-1.jpg" alt="" class="img-responsive center-block"></a>	
+							</div>
+							<div class="col-xs-6 menu-mobile">
+								<a data-image="{{url()}}/img/galeria-menu-2.jpg" href="{{url()}}/galeria"><img src="{{url()}}/img/galeria-menu-1.jpg" alt="" class="img-responsive center-block"></a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

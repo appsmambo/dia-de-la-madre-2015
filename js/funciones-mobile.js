@@ -24,7 +24,7 @@ $(document).ready(function () {
 			mensaje: "required"
 		}
 	});
-	$("#registro").submit( function(e) {
+	$("#registro").submit(function (e) {
 		if ($("#registro").valid()) {
 			$.ajax({
 				url: urlBase + '/registro',
@@ -65,10 +65,10 @@ $(document).ready(function () {
 		}
 		e.preventDefault();
 	});
-	$('#archivo').click(function() {
+	$('#archivo').click(function () {
 		$('#foto').trigger('click');
 	});
-	$('#foto').change(function(){
+	$('#foto').change(function () {
 		$('p.archivo').html(this.files[0].name);
 	});
 	$('.compartir').click(function () {
@@ -91,5 +91,8 @@ $(document).ready(function () {
 		$("img", this).prop("src", imagen);
 		setTimeout(location.href(href), 500);
 		return false;
+	});
+	$(".menu-toogle").click(function () {
+		$(".menu-content-mobile").fadeToggle("fast");
 	});
 });

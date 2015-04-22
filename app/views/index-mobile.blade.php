@@ -135,7 +135,7 @@ window.fbAsyncInit = function () {
 					<div class="container-fluid">
 						<div class="row">
 							<div class="col-xs-12">
-								<a href="#3rdPage"><img src="{{url()}}/img/btn-scroll-2.png" alt="" class="img-responsive center-block"></a>
+								<a href="#3rdPage"><img src="{{url()}}/img/btn-scroll-2.png" alt="" class="img-responsive center-block scroll-movil"></a>
 							</div>
 						</div>
 					</div>
@@ -164,18 +164,24 @@ window.fbAsyncInit = function () {
 
 		</div>
 		<div class="menu-content-mobile">
-			<div class="row">
-				<div class="col-xs-6 menu-mobile">
-					<a href="#" data-image="{{url()}}/img/home-menu-2.jpg" ><img src="{{url()}}/img/home-menu-1.jpg" alt="" class="img-responsive"></a>
-				</div>
-				<div class="col-xs-6 menu-mobile">
-					<a data-image="{{url()}}/img/participa-menu-2.jpg" href="{{url()}}/participa"><img src="{{url()}}/img/participa-menu-1.jpg" alt="" class="img-responsive"></a>
-				</div>
-				<div class="col-xs-6 menu-mobile">
-					<a data-image="{{url()}}/img/reto-menu-2.jpg" href="{{url()}}/reto"><img src="{{url()}}/img/reto-menu-1.jpg" alt="" class="img-responsive"></a>	
-				</div>
-				<div class="col-xs-6 menu-mobile">
-					<a data-image="{{url()}}/img/galeria-menu-2.jpg" href="{{url()}}/galeria"><img src="{{url()}}/img/galeria-menu-1.jpg" alt="" class="img-responsive"></a>
+			<div class="content-a">
+				<div class="content-b">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-6 menu-mobile">
+								<a href="#" data-image="{{url()}}/img/home-menu-2.jpg" ><img src="{{url()}}/img/home-menu-1.jpg" alt="" class="img-responsive center-block"></a>
+							</div>
+							<div class="col-xs-6 menu-mobile">
+								<a data-image="{{url()}}/img/participa-menu-2.jpg" href="{{url()}}/participa"><img src="{{url()}}/img/participa-menu-1.jpg" alt="" class="img-responsive center-block"></a>
+							</div>
+							<div class="col-xs-6 menu-mobile">
+								<a data-image="{{url()}}/img/reto-menu-2.jpg" href="{{url()}}/reto"><img src="{{url()}}/img/reto-menu-1.jpg" alt="" class="img-responsive center-block"></a>	
+							</div>
+							<div class="col-xs-6 menu-mobile">
+								<a data-image="{{url()}}/img/galeria-menu-2.jpg" href="{{url()}}/galeria"><img src="{{url()}}/img/galeria-menu-1.jpg" alt="" class="img-responsive center-block"></a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

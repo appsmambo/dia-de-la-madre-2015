@@ -98,6 +98,9 @@ window.fbAsyncInit = function () {
 					$(this).fadeOut();
 					return false;
 				});
+				$(".menu-toogle").click(function () {
+					$(".menu-content-mobile").fadeToggle("fast");
+				});
 			});
 		</script>
 		<script>
@@ -120,7 +123,7 @@ window.fbAsyncInit = function () {
 			<div class="container-fluid">
 				<div class="container-fluid">
 					<img src="{{url()}}/img/header-mobile.png" alt="" class="img-responsive hashtag pull-left">
-					<a href="#galeriamenu"><img src="{{url()}}/img/bar-toogle.png" alt="" class="img-responsive hashtag pull-right"></a>
+					<a href="#" style="display: block;" class="menu-toogle"><img src="{{url()}}/img/bar-toogle.png" alt="" class="img-responsive hashtag pull-right"></a>
 				</div>
 			</div>
 		</header>
@@ -184,21 +187,25 @@ window.fbAsyncInit = function () {
 				</div>
 			</div>
 		</div>
-
-
-		<div id="galeriamenu">
-			<div class="row">
-				<div class="col-xs-6 menu-mobile">
-					<a href="{{url()}}/" data-image="{{url()}}/img/home-menu-2.jpg" ><img src="{{url()}}/img/home-menu-1.jpg" alt="" class="img-responsive"></a>
-				</div>
-				<div class="col-xs-6 menu-mobile">
-					<a data-image="{{url()}}/img/participa-menu-2.jpg" href="{{url()}}/participa"><img src="{{url()}}/img/participa-menu-1.jpg" alt="" class="img-responsive"></a>
-				</div>
-				<div class="col-xs-6 menu-mobile">
-					<a data-image="{{url()}}/img/reto-menu-2.jpg" href="{{url()}}/reto"><img src="{{url()}}/img/reto-menu-1.jpg" alt="" class="img-responsive"></a>	
-				</div>
-				<div class="col-xs-6 menu-mobile">
-					<a data-image="{{url()}}/img/galeria-menu-2.jpg" href="#"><img src="{{url()}}/img/galeria-menu-1.jpg" alt="" class="img-responsive"></a>
+		<div class="menu-content-mobile">
+			<div class="content-a">
+				<div class="content-b">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-6 menu-mobile">
+								<a href="{{url()}}/" data-image="{{url()}}/img/home-menu-2.jpg" ><img src="{{url()}}/img/home-menu-1.jpg" alt="" class="img-responsive center-block"></a>
+							</div>
+							<div class="col-xs-6 menu-mobile">
+								<a data-image="{{url()}}/img/participa-menu-2.jpg" href="{{url()}}/participa"><img src="{{url()}}/img/participa-menu-1.jpg" alt="" class="img-responsive center-block"></a>
+							</div>
+							<div class="col-xs-6 menu-mobile">
+								<a data-image="{{url()}}/img/reto-menu-2.jpg" href="{{url()}}/reto"><img src="{{url()}}/img/reto-menu-1.jpg" alt="" class="img-responsive center-block"></a>	
+							</div>
+							<div class="col-xs-6 menu-mobile">
+								<a data-image="{{url()}}/img/galeria-menu-2.jpg" href="#"><img src="{{url()}}/img/galeria-menu-1.jpg" alt="" class="img-responsive center-block"></a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
