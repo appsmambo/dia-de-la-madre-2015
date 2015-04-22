@@ -267,7 +267,7 @@ endfor;
 			</div>
 		</div>
 		<div class="formulario">
-			<a class="btn-close">
+			<a href="#" class="btn-close">
 				<img src="{{url()}}/img/btn-close-formulario.jpg" alt="">
 			</a>
 			<div class="container-formulario">

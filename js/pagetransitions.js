@@ -1,3 +1,11 @@
+$.fn.redraw = function(){
+	$(this).each(function(){
+		var redraw = this.offsetHeight;
+	});
+};
+function desbloquear() {
+	$('body').unblock()
+}
 var PageTransitions = (function () {
 
 	var $main = $('#pt-main'),
@@ -87,6 +95,7 @@ var PageTransitions = (function () {
 				// Animation complete.
 			});
 			flag = false;
+			$('.page-participa').redraw();
 		});
 		$('.btn-close').click(function () {
 			$('header, #pt-main, footer').delay(250).animate({
@@ -100,6 +109,7 @@ var PageTransitions = (function () {
 				// Animation complete.
 			});
 			flag = true;
+			$('.page-participa').redraw();
 		});
 
 		$('body').mousewheel(function(event, intDelta){

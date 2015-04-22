@@ -418,12 +418,11 @@ a.saltar {
 	margin-top:85%
 }
 .btn-close{
-	cursor:pointer;
 	position:absolute;
 	right:0;
 	top:5%;
 	width:80px;
-	height:73px;
+	height:73px
 }
 .content-a{
 	display: table;

@@ -14,7 +14,12 @@ class HomeController extends BaseController {
 	
 	public function participa()
 	{
-		return View::make('participa-mobile');
+		$flag_FB = '0';
+		$ua = strtolower($_SERVER['HTTP_USER_AGENT']);
+		if (stripos($ua, 'fb_iab') !== false) {
+			$flag_FB = '1';
+		}
+		return View::make('participa-mobile')->with('flag_FB', $flag_FB);
 	}
 	
 	public function reto()

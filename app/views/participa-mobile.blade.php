@@ -43,7 +43,7 @@
 		<script src="{{url()}}/js/queryloader2.min.js"></script>
 		<script>
 var urlBase = '{{url()}}';
-var api_fsvideo, flagIntro = false
+var api_fsvideo, flagIntro = false;
 window.addEventListener('DOMContentLoaded', function () {
 	new QueryLoader2(document.querySelector("body"), {
 		barColor: "#ff6702",
@@ -160,6 +160,12 @@ window.fbAsyncInit = function () {
 				<img src="{{url()}}/img/btn-close-formulario.jpg" alt="" class="img-responsive">
 			</div>
 			<div class="formulario registro-formulario">
+@if ($flag_FB == '1')
+				<br><br>
+				<h2 style="font-family: 'DINNextLTPro-UltraLight';color:#0154a0">
+					Para subir tu imagen, despliega el menú superior derecho y accede desde tu navegador tocando "abrir con".
+				</h2>
+@else				
 				<p class="parrafo-1">
 					<span>Comparte una foto en la que reflejes un momento con tu mamá.</span>
 					La foto puede ser actual o de tu infancia, aparecer tu mamá o no, pero siempre debe
@@ -209,6 +215,7 @@ window.fbAsyncInit = function () {
 				<p class="parrafo-2">
 					<span class="asterisco">*</span> Las fotos que más nos gusten serán compartidas en nuestras redes sociales. <span class="suerte">¡Suerte!</span> ;)
 				</p>
+@endif
 			</div>
 		</div>
 		<div class="content-gracias gracias-registro">
